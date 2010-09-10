@@ -1,4 +1,4 @@
-﻿namespace InteractionSearch
+﻿namespace InteractionMapping
 {
 	partial class PartInfoPanel
 	{

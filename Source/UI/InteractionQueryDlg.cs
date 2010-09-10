@@ -31,7 +31,7 @@ using System.Threading;
 using System.Net;
 using System.Globalization;
 
-namespace InteractionSearch
+namespace InteractionMapping
 {
 	public partial class InteractionQueryDlg : Form
 	{

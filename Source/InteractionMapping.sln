@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartInteractions", "PartInteractions.csproj", "{D3D1E42D-F4DE-4E10-8C32-8218DAB09B0B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteractionMapping", "InteractionMapping.csproj", "{D3D1E42D-F4DE-4E10-8C32-8218DAB09B0B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CytoscapeRPC", "CytoscapeRPC\CytoscapeRPC.csproj", "{25AC1316-E12C-4A54-AB78-2D59CDE0C4AF}"
 EndProject

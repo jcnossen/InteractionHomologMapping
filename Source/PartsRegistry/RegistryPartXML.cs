@@ -25,7 +25,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace InteractionSearch.PartsRegistry
+namespace InteractionMapping.PartsRegistry
 {
 	[XmlRoot("rsbpml")]
 	public class Root

@@ -27,7 +27,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-namespace InteractionSearch
+namespace InteractionMapping
 {
 	class Util
 	{

@@ -8,17 +8,17 @@
     <ProjectGuid>{D3D1E42D-F4DE-4E10-8C32-8218DAB09B0B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>InteractionSearch</RootNamespace>
-    <AssemblyName>InteractionSearch</AssemblyName>
+    <RootNamespace>InteractionMapping</RootNamespace>
+    <AssemblyName>InteractionMapping</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <StartupObject>InteractionSearch.Program</StartupObject>
+    <StartupObject>InteractionMapping.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\Bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -27,7 +27,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\Bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -35,11 +35,11 @@
   <ItemGroup>
     <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\Mono.Security.dll</HintPath>
+      <HintPath>..\Bin\Mono.Security.dll</HintPath>
     </Reference>
     <Reference Include="Npgsql, Version=2.0.10.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\Npgsql.dll</HintPath>
+      <HintPath>..\Bin\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -111,11 +111,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Service References\NCBIBlastService\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="UI\InteractionQueryDlg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,7 +144,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\NCBIBlastServiceAsync\" />
-    <WCFMetadataStorage Include="Service References\NCBIBlastService\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\NCBIBlastServiceAsync\configuration91.svcinfo" />
@@ -158,34 +152,17 @@
     <None Include="Service References\NCBIBlastServiceAsync\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\NCBIBlastServiceAsync\InteractionSearch.NCBIBlastServiceAsync.wsParameterDetails.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\NCBIBlastServiceAsync\InteractionSearch.NCBIBlastServiceAsync.wsResultType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Service References\NCBIBlastServiceAsync\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Service References\NCBIBlastService\ncbiblast.wsdl" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\NCBIBlastService\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\NCBIBlastService\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\NCBIBlastService\InteractionSearch.NCBIBlastService.wsParameterDetails.datasource">
+    <None Include="Service References\NCBIBlastServiceAsync\InteractionMapping.NCBIBlastServiceAsync.wsParameterDetails.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\NCBIBlastService\InteractionSearch.NCBIBlastService.wsResultType.datasource">
+    <None Include="Service References\NCBIBlastServiceAsync\InteractionMapping.NCBIBlastServiceAsync.wsResultType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\NCBIBlastService\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

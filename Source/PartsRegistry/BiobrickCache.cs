@@ -29,7 +29,7 @@ using System.Net;
 
 using System.Xml.Serialization;
 
-namespace InteractionSearch
+namespace InteractionMapping
 {
 	using Root = PartsRegistry.Root;
 	using Part = PartsRegistry.Part;

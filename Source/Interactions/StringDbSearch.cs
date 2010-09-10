@@ -29,7 +29,7 @@ using System.Xml.Serialization;
 using System.IO;
 using Npgsql;
 
-namespace InteractionSearch
+namespace InteractionMapping
 {
 	[XmlRoot("dbconn")]
 	public class StringConnectionSettings

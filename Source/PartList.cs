@@ -27,7 +27,7 @@ using System.Xml.Serialization;
 using System.IO;
 using System.Data;
 
-namespace InteractionSearch
+namespace InteractionMapping
 {
 	public class PartList
 	{

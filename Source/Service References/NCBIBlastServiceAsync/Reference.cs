@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace InteractionSearch.NCBIBlastServiceAsync {
+namespace InteractionMapping.NCBIBlastServiceAsync {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
@@ -19,67 +19,67 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
         [System.ServiceModel.OperationContractAttribute(Action="urn:Run", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute()]
         [return: System.ServiceModel.MessageParameterAttribute(Name="jobId")]
-        InteractionSearch.NCBIBlastServiceAsync.runResponse run(InteractionSearch.NCBIBlastServiceAsync.runRequest request);
+        InteractionMapping.NCBIBlastServiceAsync.runResponse run(InteractionMapping.NCBIBlastServiceAsync.runRequest request);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:Run", ReplyAction="*")]
-        System.IAsyncResult Beginrun(InteractionSearch.NCBIBlastServiceAsync.runRequest request, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult Beginrun(InteractionMapping.NCBIBlastServiceAsync.runRequest request, System.AsyncCallback callback, object asyncState);
         
-        InteractionSearch.NCBIBlastServiceAsync.runResponse Endrun(System.IAsyncResult result);
+        InteractionMapping.NCBIBlastServiceAsync.runResponse Endrun(System.IAsyncResult result);
         
         // CODEGEN: Parameter 'status' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:GetStatus", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute()]
         [return: System.ServiceModel.MessageParameterAttribute(Name="status")]
-        InteractionSearch.NCBIBlastServiceAsync.getStatusResponse getStatus(InteractionSearch.NCBIBlastServiceAsync.getStatusRequest request);
+        InteractionMapping.NCBIBlastServiceAsync.getStatusResponse getStatus(InteractionMapping.NCBIBlastServiceAsync.getStatusRequest request);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:GetStatus", ReplyAction="*")]
-        System.IAsyncResult BegingetStatus(InteractionSearch.NCBIBlastServiceAsync.getStatusRequest request, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult BegingetStatus(InteractionMapping.NCBIBlastServiceAsync.getStatusRequest request, System.AsyncCallback callback, object asyncState);
         
-        InteractionSearch.NCBIBlastServiceAsync.getStatusResponse EndgetStatus(System.IAsyncResult result);
+        InteractionMapping.NCBIBlastServiceAsync.getStatusResponse EndgetStatus(System.IAsyncResult result);
         
         // CODEGEN: Parameter 'resultTypes' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlArrayAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:GetResultTypes", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute()]
         [return: System.ServiceModel.MessageParameterAttribute(Name="resultTypes")]
-        InteractionSearch.NCBIBlastServiceAsync.getResultTypesResponse getResultTypes(InteractionSearch.NCBIBlastServiceAsync.getResultTypesRequest request);
+        InteractionMapping.NCBIBlastServiceAsync.getResultTypesResponse getResultTypes(InteractionMapping.NCBIBlastServiceAsync.getResultTypesRequest request);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:GetResultTypes", ReplyAction="*")]
-        System.IAsyncResult BegingetResultTypes(InteractionSearch.NCBIBlastServiceAsync.getResultTypesRequest request, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult BegingetResultTypes(InteractionMapping.NCBIBlastServiceAsync.getResultTypesRequest request, System.AsyncCallback callback, object asyncState);
         
-        InteractionSearch.NCBIBlastServiceAsync.getResultTypesResponse EndgetResultTypes(System.IAsyncResult result);
+        InteractionMapping.NCBIBlastServiceAsync.getResultTypesResponse EndgetResultTypes(System.IAsyncResult result);
         
         // CODEGEN: Parameter 'output' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:GetResult", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute()]
         [return: System.ServiceModel.MessageParameterAttribute(Name="output")]
-        InteractionSearch.NCBIBlastServiceAsync.getResultResponse getResult(InteractionSearch.NCBIBlastServiceAsync.getResultRequest request);
+        InteractionMapping.NCBIBlastServiceAsync.getResultResponse getResult(InteractionMapping.NCBIBlastServiceAsync.getResultRequest request);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:GetResult", ReplyAction="*")]
-        System.IAsyncResult BegingetResult(InteractionSearch.NCBIBlastServiceAsync.getResultRequest request, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult BegingetResult(InteractionMapping.NCBIBlastServiceAsync.getResultRequest request, System.AsyncCallback callback, object asyncState);
         
-        InteractionSearch.NCBIBlastServiceAsync.getResultResponse EndgetResult(System.IAsyncResult result);
+        InteractionMapping.NCBIBlastServiceAsync.getResultResponse EndgetResult(System.IAsyncResult result);
         
         // CODEGEN: Parameter 'parameters' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlArrayAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:GetParameters", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute()]
         [return: System.ServiceModel.MessageParameterAttribute(Name="parameters")]
-        InteractionSearch.NCBIBlastServiceAsync.getParametersResponse getParameters(InteractionSearch.NCBIBlastServiceAsync.getParametersRequest request);
+        InteractionMapping.NCBIBlastServiceAsync.getParametersResponse getParameters(InteractionMapping.NCBIBlastServiceAsync.getParametersRequest request);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:GetParameters", ReplyAction="*")]
-        System.IAsyncResult BegingetParameters(InteractionSearch.NCBIBlastServiceAsync.getParametersRequest request, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult BegingetParameters(InteractionMapping.NCBIBlastServiceAsync.getParametersRequest request, System.AsyncCallback callback, object asyncState);
         
-        InteractionSearch.NCBIBlastServiceAsync.getParametersResponse EndgetParameters(System.IAsyncResult result);
+        InteractionMapping.NCBIBlastServiceAsync.getParametersResponse EndgetParameters(System.IAsyncResult result);
         
         // CODEGEN: Parameter 'parameterDetails' requires additional schema information that cannot be captured using the parameter mode. The specific attribute is 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:GetParameterDetails", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute()]
         [return: System.ServiceModel.MessageParameterAttribute(Name="parameterDetails")]
-        InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsResponse getParameterDetails(InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsRequest request);
+        InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsResponse getParameterDetails(InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsRequest request);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="urn:GetParameterDetails", ReplyAction="*")]
-        System.IAsyncResult BegingetParameterDetails(InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsRequest request, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult BegingetParameterDetails(InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsRequest request, System.AsyncCallback callback, object asyncState);
         
-        InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsResponse EndgetParameterDetails(System.IAsyncResult result);
+        InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsResponse EndgetParameterDetails(System.IAsyncResult result);
     }
     
     /// <remarks/>
@@ -769,12 +769,12 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap.jdispatcher.ebi.ac.uk", Order=2)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public InteractionSearch.NCBIBlastServiceAsync.InputParameters parameters;
+        public InteractionMapping.NCBIBlastServiceAsync.InputParameters parameters;
         
         public runRequest() {
         }
         
-        public runRequest(string email, string title, InteractionSearch.NCBIBlastServiceAsync.InputParameters parameters) {
+        public runRequest(string email, string title, InteractionMapping.NCBIBlastServiceAsync.InputParameters parameters) {
             this.email = email;
             this.title = title;
             this.parameters = parameters;
@@ -963,18 +963,18 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap.jdispatcher.ebi.ac.uk", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public InteractionSearch.NCBIBlastServiceAsync.wsParameterDetails parameterDetails;
+        public InteractionMapping.NCBIBlastServiceAsync.wsParameterDetails parameterDetails;
         
         public getParameterDetailsResponse() {
         }
         
-        public getParameterDetailsResponse(InteractionSearch.NCBIBlastServiceAsync.wsParameterDetails parameterDetails) {
+        public getParameterDetailsResponse(InteractionMapping.NCBIBlastServiceAsync.wsParameterDetails parameterDetails) {
             this.parameterDetails = parameterDetails;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
-    public interface JDispatcherServiceChannel : InteractionSearch.NCBIBlastServiceAsync.JDispatcherService, System.ServiceModel.IClientChannel {
+    public interface JDispatcherServiceChannel : InteractionMapping.NCBIBlastServiceAsync.JDispatcherService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1083,17 +1083,17 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
             this.results = results;
         }
         
-        public InteractionSearch.NCBIBlastServiceAsync.wsParameterDetails Result {
+        public InteractionMapping.NCBIBlastServiceAsync.wsParameterDetails Result {
             get {
                 base.RaiseExceptionIfNecessary();
-                return ((InteractionSearch.NCBIBlastServiceAsync.wsParameterDetails)(this.results[0]));
+                return ((InteractionMapping.NCBIBlastServiceAsync.wsParameterDetails)(this.results[0]));
             }
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
-    public partial class JDispatcherServiceClient : System.ServiceModel.ClientBase<InteractionSearch.NCBIBlastServiceAsync.JDispatcherService>, InteractionSearch.NCBIBlastServiceAsync.JDispatcherService {
+    public partial class JDispatcherServiceClient : System.ServiceModel.ClientBase<InteractionMapping.NCBIBlastServiceAsync.JDispatcherService>, InteractionMapping.NCBIBlastServiceAsync.JDispatcherService {
         
         private BeginOperationDelegate onBeginrunDelegate;
         
@@ -1163,48 +1163,48 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
         public event System.EventHandler<getParameterDetailsCompletedEventArgs> getParameterDetailsCompleted;
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.runResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.run(InteractionSearch.NCBIBlastServiceAsync.runRequest request) {
+        InteractionMapping.NCBIBlastServiceAsync.runResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.run(InteractionMapping.NCBIBlastServiceAsync.runRequest request) {
             return base.Channel.run(request);
         }
         
-        public string run(string email, string title, InteractionSearch.NCBIBlastServiceAsync.InputParameters parameters) {
-            InteractionSearch.NCBIBlastServiceAsync.runRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.runRequest();
+        public string run(string email, string title, InteractionMapping.NCBIBlastServiceAsync.InputParameters parameters) {
+            InteractionMapping.NCBIBlastServiceAsync.runRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.runRequest();
             inValue.email = email;
             inValue.title = title;
             inValue.parameters = parameters;
-            InteractionSearch.NCBIBlastServiceAsync.runResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).run(inValue);
+            InteractionMapping.NCBIBlastServiceAsync.runResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).run(inValue);
             return retVal.jobId;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.Beginrun(InteractionSearch.NCBIBlastServiceAsync.runRequest request, System.AsyncCallback callback, object asyncState) {
+        System.IAsyncResult InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.Beginrun(InteractionMapping.NCBIBlastServiceAsync.runRequest request, System.AsyncCallback callback, object asyncState) {
             return base.Channel.Beginrun(request, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult Beginrun(string email, string title, InteractionSearch.NCBIBlastServiceAsync.InputParameters parameters, System.AsyncCallback callback, object asyncState) {
-            InteractionSearch.NCBIBlastServiceAsync.runRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.runRequest();
+        public System.IAsyncResult Beginrun(string email, string title, InteractionMapping.NCBIBlastServiceAsync.InputParameters parameters, System.AsyncCallback callback, object asyncState) {
+            InteractionMapping.NCBIBlastServiceAsync.runRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.runRequest();
             inValue.email = email;
             inValue.title = title;
             inValue.parameters = parameters;
-            return ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).Beginrun(inValue, callback, asyncState);
+            return ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).Beginrun(inValue, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.runResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.Endrun(System.IAsyncResult result) {
+        InteractionMapping.NCBIBlastServiceAsync.runResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.Endrun(System.IAsyncResult result) {
             return base.Channel.Endrun(result);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public string Endrun(System.IAsyncResult result) {
-            InteractionSearch.NCBIBlastServiceAsync.runResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).Endrun(result);
+            InteractionMapping.NCBIBlastServiceAsync.runResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).Endrun(result);
             return retVal.jobId;
         }
         
         private System.IAsyncResult OnBeginrun(object[] inValues, System.AsyncCallback callback, object asyncState) {
             string email = ((string)(inValues[0]));
             string title = ((string)(inValues[1]));
-            InteractionSearch.NCBIBlastServiceAsync.InputParameters parameters = ((InteractionSearch.NCBIBlastServiceAsync.InputParameters)(inValues[2]));
+            InteractionMapping.NCBIBlastServiceAsync.InputParameters parameters = ((InteractionMapping.NCBIBlastServiceAsync.InputParameters)(inValues[2]));
             return this.Beginrun(email, title, parameters, callback, asyncState);
         }
         
@@ -1221,11 +1221,11 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
             }
         }
         
-        public void runAsync(string email, string title, InteractionSearch.NCBIBlastServiceAsync.InputParameters parameters) {
+        public void runAsync(string email, string title, InteractionMapping.NCBIBlastServiceAsync.InputParameters parameters) {
             this.runAsync(email, title, parameters, null);
         }
         
-        public void runAsync(string email, string title, InteractionSearch.NCBIBlastServiceAsync.InputParameters parameters, object userState) {
+        public void runAsync(string email, string title, InteractionMapping.NCBIBlastServiceAsync.InputParameters parameters, object userState) {
             if ((this.onBeginrunDelegate == null)) {
                 this.onBeginrunDelegate = new BeginOperationDelegate(this.OnBeginrun);
             }
@@ -1242,37 +1242,37 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.getStatusResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.getStatus(InteractionSearch.NCBIBlastServiceAsync.getStatusRequest request) {
+        InteractionMapping.NCBIBlastServiceAsync.getStatusResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.getStatus(InteractionMapping.NCBIBlastServiceAsync.getStatusRequest request) {
             return base.Channel.getStatus(request);
         }
         
         public string getStatus(string jobId) {
-            InteractionSearch.NCBIBlastServiceAsync.getStatusRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.getStatusRequest();
+            InteractionMapping.NCBIBlastServiceAsync.getStatusRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.getStatusRequest();
             inValue.jobId = jobId;
-            InteractionSearch.NCBIBlastServiceAsync.getStatusResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).getStatus(inValue);
+            InteractionMapping.NCBIBlastServiceAsync.getStatusResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).getStatus(inValue);
             return retVal.status;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.BegingetStatus(InteractionSearch.NCBIBlastServiceAsync.getStatusRequest request, System.AsyncCallback callback, object asyncState) {
+        System.IAsyncResult InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.BegingetStatus(InteractionMapping.NCBIBlastServiceAsync.getStatusRequest request, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BegingetStatus(request, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public System.IAsyncResult BegingetStatus(string jobId, System.AsyncCallback callback, object asyncState) {
-            InteractionSearch.NCBIBlastServiceAsync.getStatusRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.getStatusRequest();
+            InteractionMapping.NCBIBlastServiceAsync.getStatusRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.getStatusRequest();
             inValue.jobId = jobId;
-            return ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).BegingetStatus(inValue, callback, asyncState);
+            return ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).BegingetStatus(inValue, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.getStatusResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.EndgetStatus(System.IAsyncResult result) {
+        InteractionMapping.NCBIBlastServiceAsync.getStatusResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.EndgetStatus(System.IAsyncResult result) {
             return base.Channel.EndgetStatus(result);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public string EndgetStatus(System.IAsyncResult result) {
-            InteractionSearch.NCBIBlastServiceAsync.getStatusResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).EndgetStatus(result);
+            InteractionMapping.NCBIBlastServiceAsync.getStatusResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).EndgetStatus(result);
             return retVal.status;
         }
         
@@ -1313,37 +1313,37 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.getResultTypesResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.getResultTypes(InteractionSearch.NCBIBlastServiceAsync.getResultTypesRequest request) {
+        InteractionMapping.NCBIBlastServiceAsync.getResultTypesResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.getResultTypes(InteractionMapping.NCBIBlastServiceAsync.getResultTypesRequest request) {
             return base.Channel.getResultTypes(request);
         }
         
         public wsResultType[] getResultTypes(string jobId) {
-            InteractionSearch.NCBIBlastServiceAsync.getResultTypesRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.getResultTypesRequest();
+            InteractionMapping.NCBIBlastServiceAsync.getResultTypesRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.getResultTypesRequest();
             inValue.jobId = jobId;
-            InteractionSearch.NCBIBlastServiceAsync.getResultTypesResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).getResultTypes(inValue);
+            InteractionMapping.NCBIBlastServiceAsync.getResultTypesResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).getResultTypes(inValue);
             return retVal.resultTypes;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.BegingetResultTypes(InteractionSearch.NCBIBlastServiceAsync.getResultTypesRequest request, System.AsyncCallback callback, object asyncState) {
+        System.IAsyncResult InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.BegingetResultTypes(InteractionMapping.NCBIBlastServiceAsync.getResultTypesRequest request, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BegingetResultTypes(request, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public System.IAsyncResult BegingetResultTypes(string jobId, System.AsyncCallback callback, object asyncState) {
-            InteractionSearch.NCBIBlastServiceAsync.getResultTypesRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.getResultTypesRequest();
+            InteractionMapping.NCBIBlastServiceAsync.getResultTypesRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.getResultTypesRequest();
             inValue.jobId = jobId;
-            return ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).BegingetResultTypes(inValue, callback, asyncState);
+            return ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).BegingetResultTypes(inValue, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.getResultTypesResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.EndgetResultTypes(System.IAsyncResult result) {
+        InteractionMapping.NCBIBlastServiceAsync.getResultTypesResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.EndgetResultTypes(System.IAsyncResult result) {
             return base.Channel.EndgetResultTypes(result);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public wsResultType[] EndgetResultTypes(System.IAsyncResult result) {
-            InteractionSearch.NCBIBlastServiceAsync.getResultTypesResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).EndgetResultTypes(result);
+            InteractionMapping.NCBIBlastServiceAsync.getResultTypesResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).EndgetResultTypes(result);
             return retVal.resultTypes;
         }
         
@@ -1384,41 +1384,41 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.getResultResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.getResult(InteractionSearch.NCBIBlastServiceAsync.getResultRequest request) {
+        InteractionMapping.NCBIBlastServiceAsync.getResultResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.getResult(InteractionMapping.NCBIBlastServiceAsync.getResultRequest request) {
             return base.Channel.getResult(request);
         }
         
         public byte[] getResult(string jobId, string type, wsRawOutputParameter[] parameters) {
-            InteractionSearch.NCBIBlastServiceAsync.getResultRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.getResultRequest();
+            InteractionMapping.NCBIBlastServiceAsync.getResultRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.getResultRequest();
             inValue.jobId = jobId;
             inValue.type = type;
             inValue.parameters = parameters;
-            InteractionSearch.NCBIBlastServiceAsync.getResultResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).getResult(inValue);
+            InteractionMapping.NCBIBlastServiceAsync.getResultResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).getResult(inValue);
             return retVal.output;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.BegingetResult(InteractionSearch.NCBIBlastServiceAsync.getResultRequest request, System.AsyncCallback callback, object asyncState) {
+        System.IAsyncResult InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.BegingetResult(InteractionMapping.NCBIBlastServiceAsync.getResultRequest request, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BegingetResult(request, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public System.IAsyncResult BegingetResult(string jobId, string type, wsRawOutputParameter[] parameters, System.AsyncCallback callback, object asyncState) {
-            InteractionSearch.NCBIBlastServiceAsync.getResultRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.getResultRequest();
+            InteractionMapping.NCBIBlastServiceAsync.getResultRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.getResultRequest();
             inValue.jobId = jobId;
             inValue.type = type;
             inValue.parameters = parameters;
-            return ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).BegingetResult(inValue, callback, asyncState);
+            return ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).BegingetResult(inValue, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.getResultResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.EndgetResult(System.IAsyncResult result) {
+        InteractionMapping.NCBIBlastServiceAsync.getResultResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.EndgetResult(System.IAsyncResult result) {
             return base.Channel.EndgetResult(result);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public byte[] EndgetResult(System.IAsyncResult result) {
-            InteractionSearch.NCBIBlastServiceAsync.getResultResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).EndgetResult(result);
+            InteractionMapping.NCBIBlastServiceAsync.getResultResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).EndgetResult(result);
             return retVal.output;
         }
         
@@ -1463,35 +1463,35 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.getParametersResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.getParameters(InteractionSearch.NCBIBlastServiceAsync.getParametersRequest request) {
+        InteractionMapping.NCBIBlastServiceAsync.getParametersResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.getParameters(InteractionMapping.NCBIBlastServiceAsync.getParametersRequest request) {
             return base.Channel.getParameters(request);
         }
         
         public string[] getParameters() {
-            InteractionSearch.NCBIBlastServiceAsync.getParametersRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.getParametersRequest();
-            InteractionSearch.NCBIBlastServiceAsync.getParametersResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).getParameters(inValue);
+            InteractionMapping.NCBIBlastServiceAsync.getParametersRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.getParametersRequest();
+            InteractionMapping.NCBIBlastServiceAsync.getParametersResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).getParameters(inValue);
             return retVal.parameters;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.BegingetParameters(InteractionSearch.NCBIBlastServiceAsync.getParametersRequest request, System.AsyncCallback callback, object asyncState) {
+        System.IAsyncResult InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.BegingetParameters(InteractionMapping.NCBIBlastServiceAsync.getParametersRequest request, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BegingetParameters(request, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public System.IAsyncResult BegingetParameters(System.AsyncCallback callback, object asyncState) {
-            InteractionSearch.NCBIBlastServiceAsync.getParametersRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.getParametersRequest();
-            return ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).BegingetParameters(inValue, callback, asyncState);
+            InteractionMapping.NCBIBlastServiceAsync.getParametersRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.getParametersRequest();
+            return ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).BegingetParameters(inValue, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.getParametersResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.EndgetParameters(System.IAsyncResult result) {
+        InteractionMapping.NCBIBlastServiceAsync.getParametersResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.EndgetParameters(System.IAsyncResult result) {
             return base.Channel.EndgetParameters(result);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public string[] EndgetParameters(System.IAsyncResult result) {
-            InteractionSearch.NCBIBlastServiceAsync.getParametersResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).EndgetParameters(result);
+            InteractionMapping.NCBIBlastServiceAsync.getParametersResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).EndgetParameters(result);
             return retVal.parameters;
         }
         
@@ -1530,37 +1530,37 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.getParameterDetails(InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsRequest request) {
+        InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.getParameterDetails(InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsRequest request) {
             return base.Channel.getParameterDetails(request);
         }
         
-        public InteractionSearch.NCBIBlastServiceAsync.wsParameterDetails getParameterDetails(string parameterId) {
-            InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsRequest();
+        public InteractionMapping.NCBIBlastServiceAsync.wsParameterDetails getParameterDetails(string parameterId) {
+            InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsRequest();
             inValue.parameterId = parameterId;
-            InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).getParameterDetails(inValue);
+            InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).getParameterDetails(inValue);
             return retVal.parameterDetails;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.BegingetParameterDetails(InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsRequest request, System.AsyncCallback callback, object asyncState) {
+        System.IAsyncResult InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.BegingetParameterDetails(InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsRequest request, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BegingetParameterDetails(request, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         public System.IAsyncResult BegingetParameterDetails(string parameterId, System.AsyncCallback callback, object asyncState) {
-            InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsRequest inValue = new InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsRequest();
+            InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsRequest inValue = new InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsRequest();
             inValue.parameterId = parameterId;
-            return ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).BegingetParameterDetails(inValue, callback, asyncState);
+            return ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).BegingetParameterDetails(inValue, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsResponse InteractionSearch.NCBIBlastServiceAsync.JDispatcherService.EndgetParameterDetails(System.IAsyncResult result) {
+        InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsResponse InteractionMapping.NCBIBlastServiceAsync.JDispatcherService.EndgetParameterDetails(System.IAsyncResult result) {
             return base.Channel.EndgetParameterDetails(result);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public InteractionSearch.NCBIBlastServiceAsync.wsParameterDetails EndgetParameterDetails(System.IAsyncResult result) {
-            InteractionSearch.NCBIBlastServiceAsync.getParameterDetailsResponse retVal = ((InteractionSearch.NCBIBlastServiceAsync.JDispatcherService)(this)).EndgetParameterDetails(result);
+        public InteractionMapping.NCBIBlastServiceAsync.wsParameterDetails EndgetParameterDetails(System.IAsyncResult result) {
+            InteractionMapping.NCBIBlastServiceAsync.getParameterDetailsResponse retVal = ((InteractionMapping.NCBIBlastServiceAsync.JDispatcherService)(this)).EndgetParameterDetails(result);
             return retVal.parameterDetails;
         }
         
@@ -1570,7 +1570,7 @@ namespace InteractionSearch.NCBIBlastServiceAsync {
         }
         
         private object[] OnEndgetParameterDetails(System.IAsyncResult result) {
-            InteractionSearch.NCBIBlastServiceAsync.wsParameterDetails retVal = this.EndgetParameterDetails(result);
+            InteractionMapping.NCBIBlastServiceAsync.wsParameterDetails retVal = this.EndgetParameterDetails(result);
             return new object[] {
                     retVal};
         }
