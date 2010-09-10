@@ -1,0 +1,4367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:tns="http://CytoscapeRPC.tudelft/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CytoscapeService" targetNamespace="http://CytoscapeRPC.tudelft/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:9001/cytoscape/CytoscapeRPC?xsd=1" namespace="http://CytoscapeRPC.tudelft/" />
+    </xsd:schema>
+  </types>
+  <message name="hideAllInCurrent">
+    <part name="parameters" element="tns:hideAllInCurrent" />
+  </message>
+  <message name="hideAllInCurrentResponse">
+    <part name="parameters" element="tns:hideAllInCurrentResponse" />
+  </message>
+  <message name="XmlRpcException">
+    <part name="fault" element="tns:XmlRpcException" />
+  </message>
+  <message name="unhideAllInCurrent">
+    <part name="parameters" element="tns:unhideAllInCurrent" />
+  </message>
+  <message name="unhideAllInCurrentResponse">
+    <part name="parameters" element="tns:unhideAllInCurrentResponse" />
+  </message>
+  <message name="clearSelectionInCurrent">
+    <part name="parameters" element="tns:clearSelectionInCurrent" />
+  </message>
+  <message name="clearSelectionInCurrentResponse">
+    <part name="parameters" element="tns:clearSelectionInCurrentResponse" />
+  </message>
+  <message name="getCurrentNetworkTitle">
+    <part name="parameters" element="tns:getCurrentNetworkTitle" />
+  </message>
+  <message name="getCurrentNetworkTitleResponse">
+    <part name="parameters" element="tns:getCurrentNetworkTitleResponse" />
+  </message>
+  <message name="setCurrentNetworkTitle">
+    <part name="parameters" element="tns:setCurrentNetworkTitle" />
+  </message>
+  <message name="setCurrentNetworkTitleResponse">
+    <part name="parameters" element="tns:setCurrentNetworkTitleResponse" />
+  </message>
+  <message name="countNodesInCurrent">
+    <part name="parameters" element="tns:countNodesInCurrent" />
+  </message>
+  <message name="countNodesInCurrentResponse">
+    <part name="parameters" element="tns:countNodesInCurrentResponse" />
+  </message>
+  <message name="countSelectedNodesInCurrent">
+    <part name="parameters" element="tns:countSelectedNodesInCurrent" />
+  </message>
+  <message name="countSelectedNodesInCurrentResponse">
+    <part name="parameters" element="tns:countSelectedNodesInCurrentResponse" />
+  </message>
+  <message name="hideSelectedNodesInCurrent">
+    <part name="parameters" element="tns:hideSelectedNodesInCurrent" />
+  </message>
+  <message name="hideSelectedNodesInCurrentResponse">
+    <part name="parameters" element="tns:hideSelectedNodesInCurrentResponse" />
+  </message>
+  <message name="getNodesInCurrent">
+    <part name="parameters" element="tns:getNodesInCurrent" />
+  </message>
+  <message name="getNodesInCurrentResponse">
+    <part name="parameters" element="tns:getNodesInCurrentResponse" />
+  </message>
+  <message name="isNodeSelectedInCurrent">
+    <part name="parameters" element="tns:isNodeSelectedInCurrent" />
+  </message>
+  <message name="isNodeSelectedInCurrentResponse">
+    <part name="parameters" element="tns:isNodeSelectedInCurrentResponse" />
+  </message>
+  <message name="clearNodeSelectionInCurrent">
+    <part name="parameters" element="tns:clearNodeSelectionInCurrent" />
+  </message>
+  <message name="clearNodeSelectionInCurrentResponse">
+    <part name="parameters" element="tns:clearNodeSelectionInCurrentResponse" />
+  </message>
+  <message name="selectNode">
+    <part name="parameters" element="tns:selectNode" />
+  </message>
+  <message name="selectNodeResponse">
+    <part name="parameters" element="tns:selectNodeResponse" />
+  </message>
+  <message name="selectNodeInCurrent">
+    <part name="parameters" element="tns:selectNodeInCurrent" />
+  </message>
+  <message name="selectNodeInCurrentResponse">
+    <part name="parameters" element="tns:selectNodeInCurrentResponse" />
+  </message>
+  <message name="selectNodesInCurrent">
+    <part name="parameters" element="tns:selectNodesInCurrent" />
+  </message>
+  <message name="selectNodesInCurrentResponse">
+    <part name="parameters" element="tns:selectNodesInCurrentResponse" />
+  </message>
+  <message name="getSelectedNodesInCurrent">
+    <part name="parameters" element="tns:getSelectedNodesInCurrent" />
+  </message>
+  <message name="getSelectedNodesInCurrentResponse">
+    <part name="parameters" element="tns:getSelectedNodesInCurrentResponse" />
+  </message>
+  <message name="createNodeInCurrent">
+    <part name="parameters" element="tns:createNodeInCurrent" />
+  </message>
+  <message name="createNodeInCurrentResponse">
+    <part name="parameters" element="tns:createNodeInCurrentResponse" />
+  </message>
+  <message name="createNodesInCurrent">
+    <part name="parameters" element="tns:createNodesInCurrent" />
+  </message>
+  <message name="createNodesInCurrentResponse">
+    <part name="parameters" element="tns:createNodesInCurrentResponse" />
+  </message>
+  <message name="getNodeNeighborsInCurrent">
+    <part name="parameters" element="tns:getNodeNeighborsInCurrent" />
+  </message>
+  <message name="getNodeNeighborsInCurrentResponse">
+    <part name="parameters" element="tns:getNodeNeighborsInCurrentResponse" />
+  </message>
+  <message name="getConnectedEdgesInCurrent">
+    <part name="parameters" element="tns:getConnectedEdgesInCurrent" />
+  </message>
+  <message name="getConnectedEdgesInCurrentResponse">
+    <part name="parameters" element="tns:getConnectedEdgesInCurrentResponse" />
+  </message>
+  <message name="removeNodeInCurrent">
+    <part name="parameters" element="tns:removeNodeInCurrent" />
+  </message>
+  <message name="removeNodeInCurrentResponse">
+    <part name="parameters" element="tns:removeNodeInCurrentResponse" />
+  </message>
+  <message name="addNodesToCurrentNetwork">
+    <part name="parameters" element="tns:addNodesToCurrentNetwork" />
+  </message>
+  <message name="addNodesToCurrentNetworkResponse">
+    <part name="parameters" element="tns:addNodesToCurrentNetworkResponse" />
+  </message>
+  <message name="setSelectedNodesInCurrent">
+    <part name="parameters" element="tns:setSelectedNodesInCurrent" />
+  </message>
+  <message name="setSelectedNodesInCurrentResponse">
+    <part name="parameters" element="tns:setSelectedNodesInCurrentResponse" />
+  </message>
+  <message name="setNodeShapeInCurrent">
+    <part name="parameters" element="tns:setNodeShapeInCurrent" />
+  </message>
+  <message name="setNodeShapeInCurrentResponse">
+    <part name="parameters" element="tns:setNodeShapeInCurrentResponse" />
+  </message>
+  <message name="overrideNodesVizAttribute">
+    <part name="parameters" element="tns:overrideNodesVizAttribute" />
+  </message>
+  <message name="overrideNodesVizAttributeResponse">
+    <part name="parameters" element="tns:overrideNodesVizAttributeResponse" />
+  </message>
+  <message name="unhideNodeInCurrent">
+    <part name="parameters" element="tns:unhideNodeInCurrent" />
+  </message>
+  <message name="unhideNodeInCurrentResponse">
+    <part name="parameters" element="tns:unhideNodeInCurrentResponse" />
+  </message>
+  <message name="unhideAllNodesInCurrent">
+    <part name="parameters" element="tns:unhideAllNodesInCurrent" />
+  </message>
+  <message name="unhideAllNodesInCurrentResponse">
+    <part name="parameters" element="tns:unhideAllNodesInCurrentResponse" />
+  </message>
+  <message name="countEdgesInCurrent">
+    <part name="parameters" element="tns:countEdgesInCurrent" />
+  </message>
+  <message name="countEdgesInCurrentResponse">
+    <part name="parameters" element="tns:countEdgesInCurrentResponse" />
+  </message>
+  <message name="countSelectedEdgesInCurrent">
+    <part name="parameters" element="tns:countSelectedEdgesInCurrent" />
+  </message>
+  <message name="countSelectedEdgesInCurrentResponse">
+    <part name="parameters" element="tns:countSelectedEdgesInCurrentResponse" />
+  </message>
+  <message name="createEdgeInCurrent">
+    <part name="parameters" element="tns:createEdgeInCurrent" />
+  </message>
+  <message name="createEdgeInCurrentResponse">
+    <part name="parameters" element="tns:createEdgeInCurrentResponse" />
+  </message>
+  <message name="createEdgesInCurrent">
+    <part name="parameters" element="tns:createEdgesInCurrent" />
+  </message>
+  <message name="createEdgesInCurrentResponse">
+    <part name="parameters" element="tns:createEdgesInCurrentResponse" />
+  </message>
+  <message name="removeEdgeInCurrent">
+    <part name="parameters" element="tns:removeEdgeInCurrent" />
+  </message>
+  <message name="removeEdgeInCurrentResponse">
+    <part name="parameters" element="tns:removeEdgeInCurrentResponse" />
+  </message>
+  <message name="clearEdgeSelectionInCurrent">
+    <part name="parameters" element="tns:clearEdgeSelectionInCurrent" />
+  </message>
+  <message name="clearEdgeSelectionInCurrentResponse">
+    <part name="parameters" element="tns:clearEdgeSelectionInCurrentResponse" />
+  </message>
+  <message name="getAllEdgesInCurrent">
+    <part name="parameters" element="tns:getAllEdgesInCurrent" />
+  </message>
+  <message name="getAllEdgesInCurrentResponse">
+    <part name="parameters" element="tns:getAllEdgesInCurrentResponse" />
+  </message>
+  <message name="getSelectedEdgesInCurrent">
+    <part name="parameters" element="tns:getSelectedEdgesInCurrent" />
+  </message>
+  <message name="getSelectedEdgesInCurrentResponse">
+    <part name="parameters" element="tns:getSelectedEdgesInCurrentResponse" />
+  </message>
+  <message name="unhideAllEdgesInCurrent">
+    <part name="parameters" element="tns:unhideAllEdgesInCurrent" />
+  </message>
+  <message name="unhideAllEdgesInCurrentResponse">
+    <part name="parameters" element="tns:unhideAllEdgesInCurrentResponse" />
+  </message>
+  <message name="getEdgeAttributeList">
+    <part name="parameters" element="tns:getEdgeAttributeList" />
+  </message>
+  <message name="getEdgeAttributeListResponse">
+    <part name="parameters" element="tns:getEdgeAttributeListResponse" />
+  </message>
+  <message name="getNodeAttributeList">
+    <part name="parameters" element="tns:getNodeAttributeList" />
+  </message>
+  <message name="getNodeAttributeListResponse">
+    <part name="parameters" element="tns:getNodeAttributeListResponse" />
+  </message>
+  <message name="getNetworkAttributeList">
+    <part name="parameters" element="tns:getNetworkAttributeList" />
+  </message>
+  <message name="getNetworkAttributeListResponse">
+    <part name="parameters" element="tns:getNetworkAttributeListResponse" />
+  </message>
+  <message name="deleteEdgeAttributeInAll">
+    <part name="parameters" element="tns:deleteEdgeAttributeInAll" />
+  </message>
+  <message name="deleteEdgeAttributeInAllResponse">
+    <part name="parameters" element="tns:deleteEdgeAttributeInAllResponse" />
+  </message>
+  <message name="deleteNetworkAttributeInAll">
+    <part name="parameters" element="tns:deleteNetworkAttributeInAll" />
+  </message>
+  <message name="deleteNetworkAttributeInAllResponse">
+    <part name="parameters" element="tns:deleteNetworkAttributeInAllResponse" />
+  </message>
+  <message name="deleteNodeAttributeInAll">
+    <part name="parameters" element="tns:deleteNodeAttributeInAll" />
+  </message>
+  <message name="deleteNodeAttributeInAllResponse">
+    <part name="parameters" element="tns:deleteNodeAttributeInAllResponse" />
+  </message>
+  <message name="performDefaultLayoutOnCurrent">
+    <part name="parameters" element="tns:performDefaultLayoutOnCurrent" />
+  </message>
+  <message name="performDefaultLayoutOnCurrentResponse">
+    <part name="parameters" element="tns:performDefaultLayoutOnCurrentResponse" />
+  </message>
+  <message name="performLayoutOnCurrent">
+    <part name="parameters" element="tns:performLayoutOnCurrent" />
+  </message>
+  <message name="performLayoutOnCurrentResponse">
+    <part name="parameters" element="tns:performLayoutOnCurrentResponse" />
+  </message>
+  <message name="redrawCurrent">
+    <part name="parameters" element="tns:redrawCurrent" />
+  </message>
+  <message name="redrawCurrentResponse">
+    <part name="parameters" element="tns:redrawCurrentResponse" />
+  </message>
+  <message name="exportCurrentView">
+    <part name="parameters" element="tns:exportCurrentView" />
+  </message>
+  <message name="exportCurrentViewResponse">
+    <part name="parameters" element="tns:exportCurrentViewResponse" />
+  </message>
+  <message name="hideAllEdges">
+    <part name="parameters" element="tns:hideAllEdges" />
+  </message>
+  <message name="hideAllEdgesResponse">
+    <part name="parameters" element="tns:hideAllEdgesResponse" />
+  </message>
+  <message name="getUniqueNodeAttributes">
+    <part name="parameters" element="tns:getUniqueNodeAttributes" />
+  </message>
+  <message name="getUniqueNodeAttributesResponse">
+    <part name="parameters" element="tns:getUniqueNodeAttributesResponse" />
+  </message>
+  <message name="hideAll">
+    <part name="parameters" element="tns:hideAll" />
+  </message>
+  <message name="hideAllResponse">
+    <part name="parameters" element="tns:hideAllResponse" />
+  </message>
+  <message name="clearSelection">
+    <part name="parameters" element="tns:clearSelection" />
+  </message>
+  <message name="clearSelectionResponse">
+    <part name="parameters" element="tns:clearSelectionResponse" />
+  </message>
+  <message name="getNetworkTitle">
+    <part name="parameters" element="tns:getNetworkTitle" />
+  </message>
+  <message name="getNetworkTitleResponse">
+    <part name="parameters" element="tns:getNetworkTitleResponse" />
+  </message>
+  <message name="setNetworkTitle">
+    <part name="parameters" element="tns:setNetworkTitle" />
+  </message>
+  <message name="setNetworkTitleResponse">
+    <part name="parameters" element="tns:setNetworkTitleResponse" />
+  </message>
+  <message name="countNodes">
+    <part name="parameters" element="tns:countNodes" />
+  </message>
+  <message name="countNodesResponse">
+    <part name="parameters" element="tns:countNodesResponse" />
+  </message>
+  <message name="countSelectedNodes">
+    <part name="parameters" element="tns:countSelectedNodes" />
+  </message>
+  <message name="countSelectedNodesResponse">
+    <part name="parameters" element="tns:countSelectedNodesResponse" />
+  </message>
+  <message name="hideSelectedNodes">
+    <part name="parameters" element="tns:hideSelectedNodes" />
+  </message>
+  <message name="hideSelectedNodesResponse">
+    <part name="parameters" element="tns:hideSelectedNodesResponse" />
+  </message>
+  <message name="getNodes">
+    <part name="parameters" element="tns:getNodes" />
+  </message>
+  <message name="getNodesResponse">
+    <part name="parameters" element="tns:getNodesResponse" />
+  </message>
+  <message name="isNodeSelected">
+    <part name="parameters" element="tns:isNodeSelected" />
+  </message>
+  <message name="isNodeSelectedResponse">
+    <part name="parameters" element="tns:isNodeSelectedResponse" />
+  </message>
+  <message name="clearNodeSelection">
+    <part name="parameters" element="tns:clearNodeSelection" />
+  </message>
+  <message name="clearNodeSelectionResponse">
+    <part name="parameters" element="tns:clearNodeSelectionResponse" />
+  </message>
+  <message name="selectNodes">
+    <part name="parameters" element="tns:selectNodes" />
+  </message>
+  <message name="selectNodesResponse">
+    <part name="parameters" element="tns:selectNodesResponse" />
+  </message>
+  <message name="getSelectedNodes">
+    <part name="parameters" element="tns:getSelectedNodes" />
+  </message>
+  <message name="getSelectedNodesResponse">
+    <part name="parameters" element="tns:getSelectedNodesResponse" />
+  </message>
+  <message name="createNode">
+    <part name="parameters" element="tns:createNode" />
+  </message>
+  <message name="createNodeResponse">
+    <part name="parameters" element="tns:createNodeResponse" />
+  </message>
+  <message name="createNodes">
+    <part name="parameters" element="tns:createNodes" />
+  </message>
+  <message name="createNodesResponse">
+    <part name="parameters" element="tns:createNodesResponse" />
+  </message>
+  <message name="getNodeNeighbors">
+    <part name="parameters" element="tns:getNodeNeighbors" />
+  </message>
+  <message name="getNodeNeighborsResponse">
+    <part name="parameters" element="tns:getNodeNeighborsResponse" />
+  </message>
+  <message name="getEdgesFromNodePair">
+    <part name="parameters" element="tns:getEdgesFromNodePair" />
+  </message>
+  <message name="getEdgesFromNodePairResponse">
+    <part name="parameters" element="tns:getEdgesFromNodePairResponse" />
+  </message>
+  <message name="addNodesToNetwork">
+    <part name="parameters" element="tns:addNodesToNetwork" />
+  </message>
+  <message name="addNodesToNetworkResponse">
+    <part name="parameters" element="tns:addNodesToNetworkResponse" />
+  </message>
+  <message name="setNodeShape">
+    <part name="parameters" element="tns:setNodeShape" />
+  </message>
+  <message name="setNodeShapeResponse">
+    <part name="parameters" element="tns:setNodeShapeResponse" />
+  </message>
+  <message name="overrideNodeVizAttribute">
+    <part name="parameters" element="tns:overrideNodeVizAttribute" />
+  </message>
+  <message name="overrideNodeVizAttributeResponse">
+    <part name="parameters" element="tns:overrideNodeVizAttributeResponse" />
+  </message>
+  <message name="unhideNode">
+    <part name="parameters" element="tns:unhideNode" />
+  </message>
+  <message name="unhideNodeResponse">
+    <part name="parameters" element="tns:unhideNodeResponse" />
+  </message>
+  <message name="unhideAllNodes">
+    <part name="parameters" element="tns:unhideAllNodes" />
+  </message>
+  <message name="unhideAllNodesResponse">
+    <part name="parameters" element="tns:unhideAllNodesResponse" />
+  </message>
+  <message name="countEdges">
+    <part name="parameters" element="tns:countEdges" />
+  </message>
+  <message name="countEdgesResponse">
+    <part name="parameters" element="tns:countEdgesResponse" />
+  </message>
+  <message name="countSelectedEdges">
+    <part name="parameters" element="tns:countSelectedEdges" />
+  </message>
+  <message name="countSelectedEdgesResponse">
+    <part name="parameters" element="tns:countSelectedEdgesResponse" />
+  </message>
+  <message name="createEdge">
+    <part name="parameters" element="tns:createEdge" />
+  </message>
+  <message name="createEdgeResponse">
+    <part name="parameters" element="tns:createEdgeResponse" />
+  </message>
+  <message name="createEdges">
+    <part name="parameters" element="tns:createEdges" />
+  </message>
+  <message name="createEdgesResponse">
+    <part name="parameters" element="tns:createEdgesResponse" />
+  </message>
+  <message name="removeEdge">
+    <part name="parameters" element="tns:removeEdge" />
+  </message>
+  <message name="removeEdgeResponse">
+    <part name="parameters" element="tns:removeEdgeResponse" />
+  </message>
+  <message name="clearEdgeSelection">
+    <part name="parameters" element="tns:clearEdgeSelection" />
+  </message>
+  <message name="clearEdgeSelectionResponse">
+    <part name="parameters" element="tns:clearEdgeSelectionResponse" />
+  </message>
+  <message name="getAllEdges">
+    <part name="parameters" element="tns:getAllEdges" />
+  </message>
+  <message name="getAllEdgesResponse">
+    <part name="parameters" element="tns:getAllEdgesResponse" />
+  </message>
+  <message name="getSelectedEdges">
+    <part name="parameters" element="tns:getSelectedEdges" />
+  </message>
+  <message name="getSelectedEdgesResponse">
+    <part name="parameters" element="tns:getSelectedEdgesResponse" />
+  </message>
+  <message name="unhideAllEdges">
+    <part name="parameters" element="tns:unhideAllEdges" />
+  </message>
+  <message name="unhideAllEdgesResponse">
+    <part name="parameters" element="tns:unhideAllEdgesResponse" />
+  </message>
+  <message name="deleteEdgeAttribute">
+    <part name="parameters" element="tns:deleteEdgeAttribute" />
+  </message>
+  <message name="deleteEdgeAttributeResponse">
+    <part name="parameters" element="tns:deleteEdgeAttributeResponse" />
+  </message>
+  <message name="deleteNetworkAttribute">
+    <part name="parameters" element="tns:deleteNetworkAttribute" />
+  </message>
+  <message name="deleteNetworkAttributeResponse">
+    <part name="parameters" element="tns:deleteNetworkAttributeResponse" />
+  </message>
+  <message name="deleteNodeAttribute">
+    <part name="parameters" element="tns:deleteNodeAttribute" />
+  </message>
+  <message name="deleteNodeAttributeResponse">
+    <part name="parameters" element="tns:deleteNodeAttributeResponse" />
+  </message>
+  <message name="performDefaultLayout">
+    <part name="parameters" element="tns:performDefaultLayout" />
+  </message>
+  <message name="performDefaultLayoutResponse">
+    <part name="parameters" element="tns:performDefaultLayoutResponse" />
+  </message>
+  <message name="performLayout">
+    <part name="parameters" element="tns:performLayout" />
+  </message>
+  <message name="performLayoutResponse">
+    <part name="parameters" element="tns:performLayoutResponse" />
+  </message>
+  <message name="redraw">
+    <part name="parameters" element="tns:redraw" />
+  </message>
+  <message name="redrawResponse">
+    <part name="parameters" element="tns:redrawResponse" />
+  </message>
+  <message name="exportView">
+    <part name="parameters" element="tns:exportView" />
+  </message>
+  <message name="exportViewResponse">
+    <part name="parameters" element="tns:exportViewResponse" />
+  </message>
+  <message name="test">
+    <part name="parameters" element="tns:test" />
+  </message>
+  <message name="testResponse">
+    <part name="parameters" element="tns:testResponse" />
+  </message>
+  <message name="getShapeNames">
+    <part name="parameters" element="tns:getShapeNames" />
+  </message>
+  <message name="getShapeNamesResponse">
+    <part name="parameters" element="tns:getShapeNamesResponse" />
+  </message>
+  <message name="showMessage">
+    <part name="parameters" element="tns:showMessage" />
+  </message>
+  <message name="showMessageResponse">
+    <part name="parameters" element="tns:showMessageResponse" />
+  </message>
+  <message name="getNotFoundCode">
+    <part name="parameters" element="tns:getNotFoundCode" />
+  </message>
+  <message name="getNotFoundCodeResponse">
+    <part name="parameters" element="tns:getNotFoundCodeResponse" />
+  </message>
+  <message name="getNotExistsCode">
+    <part name="parameters" element="tns:getNotExistsCode" />
+  </message>
+  <message name="getNotExistsCodeResponse">
+    <part name="parameters" element="tns:getNotExistsCodeResponse" />
+  </message>
+  <message name="getWrongTypeCode">
+    <part name="parameters" element="tns:getWrongTypeCode" />
+  </message>
+  <message name="getWrongTypeCodeResponse">
+    <part name="parameters" element="tns:getWrongTypeCodeResponse" />
+  </message>
+  <message name="getInputArgMismatchCode">
+    <part name="parameters" element="tns:getInputArgMismatchCode" />
+  </message>
+  <message name="getInputArgMismatchCodeResponse">
+    <part name="parameters" element="tns:getInputArgMismatchCodeResponse" />
+  </message>
+  <message name="_getAttributeNames">
+    <part name="parameters" element="tns:_getAttributeNames" />
+  </message>
+  <message name="_getAttributeNamesResponse">
+    <part name="parameters" element="tns:_getAttributeNamesResponse" />
+  </message>
+  <message name="trait_names">
+    <part name="parameters" element="tns:trait_names" />
+  </message>
+  <message name="trait_namesResponse">
+    <part name="parameters" element="tns:trait_namesResponse" />
+  </message>
+  <message name="deleteNodeByPassAttr">
+    <part name="parameters" element="tns:deleteNodeByPassAttr" />
+  </message>
+  <message name="deleteNodeByPassAttrResponse">
+    <part name="parameters" element="tns:deleteNodeByPassAttrResponse" />
+  </message>
+  <message name="hasCurrentNetwork">
+    <part name="parameters" element="tns:hasCurrentNetwork" />
+  </message>
+  <message name="hasCurrentNetworkResponse">
+    <part name="parameters" element="tns:hasCurrentNetworkResponse" />
+  </message>
+  <message name="createNetwork">
+    <part name="parameters" element="tns:createNetwork" />
+  </message>
+  <message name="createNetworkResponse">
+    <part name="parameters" element="tns:createNetworkResponse" />
+  </message>
+  <message name="createNetworkView">
+    <part name="parameters" element="tns:createNetworkView" />
+  </message>
+  <message name="createNetworkViewResponse">
+    <part name="parameters" element="tns:createNetworkViewResponse" />
+  </message>
+  <message name="destroyNetwork">
+    <part name="parameters" element="tns:destroyNetwork" />
+  </message>
+  <message name="destroyNetworkResponse">
+    <part name="parameters" element="tns:destroyNetworkResponse" />
+  </message>
+  <message name="getCurrentNetworkIndex">
+    <part name="parameters" element="tns:getCurrentNetworkIndex" />
+  </message>
+  <message name="getCurrentNetworkIndexResponse">
+    <part name="parameters" element="tns:getCurrentNetworkIndexResponse" />
+  </message>
+  <message name="getNetworkID">
+    <part name="parameters" element="tns:getNetworkID" />
+  </message>
+  <message name="getNetworkIDResponse">
+    <part name="parameters" element="tns:getNetworkIDResponse" />
+  </message>
+  <message name="getNetworkCount">
+    <part name="parameters" element="tns:getNetworkCount" />
+  </message>
+  <message name="getNetworkCountResponse">
+    <part name="parameters" element="tns:getNetworkCountResponse" />
+  </message>
+  <message name="setCurrentNetwork">
+    <part name="parameters" element="tns:setCurrentNetwork" />
+  </message>
+  <message name="setCurrentNetworkResponse">
+    <part name="parameters" element="tns:setCurrentNetworkResponse" />
+  </message>
+  <message name="networkExists">
+    <part name="parameters" element="tns:networkExists" />
+  </message>
+  <message name="networkExistsResponse">
+    <part name="parameters" element="tns:networkExistsResponse" />
+  </message>
+  <message name="countAllNodes">
+    <part name="parameters" element="tns:countAllNodes" />
+  </message>
+  <message name="countAllNodesResponse">
+    <part name="parameters" element="tns:countAllNodesResponse" />
+  </message>
+  <message name="getNodesIDs">
+    <part name="parameters" element="tns:getNodesIDs" />
+  </message>
+  <message name="getNodesIDsResponse">
+    <part name="parameters" element="tns:getNodesIDsResponse" />
+  </message>
+  <message name="setSelectedNodes">
+    <part name="parameters" element="tns:setSelectedNodes" />
+  </message>
+  <message name="setSelectedNodesResponse">
+    <part name="parameters" element="tns:setSelectedNodesResponse" />
+  </message>
+  <message name="nodeExists">
+    <part name="parameters" element="tns:nodeExists" />
+  </message>
+  <message name="nodeExistsResponse">
+    <part name="parameters" element="tns:nodeExistsResponse" />
+  </message>
+  <message name="getTotalNodeCount">
+    <part name="parameters" element="tns:getTotalNodeCount" />
+  </message>
+  <message name="getTotalNodeCountResponse">
+    <part name="parameters" element="tns:getTotalNodeCountResponse" />
+  </message>
+  <message name="getNodesNeighbors">
+    <part name="parameters" element="tns:getNodesNeighbors" />
+  </message>
+  <message name="getNodesNeighborsResponse">
+    <part name="parameters" element="tns:getNodesNeighborsResponse" />
+  </message>
+  <message name="removeNode">
+    <part name="parameters" element="tns:removeNode" />
+  </message>
+  <message name="removeNodeResponse">
+    <part name="parameters" element="tns:removeNodeResponse" />
+  </message>
+  <message name="deselectNode">
+    <part name="parameters" element="tns:deselectNode" />
+  </message>
+  <message name="deselectNodeResponse">
+    <part name="parameters" element="tns:deselectNodeResponse" />
+  </message>
+  <message name="getNodeAttributeType">
+    <part name="parameters" element="tns:getNodeAttributeType" />
+  </message>
+  <message name="getNodeAttributeTypeResponse">
+    <part name="parameters" element="tns:getNodeAttributeTypeResponse" />
+  </message>
+  <message name="getNodesByStringAttr">
+    <part name="parameters" element="tns:getNodesByStringAttr" />
+  </message>
+  <message name="getNodesByStringAttrResponse">
+    <part name="parameters" element="tns:getNodesByStringAttrResponse" />
+  </message>
+  <message name="getAllNodes">
+    <part name="parameters" element="tns:getAllNodes" />
+  </message>
+  <message name="getAllNodesResponse">
+    <part name="parameters" element="tns:getAllNodesResponse" />
+  </message>
+  <message name="getNodeShapeNames">
+    <part name="parameters" element="tns:getNodeShapeNames" />
+  </message>
+  <message name="getNodeShapeNamesResponse">
+    <part name="parameters" element="tns:getNodeShapeNamesResponse" />
+  </message>
+  <message name="getNodeColorPropertyNames">
+    <part name="parameters" element="tns:getNodeColorPropertyNames" />
+  </message>
+  <message name="getNodeColorPropertyNamesResponse">
+    <part name="parameters" element="tns:getNodeColorPropertyNamesResponse" />
+  </message>
+  <message name="setNodeFillColor">
+    <part name="parameters" element="tns:setNodeFillColor" />
+  </message>
+  <message name="setNodeFillColorResponse">
+    <part name="parameters" element="tns:setNodeFillColorResponse" />
+  </message>
+  <message name="setNodeBorderColor">
+    <part name="parameters" element="tns:setNodeBorderColor" />
+  </message>
+  <message name="setNodeBorderColorResponse">
+    <part name="parameters" element="tns:setNodeBorderColorResponse" />
+  </message>
+  <message name="setNodeLabelColor">
+    <part name="parameters" element="tns:setNodeLabelColor" />
+  </message>
+  <message name="setNodeLabelColorResponse">
+    <part name="parameters" element="tns:setNodeLabelColorResponse" />
+  </message>
+  <message name="hideAllNodes">
+    <part name="parameters" element="tns:hideAllNodes" />
+  </message>
+  <message name="hideAllNodesResponse">
+    <part name="parameters" element="tns:hideAllNodesResponse" />
+  </message>
+  <message name="hideNode">
+    <part name="parameters" element="tns:hideNode" />
+  </message>
+  <message name="hideNodeResponse">
+    <part name="parameters" element="tns:hideNodeResponse" />
+  </message>
+  <message name="setNodeProperty">
+    <part name="parameters" element="tns:setNodeProperty" />
+  </message>
+  <message name="setNodePropertyResponse">
+    <part name="parameters" element="tns:setNodePropertyResponse" />
+  </message>
+  <message name="getAdjacentEdges">
+    <part name="parameters" element="tns:getAdjacentEdges" />
+  </message>
+  <message name="getAdjacentEdgesResponse">
+    <part name="parameters" element="tns:getAdjacentEdgesResponse" />
+  </message>
+  <message name="countAllEdges">
+    <part name="parameters" element="tns:countAllEdges" />
+  </message>
+  <message name="countAllEdgesResponse">
+    <part name="parameters" element="tns:countAllEdgesResponse" />
+  </message>
+  <message name="hideSelectedEdges">
+    <part name="parameters" element="tns:hideSelectedEdges" />
+  </message>
+  <message name="hideSelectedEdgesResponse">
+    <part name="parameters" element="tns:hideSelectedEdgesResponse" />
+  </message>
+  <message name="createEdgesFromVector">
+    <part name="parameters" element="tns:createEdgesFromVector" />
+  </message>
+  <message name="createEdgesFromVectorResponse">
+    <part name="parameters" element="tns:createEdgesFromVectorResponse" />
+  </message>
+  <message name="getEdgeAttributeType">
+    <part name="parameters" element="tns:getEdgeAttributeType" />
+  </message>
+  <message name="getEdgeAttributeTypeResponse">
+    <part name="parameters" element="tns:getEdgeAttributeTypeResponse" />
+  </message>
+  <message name="hideEdge">
+    <part name="parameters" element="tns:hideEdge" />
+  </message>
+  <message name="hideEdgeResponse">
+    <part name="parameters" element="tns:hideEdgeResponse" />
+  </message>
+  <message name="setEdgeProperty">
+    <part name="parameters" element="tns:setEdgeProperty" />
+  </message>
+  <message name="setEdgePropertyResponse">
+    <part name="parameters" element="tns:setEdgePropertyResponse" />
+  </message>
+  <message name="getLineStyleNames">
+    <part name="parameters" element="tns:getLineStyleNames" />
+  </message>
+  <message name="getLineStyleNamesResponse">
+    <part name="parameters" element="tns:getLineStyleNamesResponse" />
+  </message>
+  <message name="getArrowShapeNames">
+    <part name="parameters" element="tns:getArrowShapeNames" />
+  </message>
+  <message name="getArrowShapeNamesResponse">
+    <part name="parameters" element="tns:getArrowShapeNamesResponse" />
+  </message>
+  <message name="hasEdgeAttribute">
+    <part name="parameters" element="tns:hasEdgeAttribute" />
+  </message>
+  <message name="hasEdgeAttributeResponse">
+    <part name="parameters" element="tns:hasEdgeAttributeResponse" />
+  </message>
+  <message name="hasNodeAttribute">
+    <part name="parameters" element="tns:hasNodeAttribute" />
+  </message>
+  <message name="hasNodeAttributeResponse">
+    <part name="parameters" element="tns:hasNodeAttributeResponse" />
+  </message>
+  <message name="hasNetworkAttribute">
+    <part name="parameters" element="tns:hasNetworkAttribute" />
+  </message>
+  <message name="hasNetworkAttributeResponse">
+    <part name="parameters" element="tns:hasNetworkAttributeResponse" />
+  </message>
+  <message name="getNodeAttribute">
+    <part name="parameters" element="tns:getNodeAttribute" />
+  </message>
+  <message name="getNodeAttributeResponse">
+    <part name="parameters" element="tns:getNodeAttributeResponse" />
+  </message>
+  <message name="getNodesAttributes">
+    <part name="parameters" element="tns:getNodesAttributes" />
+  </message>
+  <message name="getNodesAttributesResponse">
+    <part name="parameters" element="tns:getNodesAttributesResponse" />
+  </message>
+  <message name="getNetworksAttributes">
+    <part name="parameters" element="tns:getNetworksAttributes" />
+  </message>
+  <message name="getNetworksAttributesResponse">
+    <part name="parameters" element="tns:getNetworksAttributesResponse" />
+  </message>
+  <message name="getEdgeAttribute">
+    <part name="parameters" element="tns:getEdgeAttribute" />
+  </message>
+  <message name="getEdgeAttributeResponse">
+    <part name="parameters" element="tns:getEdgeAttributeResponse" />
+  </message>
+  <message name="getEdgesAttributes">
+    <part name="parameters" element="tns:getEdgesAttributes" />
+  </message>
+  <message name="getEdgesAttributesResponse">
+    <part name="parameters" element="tns:getEdgesAttributesResponse" />
+  </message>
+  <message name="getEdgeAttributeNames">
+    <part name="parameters" element="tns:getEdgeAttributeNames" />
+  </message>
+  <message name="getEdgeAttributeNamesResponse">
+    <part name="parameters" element="tns:getEdgeAttributeNamesResponse" />
+  </message>
+  <message name="getNodeAttributeNames">
+    <part name="parameters" element="tns:getNodeAttributeNames" />
+  </message>
+  <message name="getNodeAttributeNamesResponse">
+    <part name="parameters" element="tns:getNodeAttributeNamesResponse" />
+  </message>
+  <message name="getNetworkAttributeNames">
+    <part name="parameters" element="tns:getNetworkAttributeNames" />
+  </message>
+  <message name="getNetworkAttributeNamesResponse">
+    <part name="parameters" element="tns:getNetworkAttributeNamesResponse" />
+  </message>
+  <message name="addBooleanEdgeAttribute">
+    <part name="parameters" element="tns:addBooleanEdgeAttribute" />
+  </message>
+  <message name="addBooleanEdgeAttributeResponse">
+    <part name="parameters" element="tns:addBooleanEdgeAttributeResponse" />
+  </message>
+  <message name="addBooleanNetworkAttribute">
+    <part name="parameters" element="tns:addBooleanNetworkAttribute" />
+  </message>
+  <message name="addBooleanNetworkAttributeResponse">
+    <part name="parameters" element="tns:addBooleanNetworkAttributeResponse" />
+  </message>
+  <message name="addBooleanNodeAttribute">
+    <part name="parameters" element="tns:addBooleanNodeAttribute" />
+  </message>
+  <message name="addBooleanNodeAttributeResponse">
+    <part name="parameters" element="tns:addBooleanNodeAttributeResponse" />
+  </message>
+  <message name="addDoubleEdgeAttribute">
+    <part name="parameters" element="tns:addDoubleEdgeAttribute" />
+  </message>
+  <message name="addDoubleEdgeAttributeResponse">
+    <part name="parameters" element="tns:addDoubleEdgeAttributeResponse" />
+  </message>
+  <message name="addDoubleNetworkAttribute">
+    <part name="parameters" element="tns:addDoubleNetworkAttribute" />
+  </message>
+  <message name="addDoubleNetworkAttributeResponse">
+    <part name="parameters" element="tns:addDoubleNetworkAttributeResponse" />
+  </message>
+  <message name="addDoubleNodeAttribute">
+    <part name="parameters" element="tns:addDoubleNodeAttribute" />
+  </message>
+  <message name="addDoubleNodeAttributeResponse">
+    <part name="parameters" element="tns:addDoubleNodeAttributeResponse" />
+  </message>
+  <message name="addIntegerEdgeAttribute">
+    <part name="parameters" element="tns:addIntegerEdgeAttribute" />
+  </message>
+  <message name="addIntegerEdgeAttributeResponse">
+    <part name="parameters" element="tns:addIntegerEdgeAttributeResponse" />
+  </message>
+  <message name="addIntegerNetworkAttribute">
+    <part name="parameters" element="tns:addIntegerNetworkAttribute" />
+  </message>
+  <message name="addIntegerNetworkAttributeResponse">
+    <part name="parameters" element="tns:addIntegerNetworkAttributeResponse" />
+  </message>
+  <message name="addIntegerNodeAttribute">
+    <part name="parameters" element="tns:addIntegerNodeAttribute" />
+  </message>
+  <message name="addIntegerNodeAttributeResponse">
+    <part name="parameters" element="tns:addIntegerNodeAttributeResponse" />
+  </message>
+  <message name="addStringEdgeAttribute">
+    <part name="parameters" element="tns:addStringEdgeAttribute" />
+  </message>
+  <message name="addStringEdgeAttributeResponse">
+    <part name="parameters" element="tns:addStringEdgeAttributeResponse" />
+  </message>
+  <message name="addStringNetworkAttribute">
+    <part name="parameters" element="tns:addStringNetworkAttribute" />
+  </message>
+  <message name="addStringNetworkAttributeResponse">
+    <part name="parameters" element="tns:addStringNetworkAttributeResponse" />
+  </message>
+  <message name="addStringNodeAttribute">
+    <part name="parameters" element="tns:addStringNodeAttribute" />
+  </message>
+  <message name="addStringNodeAttributeResponse">
+    <part name="parameters" element="tns:addStringNodeAttributeResponse" />
+  </message>
+  <message name="addBooleanEdgeAttributes">
+    <part name="parameters" element="tns:addBooleanEdgeAttributes" />
+  </message>
+  <message name="addBooleanEdgeAttributesResponse">
+    <part name="parameters" element="tns:addBooleanEdgeAttributesResponse" />
+  </message>
+  <message name="addBooleanNetworkAttributes">
+    <part name="parameters" element="tns:addBooleanNetworkAttributes" />
+  </message>
+  <message name="addBooleanNetworkAttributesResponse">
+    <part name="parameters" element="tns:addBooleanNetworkAttributesResponse" />
+  </message>
+  <message name="addBooleanNodeAttributes">
+    <part name="parameters" element="tns:addBooleanNodeAttributes" />
+  </message>
+  <message name="addBooleanNodeAttributesResponse">
+    <part name="parameters" element="tns:addBooleanNodeAttributesResponse" />
+  </message>
+  <message name="addDoubleEdgeAttributes">
+    <part name="parameters" element="tns:addDoubleEdgeAttributes" />
+  </message>
+  <message name="addDoubleEdgeAttributesResponse">
+    <part name="parameters" element="tns:addDoubleEdgeAttributesResponse" />
+  </message>
+  <message name="addDoubleNetworkAttributes">
+    <part name="parameters" element="tns:addDoubleNetworkAttributes" />
+  </message>
+  <message name="addDoubleNetworkAttributesResponse">
+    <part name="parameters" element="tns:addDoubleNetworkAttributesResponse" />
+  </message>
+  <message name="addDoubleNodeAttributes">
+    <part name="parameters" element="tns:addDoubleNodeAttributes" />
+  </message>
+  <message name="addDoubleNodeAttributesResponse">
+    <part name="parameters" element="tns:addDoubleNodeAttributesResponse" />
+  </message>
+  <message name="addIntegerEdgeAttributes">
+    <part name="parameters" element="tns:addIntegerEdgeAttributes" />
+  </message>
+  <message name="addIntegerEdgeAttributesResponse">
+    <part name="parameters" element="tns:addIntegerEdgeAttributesResponse" />
+  </message>
+  <message name="addIntegerNetworkAttributes">
+    <part name="parameters" element="tns:addIntegerNetworkAttributes" />
+  </message>
+  <message name="addIntegerNetworkAttributesResponse">
+    <part name="parameters" element="tns:addIntegerNetworkAttributesResponse" />
+  </message>
+  <message name="addIntegerNodeAttributes">
+    <part name="parameters" element="tns:addIntegerNodeAttributes" />
+  </message>
+  <message name="addIntegerNodeAttributesResponse">
+    <part name="parameters" element="tns:addIntegerNodeAttributesResponse" />
+  </message>
+  <message name="addStringEdgeAttributes">
+    <part name="parameters" element="tns:addStringEdgeAttributes" />
+  </message>
+  <message name="addStringEdgeAttributesResponse">
+    <part name="parameters" element="tns:addStringEdgeAttributesResponse" />
+  </message>
+  <message name="addStringNetworkAttributes">
+    <part name="parameters" element="tns:addStringNetworkAttributes" />
+  </message>
+  <message name="addStringNetworkAttributesResponse">
+    <part name="parameters" element="tns:addStringNetworkAttributesResponse" />
+  </message>
+  <message name="addStringNodeAttributes">
+    <part name="parameters" element="tns:addStringNodeAttributes" />
+  </message>
+  <message name="addStringNodeAttributesResponse">
+    <part name="parameters" element="tns:addStringNodeAttributesResponse" />
+  </message>
+  <message name="addNodeAttribute">
+    <part name="parameters" element="tns:addNodeAttribute" />
+  </message>
+  <message name="addNodeAttributeResponse">
+    <part name="parameters" element="tns:addNodeAttributeResponse" />
+  </message>
+  <message name="addEdgeAttribute">
+    <part name="parameters" element="tns:addEdgeAttribute" />
+  </message>
+  <message name="addEdgeAttributeResponse">
+    <part name="parameters" element="tns:addEdgeAttributeResponse" />
+  </message>
+  <message name="addNetworkAttribute">
+    <part name="parameters" element="tns:addNetworkAttribute" />
+  </message>
+  <message name="addNetworkAttributeResponse">
+    <part name="parameters" element="tns:addNetworkAttributeResponse" />
+  </message>
+  <message name="addEdgeAttributes">
+    <part name="parameters" element="tns:addEdgeAttributes" />
+  </message>
+  <message name="addEdgeAttributesResponse">
+    <part name="parameters" element="tns:addEdgeAttributesResponse" />
+  </message>
+  <message name="addNetworkAttributes">
+    <part name="parameters" element="tns:addNetworkAttributes" />
+  </message>
+  <message name="addNetworkAttributesResponse">
+    <part name="parameters" element="tns:addNetworkAttributesResponse" />
+  </message>
+  <message name="getLayoutNames">
+    <part name="parameters" element="tns:getLayoutNames" />
+  </message>
+  <message name="getLayoutNamesResponse">
+    <part name="parameters" element="tns:getLayoutNamesResponse" />
+  </message>
+  <message name="getVisualStyleNames">
+    <part name="parameters" element="tns:getVisualStyleNames" />
+  </message>
+  <message name="getVisualStyleNamesResponse">
+    <part name="parameters" element="tns:getVisualStyleNamesResponse" />
+  </message>
+  <message name="copyVisualStyle">
+    <part name="parameters" element="tns:copyVisualStyle" />
+  </message>
+  <message name="copyVisualStyleResponse">
+    <part name="parameters" element="tns:copyVisualStyleResponse" />
+  </message>
+  <message name="getCurrentVisualStyle">
+    <part name="parameters" element="tns:getCurrentVisualStyle" />
+  </message>
+  <message name="getCurrentVisualStyleResponse">
+    <part name="parameters" element="tns:getCurrentVisualStyleResponse" />
+  </message>
+  <message name="setVisualStyle">
+    <part name="parameters" element="tns:setVisualStyle" />
+  </message>
+  <message name="setVisualStyleResponse">
+    <part name="parameters" element="tns:setVisualStyleResponse" />
+  </message>
+  <message name="getVisualStyleModifiables">
+    <part name="parameters" element="tns:getVisualStyleModifiables" />
+  </message>
+  <message name="getVisualStyleModifiablesResponse">
+    <part name="parameters" element="tns:getVisualStyleModifiablesResponse" />
+  </message>
+  <message name="setDiscreteNodeShapeMapper">
+    <part name="parameters" element="tns:setDiscreteNodeShapeMapper" />
+  </message>
+  <message name="setDiscreteNodeShapeMapperResponse">
+    <part name="parameters" element="tns:setDiscreteNodeShapeMapperResponse" />
+  </message>
+  <message name="createContinuousNodeColorVisualStyle">
+    <part name="parameters" element="tns:createContinuousNodeColorVisualStyle" />
+  </message>
+  <message name="createContinuousNodeColorVisualStyleResponse">
+    <part name="parameters" element="tns:createContinuousNodeColorVisualStyleResponse" />
+  </message>
+  <message name="createContinuousNodeVisualStyle">
+    <part name="parameters" element="tns:createContinuousNodeVisualStyle" />
+  </message>
+  <message name="createContinuousNodeVisualStyleResponse">
+    <part name="parameters" element="tns:createContinuousNodeVisualStyleResponse" />
+  </message>
+  <message name="setDiscreteNodeMapper">
+    <part name="parameters" element="tns:setDiscreteNodeMapper" />
+  </message>
+  <message name="setDiscreteNodeMapperResponse">
+    <part name="parameters" element="tns:setDiscreteNodeMapperResponse" />
+  </message>
+  <message name="discreteMapper">
+    <part name="parameters" element="tns:discreteMapper" />
+  </message>
+  <message name="discreteMapperResponse">
+    <part name="parameters" element="tns:discreteMapperResponse" />
+  </message>
+  <message name="passthroughMapper">
+    <part name="parameters" element="tns:passthroughMapper" />
+  </message>
+  <message name="passthroughMapperResponse">
+    <part name="parameters" element="tns:passthroughMapperResponse" />
+  </message>
+  <message name="arrowMapper">
+    <part name="parameters" element="tns:arrowMapper" />
+  </message>
+  <message name="arrowMapperResponse">
+    <part name="parameters" element="tns:arrowMapperResponse" />
+  </message>
+  <message name="setNodeLabel">
+    <part name="parameters" element="tns:setNodeLabel" />
+  </message>
+  <message name="setNodeLabelResponse">
+    <part name="parameters" element="tns:setNodeLabelResponse" />
+  </message>
+  <message name="hidePanel">
+    <part name="parameters" element="tns:hidePanel" />
+  </message>
+  <message name="hidePanelResponse">
+    <part name="parameters" element="tns:hidePanelResponse" />
+  </message>
+  <message name="dockPanel">
+    <part name="parameters" element="tns:dockPanel" />
+  </message>
+  <message name="dockPanelResponse">
+    <part name="parameters" element="tns:dockPanelResponse" />
+  </message>
+  <message name="floatPanel">
+    <part name="parameters" element="tns:floatPanel" />
+  </message>
+  <message name="floatPanelResponse">
+    <part name="parameters" element="tns:floatPanelResponse" />
+  </message>
+  <message name="clearStatusBarMessage">
+    <part name="parameters" element="tns:clearStatusBarMessage" />
+  </message>
+  <message name="clearStatusBarMessageResponse">
+    <part name="parameters" element="tns:clearStatusBarMessageResponse" />
+  </message>
+  <message name="setStatusBarMessage">
+    <part name="parameters" element="tns:setStatusBarMessage" />
+  </message>
+  <message name="setStatusBarMessageResponse">
+    <part name="parameters" element="tns:setStatusBarMessageResponse" />
+  </message>
+  <message name="setNodePosition">
+    <part name="parameters" element="tns:setNodePosition" />
+  </message>
+  <message name="setNodePositionResponse">
+    <part name="parameters" element="tns:setNodePositionResponse" />
+  </message>
+  <message name="setNodesPositions">
+    <part name="parameters" element="tns:setNodesPositions" />
+  </message>
+  <message name="setNodesPositionsResponse">
+    <part name="parameters" element="tns:setNodesPositionsResponse" />
+  </message>
+  <message name="setNodeShapeRule">
+    <part name="parameters" element="tns:setNodeShapeRule" />
+  </message>
+  <message name="setNodeShapeRuleResponse">
+    <part name="parameters" element="tns:setNodeShapeRuleResponse" />
+  </message>
+  <message name="setEdgeLineStyleRule">
+    <part name="parameters" element="tns:setEdgeLineStyleRule" />
+  </message>
+  <message name="setEdgeLineStyleRuleResponse">
+    <part name="parameters" element="tns:setEdgeLineStyleRuleResponse" />
+  </message>
+  <message name="setEdgeTargetArrowRule">
+    <part name="parameters" element="tns:setEdgeTargetArrowRule" />
+  </message>
+  <message name="setEdgeTargetArrowRuleResponse">
+    <part name="parameters" element="tns:setEdgeTargetArrowRuleResponse" />
+  </message>
+  <message name="setEdgeSourceArrowRule">
+    <part name="parameters" element="tns:setEdgeSourceArrowRule" />
+  </message>
+  <message name="setEdgeSourceArrowRuleResponse">
+    <part name="parameters" element="tns:setEdgeSourceArrowRuleResponse" />
+  </message>
+  <message name="setContinuousEdgeColorRule">
+    <part name="parameters" element="tns:setContinuousEdgeColorRule" />
+  </message>
+  <message name="setContinuousEdgeColorRuleResponse">
+    <part name="parameters" element="tns:setContinuousEdgeColorRuleResponse" />
+  </message>
+  <message name="setEdgeColorRule">
+    <part name="parameters" element="tns:setEdgeColorRule" />
+  </message>
+  <message name="setEdgeColorRuleResponse">
+    <part name="parameters" element="tns:setEdgeColorRuleResponse" />
+  </message>
+  <portType name="CytoscapeSOAPCallHandler">
+    <operation name="hideAllInCurrent">
+      <input message="tns:hideAllInCurrent" />
+      <output message="tns:hideAllInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="unhideAllInCurrent">
+      <input message="tns:unhideAllInCurrent" />
+      <output message="tns:unhideAllInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="clearSelectionInCurrent">
+      <input message="tns:clearSelectionInCurrent" />
+      <output message="tns:clearSelectionInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getCurrentNetworkTitle">
+      <input message="tns:getCurrentNetworkTitle" />
+      <output message="tns:getCurrentNetworkTitleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setCurrentNetworkTitle">
+      <input message="tns:setCurrentNetworkTitle" />
+      <output message="tns:setCurrentNetworkTitleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="countNodesInCurrent">
+      <input message="tns:countNodesInCurrent" />
+      <output message="tns:countNodesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="countSelectedNodesInCurrent">
+      <input message="tns:countSelectedNodesInCurrent" />
+      <output message="tns:countSelectedNodesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="hideSelectedNodesInCurrent">
+      <input message="tns:hideSelectedNodesInCurrent" />
+      <output message="tns:hideSelectedNodesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNodesInCurrent">
+      <input message="tns:getNodesInCurrent" />
+      <output message="tns:getNodesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="isNodeSelectedInCurrent">
+      <input message="tns:isNodeSelectedInCurrent" />
+      <output message="tns:isNodeSelectedInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="clearNodeSelectionInCurrent">
+      <input message="tns:clearNodeSelectionInCurrent" />
+      <output message="tns:clearNodeSelectionInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="selectNode">
+      <input message="tns:selectNode" />
+      <output message="tns:selectNodeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="selectNodeInCurrent">
+      <input message="tns:selectNodeInCurrent" />
+      <output message="tns:selectNodeInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="selectNodesInCurrent">
+      <input message="tns:selectNodesInCurrent" />
+      <output message="tns:selectNodesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getSelectedNodesInCurrent">
+      <input message="tns:getSelectedNodesInCurrent" />
+      <output message="tns:getSelectedNodesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createNodeInCurrent">
+      <input message="tns:createNodeInCurrent" />
+      <output message="tns:createNodeInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createNodesInCurrent">
+      <input message="tns:createNodesInCurrent" />
+      <output message="tns:createNodesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNodeNeighborsInCurrent">
+      <input message="tns:getNodeNeighborsInCurrent" />
+      <output message="tns:getNodeNeighborsInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getConnectedEdgesInCurrent">
+      <input message="tns:getConnectedEdgesInCurrent" />
+      <output message="tns:getConnectedEdgesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="removeNodeInCurrent">
+      <input message="tns:removeNodeInCurrent" />
+      <output message="tns:removeNodeInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addNodesToCurrentNetwork">
+      <input message="tns:addNodesToCurrentNetwork" />
+      <output message="tns:addNodesToCurrentNetworkResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setSelectedNodesInCurrent">
+      <input message="tns:setSelectedNodesInCurrent" />
+      <output message="tns:setSelectedNodesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setNodeShapeInCurrent">
+      <input message="tns:setNodeShapeInCurrent" />
+      <output message="tns:setNodeShapeInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="overrideNodesVizAttribute">
+      <input message="tns:overrideNodesVizAttribute" />
+      <output message="tns:overrideNodesVizAttributeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="unhideNodeInCurrent">
+      <input message="tns:unhideNodeInCurrent" />
+      <output message="tns:unhideNodeInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="unhideAllNodesInCurrent">
+      <input message="tns:unhideAllNodesInCurrent" />
+      <output message="tns:unhideAllNodesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="countEdgesInCurrent">
+      <input message="tns:countEdgesInCurrent" />
+      <output message="tns:countEdgesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="countSelectedEdgesInCurrent">
+      <input message="tns:countSelectedEdgesInCurrent" />
+      <output message="tns:countSelectedEdgesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createEdgeInCurrent">
+      <input message="tns:createEdgeInCurrent" />
+      <output message="tns:createEdgeInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createEdgesInCurrent">
+      <input message="tns:createEdgesInCurrent" />
+      <output message="tns:createEdgesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="removeEdgeInCurrent">
+      <input message="tns:removeEdgeInCurrent" />
+      <output message="tns:removeEdgeInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="clearEdgeSelectionInCurrent">
+      <input message="tns:clearEdgeSelectionInCurrent" />
+      <output message="tns:clearEdgeSelectionInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getAllEdgesInCurrent">
+      <input message="tns:getAllEdgesInCurrent" />
+      <output message="tns:getAllEdgesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getSelectedEdgesInCurrent">
+      <input message="tns:getSelectedEdgesInCurrent" />
+      <output message="tns:getSelectedEdgesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="unhideAllEdgesInCurrent">
+      <input message="tns:unhideAllEdgesInCurrent" />
+      <output message="tns:unhideAllEdgesInCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getEdgeAttributeList">
+      <input message="tns:getEdgeAttributeList" />
+      <output message="tns:getEdgeAttributeListResponse" />
+    </operation>
+    <operation name="getNodeAttributeList">
+      <input message="tns:getNodeAttributeList" />
+      <output message="tns:getNodeAttributeListResponse" />
+    </operation>
+    <operation name="getNetworkAttributeList">
+      <input message="tns:getNetworkAttributeList" />
+      <output message="tns:getNetworkAttributeListResponse" />
+    </operation>
+    <operation name="deleteEdgeAttributeInAll">
+      <input message="tns:deleteEdgeAttributeInAll" />
+      <output message="tns:deleteEdgeAttributeInAllResponse" />
+    </operation>
+    <operation name="deleteNetworkAttributeInAll">
+      <input message="tns:deleteNetworkAttributeInAll" />
+      <output message="tns:deleteNetworkAttributeInAllResponse" />
+    </operation>
+    <operation name="deleteNodeAttributeInAll">
+      <input message="tns:deleteNodeAttributeInAll" />
+      <output message="tns:deleteNodeAttributeInAllResponse" />
+    </operation>
+    <operation name="performDefaultLayoutOnCurrent">
+      <input message="tns:performDefaultLayoutOnCurrent" />
+      <output message="tns:performDefaultLayoutOnCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="performLayoutOnCurrent">
+      <input message="tns:performLayoutOnCurrent" />
+      <output message="tns:performLayoutOnCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="redrawCurrent">
+      <input message="tns:redrawCurrent" />
+      <output message="tns:redrawCurrentResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="exportCurrentView">
+      <input message="tns:exportCurrentView" />
+      <output message="tns:exportCurrentViewResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="hideAllEdges">
+      <input message="tns:hideAllEdges" />
+      <output message="tns:hideAllEdgesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getUniqueNodeAttributes">
+      <input message="tns:getUniqueNodeAttributes" />
+      <output message="tns:getUniqueNodeAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="hideAll">
+      <input message="tns:hideAll" />
+      <output message="tns:hideAllResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="clearSelection">
+      <input message="tns:clearSelection" />
+      <output message="tns:clearSelectionResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNetworkTitle">
+      <input message="tns:getNetworkTitle" />
+      <output message="tns:getNetworkTitleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setNetworkTitle">
+      <input message="tns:setNetworkTitle" />
+      <output message="tns:setNetworkTitleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="countNodes">
+      <input message="tns:countNodes" />
+      <output message="tns:countNodesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="countSelectedNodes">
+      <input message="tns:countSelectedNodes" />
+      <output message="tns:countSelectedNodesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="hideSelectedNodes">
+      <input message="tns:hideSelectedNodes" />
+      <output message="tns:hideSelectedNodesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNodes">
+      <input message="tns:getNodes" />
+      <output message="tns:getNodesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="isNodeSelected">
+      <input message="tns:isNodeSelected" />
+      <output message="tns:isNodeSelectedResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="clearNodeSelection">
+      <input message="tns:clearNodeSelection" />
+      <output message="tns:clearNodeSelectionResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="selectNodes">
+      <input message="tns:selectNodes" />
+      <output message="tns:selectNodesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getSelectedNodes">
+      <input message="tns:getSelectedNodes" />
+      <output message="tns:getSelectedNodesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createNode">
+      <input message="tns:createNode" />
+      <output message="tns:createNodeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createNodes">
+      <input message="tns:createNodes" />
+      <output message="tns:createNodesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNodeNeighbors">
+      <input message="tns:getNodeNeighbors" />
+      <output message="tns:getNodeNeighborsResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getEdgesFromNodePair">
+      <input message="tns:getEdgesFromNodePair" />
+      <output message="tns:getEdgesFromNodePairResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addNodesToNetwork">
+      <input message="tns:addNodesToNetwork" />
+      <output message="tns:addNodesToNetworkResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setNodeShape">
+      <input message="tns:setNodeShape" />
+      <output message="tns:setNodeShapeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="overrideNodeVizAttribute">
+      <input message="tns:overrideNodeVizAttribute" />
+      <output message="tns:overrideNodeVizAttributeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="unhideNode">
+      <input message="tns:unhideNode" />
+      <output message="tns:unhideNodeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="unhideAllNodes">
+      <input message="tns:unhideAllNodes" />
+      <output message="tns:unhideAllNodesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="countEdges">
+      <input message="tns:countEdges" />
+      <output message="tns:countEdgesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="countSelectedEdges">
+      <input message="tns:countSelectedEdges" />
+      <output message="tns:countSelectedEdgesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createEdge">
+      <input message="tns:createEdge" />
+      <output message="tns:createEdgeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createEdges">
+      <input message="tns:createEdges" />
+      <output message="tns:createEdgesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="removeEdge">
+      <input message="tns:removeEdge" />
+      <output message="tns:removeEdgeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="clearEdgeSelection">
+      <input message="tns:clearEdgeSelection" />
+      <output message="tns:clearEdgeSelectionResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getAllEdges">
+      <input message="tns:getAllEdges" />
+      <output message="tns:getAllEdgesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getSelectedEdges">
+      <input message="tns:getSelectedEdges" />
+      <output message="tns:getSelectedEdgesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="unhideAllEdges">
+      <input message="tns:unhideAllEdges" />
+      <output message="tns:unhideAllEdgesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="deleteEdgeAttribute">
+      <input message="tns:deleteEdgeAttribute" />
+      <output message="tns:deleteEdgeAttributeResponse" />
+    </operation>
+    <operation name="deleteNetworkAttribute">
+      <input message="tns:deleteNetworkAttribute" />
+      <output message="tns:deleteNetworkAttributeResponse" />
+    </operation>
+    <operation name="deleteNodeAttribute">
+      <input message="tns:deleteNodeAttribute" />
+      <output message="tns:deleteNodeAttributeResponse" />
+    </operation>
+    <operation name="performDefaultLayout">
+      <input message="tns:performDefaultLayout" />
+      <output message="tns:performDefaultLayoutResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="performLayout">
+      <input message="tns:performLayout" />
+      <output message="tns:performLayoutResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="redraw">
+      <input message="tns:redraw" />
+      <output message="tns:redrawResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="exportView">
+      <input message="tns:exportView" />
+      <output message="tns:exportViewResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="test">
+      <input message="tns:test" />
+      <output message="tns:testResponse" />
+    </operation>
+    <operation name="getShapeNames">
+      <input message="tns:getShapeNames" />
+      <output message="tns:getShapeNamesResponse" />
+    </operation>
+    <operation name="showMessage">
+      <input message="tns:showMessage" />
+      <output message="tns:showMessageResponse" />
+    </operation>
+    <operation name="getNotFoundCode">
+      <input message="tns:getNotFoundCode" />
+      <output message="tns:getNotFoundCodeResponse" />
+    </operation>
+    <operation name="getNotExistsCode">
+      <input message="tns:getNotExistsCode" />
+      <output message="tns:getNotExistsCodeResponse" />
+    </operation>
+    <operation name="getWrongTypeCode">
+      <input message="tns:getWrongTypeCode" />
+      <output message="tns:getWrongTypeCodeResponse" />
+    </operation>
+    <operation name="getInputArgMismatchCode">
+      <input message="tns:getInputArgMismatchCode" />
+      <output message="tns:getInputArgMismatchCodeResponse" />
+    </operation>
+    <operation name="_getAttributeNames">
+      <input message="tns:_getAttributeNames" />
+      <output message="tns:_getAttributeNamesResponse" />
+    </operation>
+    <operation name="trait_names">
+      <input message="tns:trait_names" />
+      <output message="tns:trait_namesResponse" />
+    </operation>
+    <operation name="deleteNodeByPassAttr">
+      <input message="tns:deleteNodeByPassAttr" />
+      <output message="tns:deleteNodeByPassAttrResponse" />
+    </operation>
+    <operation name="hasCurrentNetwork">
+      <input message="tns:hasCurrentNetwork" />
+      <output message="tns:hasCurrentNetworkResponse" />
+    </operation>
+    <operation name="createNetwork">
+      <input message="tns:createNetwork" />
+      <output message="tns:createNetworkResponse" />
+    </operation>
+    <operation name="createNetworkView">
+      <input message="tns:createNetworkView" />
+      <output message="tns:createNetworkViewResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="destroyNetwork">
+      <input message="tns:destroyNetwork" />
+      <output message="tns:destroyNetworkResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getCurrentNetworkIndex">
+      <input message="tns:getCurrentNetworkIndex" />
+      <output message="tns:getCurrentNetworkIndexResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNetworkID">
+      <input message="tns:getNetworkID" />
+      <output message="tns:getNetworkIDResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNetworkCount">
+      <input message="tns:getNetworkCount" />
+      <output message="tns:getNetworkCountResponse" />
+    </operation>
+    <operation name="setCurrentNetwork">
+      <input message="tns:setCurrentNetwork" />
+      <output message="tns:setCurrentNetworkResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="networkExists">
+      <input message="tns:networkExists" />
+      <output message="tns:networkExistsResponse" />
+    </operation>
+    <operation name="countAllNodes">
+      <input message="tns:countAllNodes" />
+      <output message="tns:countAllNodesResponse" />
+    </operation>
+    <operation name="getNodesIDs">
+      <input message="tns:getNodesIDs" />
+      <output message="tns:getNodesIDsResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setSelectedNodes">
+      <input message="tns:setSelectedNodes" />
+      <output message="tns:setSelectedNodesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="nodeExists">
+      <input message="tns:nodeExists" />
+      <output message="tns:nodeExistsResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getTotalNodeCount">
+      <input message="tns:getTotalNodeCount" />
+      <output message="tns:getTotalNodeCountResponse" />
+    </operation>
+    <operation name="getNodesNeighbors">
+      <input message="tns:getNodesNeighbors" />
+      <output message="tns:getNodesNeighborsResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="removeNode">
+      <input message="tns:removeNode" />
+      <output message="tns:removeNodeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="deselectNode">
+      <input message="tns:deselectNode" />
+      <output message="tns:deselectNodeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNodeAttributeType">
+      <input message="tns:getNodeAttributeType" />
+      <output message="tns:getNodeAttributeTypeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNodesByStringAttr">
+      <input message="tns:getNodesByStringAttr" />
+      <output message="tns:getNodesByStringAttrResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getAllNodes">
+      <input message="tns:getAllNodes" />
+      <output message="tns:getAllNodesResponse" />
+    </operation>
+    <operation name="getNodeShapeNames">
+      <input message="tns:getNodeShapeNames" />
+      <output message="tns:getNodeShapeNamesResponse" />
+    </operation>
+    <operation name="getNodeColorPropertyNames">
+      <input message="tns:getNodeColorPropertyNames" />
+      <output message="tns:getNodeColorPropertyNamesResponse" />
+    </operation>
+    <operation name="setNodeFillColor">
+      <input message="tns:setNodeFillColor" />
+      <output message="tns:setNodeFillColorResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setNodeBorderColor">
+      <input message="tns:setNodeBorderColor" />
+      <output message="tns:setNodeBorderColorResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setNodeLabelColor">
+      <input message="tns:setNodeLabelColor" />
+      <output message="tns:setNodeLabelColorResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="hideAllNodes">
+      <input message="tns:hideAllNodes" />
+      <output message="tns:hideAllNodesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="hideNode">
+      <input message="tns:hideNode" />
+      <output message="tns:hideNodeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setNodeProperty">
+      <input message="tns:setNodeProperty" />
+      <output message="tns:setNodePropertyResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getAdjacentEdges">
+      <input message="tns:getAdjacentEdges" />
+      <output message="tns:getAdjacentEdgesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="countAllEdges">
+      <input message="tns:countAllEdges" />
+      <output message="tns:countAllEdgesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="hideSelectedEdges">
+      <input message="tns:hideSelectedEdges" />
+      <output message="tns:hideSelectedEdgesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createEdgesFromVector">
+      <input message="tns:createEdgesFromVector" />
+      <output message="tns:createEdgesFromVectorResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getEdgeAttributeType">
+      <input message="tns:getEdgeAttributeType" />
+      <output message="tns:getEdgeAttributeTypeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="hideEdge">
+      <input message="tns:hideEdge" />
+      <output message="tns:hideEdgeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setEdgeProperty">
+      <input message="tns:setEdgeProperty" />
+      <output message="tns:setEdgePropertyResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getLineStyleNames">
+      <input message="tns:getLineStyleNames" />
+      <output message="tns:getLineStyleNamesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getArrowShapeNames">
+      <input message="tns:getArrowShapeNames" />
+      <output message="tns:getArrowShapeNamesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="hasEdgeAttribute">
+      <input message="tns:hasEdgeAttribute" />
+      <output message="tns:hasEdgeAttributeResponse" />
+    </operation>
+    <operation name="hasNodeAttribute">
+      <input message="tns:hasNodeAttribute" />
+      <output message="tns:hasNodeAttributeResponse" />
+    </operation>
+    <operation name="hasNetworkAttribute">
+      <input message="tns:hasNetworkAttribute" />
+      <output message="tns:hasNetworkAttributeResponse" />
+    </operation>
+    <operation name="getNodeAttribute">
+      <input message="tns:getNodeAttribute" />
+      <output message="tns:getNodeAttributeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNodesAttributes">
+      <input message="tns:getNodesAttributes" />
+      <output message="tns:getNodesAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getNetworksAttributes">
+      <input message="tns:getNetworksAttributes" />
+      <output message="tns:getNetworksAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getEdgeAttribute">
+      <input message="tns:getEdgeAttribute" />
+      <output message="tns:getEdgeAttributeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getEdgesAttributes">
+      <input message="tns:getEdgesAttributes" />
+      <output message="tns:getEdgesAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getEdgeAttributeNames">
+      <input message="tns:getEdgeAttributeNames" />
+      <output message="tns:getEdgeAttributeNamesResponse" />
+    </operation>
+    <operation name="getNodeAttributeNames">
+      <input message="tns:getNodeAttributeNames" />
+      <output message="tns:getNodeAttributeNamesResponse" />
+    </operation>
+    <operation name="getNetworkAttributeNames">
+      <input message="tns:getNetworkAttributeNames" />
+      <output message="tns:getNetworkAttributeNamesResponse" />
+    </operation>
+    <operation name="addBooleanEdgeAttribute">
+      <input message="tns:addBooleanEdgeAttribute" />
+      <output message="tns:addBooleanEdgeAttributeResponse" />
+    </operation>
+    <operation name="addBooleanNetworkAttribute">
+      <input message="tns:addBooleanNetworkAttribute" />
+      <output message="tns:addBooleanNetworkAttributeResponse" />
+    </operation>
+    <operation name="addBooleanNodeAttribute">
+      <input message="tns:addBooleanNodeAttribute" />
+      <output message="tns:addBooleanNodeAttributeResponse" />
+    </operation>
+    <operation name="addDoubleEdgeAttribute">
+      <input message="tns:addDoubleEdgeAttribute" />
+      <output message="tns:addDoubleEdgeAttributeResponse" />
+    </operation>
+    <operation name="addDoubleNetworkAttribute">
+      <input message="tns:addDoubleNetworkAttribute" />
+      <output message="tns:addDoubleNetworkAttributeResponse" />
+    </operation>
+    <operation name="addDoubleNodeAttribute">
+      <input message="tns:addDoubleNodeAttribute" />
+      <output message="tns:addDoubleNodeAttributeResponse" />
+    </operation>
+    <operation name="addIntegerEdgeAttribute">
+      <input message="tns:addIntegerEdgeAttribute" />
+      <output message="tns:addIntegerEdgeAttributeResponse" />
+    </operation>
+    <operation name="addIntegerNetworkAttribute">
+      <input message="tns:addIntegerNetworkAttribute" />
+      <output message="tns:addIntegerNetworkAttributeResponse" />
+    </operation>
+    <operation name="addIntegerNodeAttribute">
+      <input message="tns:addIntegerNodeAttribute" />
+      <output message="tns:addIntegerNodeAttributeResponse" />
+    </operation>
+    <operation name="addStringEdgeAttribute">
+      <input message="tns:addStringEdgeAttribute" />
+      <output message="tns:addStringEdgeAttributeResponse" />
+    </operation>
+    <operation name="addStringNetworkAttribute">
+      <input message="tns:addStringNetworkAttribute" />
+      <output message="tns:addStringNetworkAttributeResponse" />
+    </operation>
+    <operation name="addStringNodeAttribute">
+      <input message="tns:addStringNodeAttribute" />
+      <output message="tns:addStringNodeAttributeResponse" />
+    </operation>
+    <operation name="addBooleanEdgeAttributes">
+      <input message="tns:addBooleanEdgeAttributes" />
+      <output message="tns:addBooleanEdgeAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addBooleanNetworkAttributes">
+      <input message="tns:addBooleanNetworkAttributes" />
+      <output message="tns:addBooleanNetworkAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addBooleanNodeAttributes">
+      <input message="tns:addBooleanNodeAttributes" />
+      <output message="tns:addBooleanNodeAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addDoubleEdgeAttributes">
+      <input message="tns:addDoubleEdgeAttributes" />
+      <output message="tns:addDoubleEdgeAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addDoubleNetworkAttributes">
+      <input message="tns:addDoubleNetworkAttributes" />
+      <output message="tns:addDoubleNetworkAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addDoubleNodeAttributes">
+      <input message="tns:addDoubleNodeAttributes" />
+      <output message="tns:addDoubleNodeAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addIntegerEdgeAttributes">
+      <input message="tns:addIntegerEdgeAttributes" />
+      <output message="tns:addIntegerEdgeAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addIntegerNetworkAttributes">
+      <input message="tns:addIntegerNetworkAttributes" />
+      <output message="tns:addIntegerNetworkAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addIntegerNodeAttributes">
+      <input message="tns:addIntegerNodeAttributes" />
+      <output message="tns:addIntegerNodeAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addStringEdgeAttributes">
+      <input message="tns:addStringEdgeAttributes" />
+      <output message="tns:addStringEdgeAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addStringNetworkAttributes">
+      <input message="tns:addStringNetworkAttributes" />
+      <output message="tns:addStringNetworkAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addStringNodeAttributes">
+      <input message="tns:addStringNodeAttributes" />
+      <output message="tns:addStringNodeAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addNodeAttribute">
+      <input message="tns:addNodeAttribute" />
+      <output message="tns:addNodeAttributeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addEdgeAttribute">
+      <input message="tns:addEdgeAttribute" />
+      <output message="tns:addEdgeAttributeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addNetworkAttribute">
+      <input message="tns:addNetworkAttribute" />
+      <output message="tns:addNetworkAttributeResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addEdgeAttributes">
+      <input message="tns:addEdgeAttributes" />
+      <output message="tns:addEdgeAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="addNetworkAttributes">
+      <input message="tns:addNetworkAttributes" />
+      <output message="tns:addNetworkAttributesResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getLayoutNames">
+      <input message="tns:getLayoutNames" />
+      <output message="tns:getLayoutNamesResponse" />
+    </operation>
+    <operation name="getVisualStyleNames">
+      <input message="tns:getVisualStyleNames" />
+      <output message="tns:getVisualStyleNamesResponse" />
+    </operation>
+    <operation name="copyVisualStyle">
+      <input message="tns:copyVisualStyle" />
+      <output message="tns:copyVisualStyleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getCurrentVisualStyle">
+      <input message="tns:getCurrentVisualStyle" />
+      <output message="tns:getCurrentVisualStyleResponse" />
+    </operation>
+    <operation name="setVisualStyle">
+      <input message="tns:setVisualStyle" />
+      <output message="tns:setVisualStyleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="getVisualStyleModifiables">
+      <input message="tns:getVisualStyleModifiables" />
+      <output message="tns:getVisualStyleModifiablesResponse" />
+    </operation>
+    <operation name="setDiscreteNodeShapeMapper">
+      <input message="tns:setDiscreteNodeShapeMapper" />
+      <output message="tns:setDiscreteNodeShapeMapperResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createContinuousNodeColorVisualStyle">
+      <input message="tns:createContinuousNodeColorVisualStyle" />
+      <output message="tns:createContinuousNodeColorVisualStyleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="createContinuousNodeVisualStyle">
+      <input message="tns:createContinuousNodeVisualStyle" />
+      <output message="tns:createContinuousNodeVisualStyleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setDiscreteNodeMapper">
+      <input message="tns:setDiscreteNodeMapper" />
+      <output message="tns:setDiscreteNodeMapperResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="discreteMapper">
+      <input message="tns:discreteMapper" />
+      <output message="tns:discreteMapperResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="passthroughMapper">
+      <input message="tns:passthroughMapper" />
+      <output message="tns:passthroughMapperResponse" />
+    </operation>
+    <operation name="arrowMapper">
+      <input message="tns:arrowMapper" />
+      <output message="tns:arrowMapperResponse" />
+    </operation>
+    <operation name="setNodeLabel">
+      <input message="tns:setNodeLabel" />
+      <output message="tns:setNodeLabelResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="hidePanel">
+      <input message="tns:hidePanel" />
+      <output message="tns:hidePanelResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="dockPanel">
+      <input message="tns:dockPanel" />
+      <output message="tns:dockPanelResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="floatPanel">
+      <input message="tns:floatPanel" />
+      <output message="tns:floatPanelResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="clearStatusBarMessage">
+      <input message="tns:clearStatusBarMessage" />
+      <output message="tns:clearStatusBarMessageResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setStatusBarMessage">
+      <input message="tns:setStatusBarMessage" />
+      <output message="tns:setStatusBarMessageResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setNodePosition">
+      <input message="tns:setNodePosition" />
+      <output message="tns:setNodePositionResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setNodesPositions">
+      <input message="tns:setNodesPositions" />
+      <output message="tns:setNodesPositionsResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setNodeShapeRule">
+      <input message="tns:setNodeShapeRule" />
+      <output message="tns:setNodeShapeRuleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setEdgeLineStyleRule">
+      <input message="tns:setEdgeLineStyleRule" />
+      <output message="tns:setEdgeLineStyleRuleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setEdgeTargetArrowRule">
+      <input message="tns:setEdgeTargetArrowRule" />
+      <output message="tns:setEdgeTargetArrowRuleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setEdgeSourceArrowRule">
+      <input message="tns:setEdgeSourceArrowRule" />
+      <output message="tns:setEdgeSourceArrowRuleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setContinuousEdgeColorRule">
+      <input message="tns:setContinuousEdgeColorRule" />
+      <output message="tns:setContinuousEdgeColorRuleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+    <operation name="setEdgeColorRule">
+      <input message="tns:setEdgeColorRule" />
+      <output message="tns:setEdgeColorRuleResponse" />
+      <fault name="XmlRpcException" message="tns:XmlRpcException" />
+    </operation>
+  </portType>
+  <binding name="CytoscapeSOAPCallHandlerPortBinding" type="tns:CytoscapeSOAPCallHandler">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="hideAllInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="unhideAllInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="clearSelectionInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getCurrentNetworkTitle">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setCurrentNetworkTitle">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="countNodesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="countSelectedNodesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hideSelectedNodesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNodesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="isNodeSelectedInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="clearNodeSelectionInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="selectNode">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="selectNodeInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="selectNodesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSelectedNodesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createNodeInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createNodesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNodeNeighborsInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getConnectedEdgesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removeNodeInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addNodesToCurrentNetwork">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setSelectedNodesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setNodeShapeInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="overrideNodesVizAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="unhideNodeInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="unhideAllNodesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="countEdgesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="countSelectedEdgesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createEdgeInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createEdgesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removeEdgeInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="clearEdgeSelectionInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getAllEdgesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSelectedEdgesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="unhideAllEdgesInCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEdgeAttributeList">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNodeAttributeList">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNetworkAttributeList">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteEdgeAttributeInAll">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteNetworkAttributeInAll">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteNodeAttributeInAll">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="performDefaultLayoutOnCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="performLayoutOnCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="redrawCurrent">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="exportCurrentView">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hideAllEdges">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getUniqueNodeAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hideAll">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="clearSelection">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNetworkTitle">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setNetworkTitle">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="countNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="countSelectedNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hideSelectedNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="isNodeSelected">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="clearNodeSelection">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="selectNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSelectedNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createNode">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNodeNeighbors">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEdgesFromNodePair">
+      <soap12:operation soapAction="getEdgesFromNodePair" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addNodesToNetwork">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setNodeShape">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="overrideNodeVizAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="unhideNode">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="unhideAllNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="countEdges">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="countSelectedEdges">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createEdge">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createEdges">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removeEdge">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="clearEdgeSelection">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getAllEdges">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getSelectedEdges">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="unhideAllEdges">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="deleteEdgeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteNetworkAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteNodeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="performDefaultLayout">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="performLayout">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="redraw">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="exportView">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="test">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getShapeNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="showMessage">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNotFoundCode">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNotExistsCode">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getWrongTypeCode">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getInputArgMismatchCode">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="_getAttributeNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="trait_names">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="deleteNodeByPassAttr">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hasCurrentNetwork">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createNetwork">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="createNetworkView">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="destroyNetwork">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getCurrentNetworkIndex">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNetworkID">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNetworkCount">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setCurrentNetwork">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="networkExists">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="countAllNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNodesIDs">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setSelectedNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="nodeExists">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getTotalNodeCount">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNodesNeighbors">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="removeNode">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="deselectNode">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNodeAttributeType">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNodesByStringAttr">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getAllNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNodeShapeNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNodeColorPropertyNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setNodeFillColor">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setNodeBorderColor">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setNodeLabelColor">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hideAllNodes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hideNode">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setNodeProperty">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getAdjacentEdges">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="countAllEdges">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hideSelectedEdges">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createEdgesFromVector">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEdgeAttributeType">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hideEdge">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setEdgeProperty">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getLineStyleNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getArrowShapeNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hasEdgeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hasNodeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hasNetworkAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNodeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNodesAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getNetworksAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEdgeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEdgesAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getEdgeAttributeNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNodeAttributeNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getNetworkAttributeNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addBooleanEdgeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addBooleanNetworkAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addBooleanNodeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addDoubleEdgeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addDoubleNetworkAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addDoubleNodeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addIntegerEdgeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addIntegerNetworkAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addIntegerNodeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addStringEdgeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addStringNetworkAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addStringNodeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="addBooleanEdgeAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addBooleanNetworkAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addBooleanNodeAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addDoubleEdgeAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addDoubleNetworkAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addDoubleNodeAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addIntegerEdgeAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addIntegerNetworkAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addIntegerNodeAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addStringEdgeAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addStringNetworkAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addStringNodeAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addNodeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addEdgeAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addNetworkAttribute">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addEdgeAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="addNetworkAttributes">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getLayoutNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getVisualStyleNames">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="copyVisualStyle">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getCurrentVisualStyle">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setVisualStyle">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getVisualStyleModifiables">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setDiscreteNodeShapeMapper">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createContinuousNodeColorVisualStyle">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="createContinuousNodeVisualStyle">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setDiscreteNodeMapper">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="discreteMapper">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="passthroughMapper">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="arrowMapper">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setNodeLabel">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="hidePanel">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="dockPanel">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="floatPanel">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="clearStatusBarMessage">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setStatusBarMessage">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setNodePosition">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setNodesPositions">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setNodeShapeRule">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setEdgeLineStyleRule">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setEdgeTargetArrowRule">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setEdgeSourceArrowRule">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setContinuousEdgeColorRule">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="setEdgeColorRule">
+      <soap12:operation soapAction="" />
+      <input>
+        <soap12:body use="literal" />
+      </input>
+      <output>
+        <soap12:body use="literal" />
+      </output>
+      <fault name="XmlRpcException">
+        <soap12:fault use="literal" name="XmlRpcException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="CytoscapeService">
+    <port name="CytoscapeSOAPCallHandlerPort" binding="tns:CytoscapeSOAPCallHandlerPortBinding">
+      <soap12:address location="http://localhost:9001/cytoscape/CytoscapeRPC" />
+    </port>
+  </service>
+</definitions>

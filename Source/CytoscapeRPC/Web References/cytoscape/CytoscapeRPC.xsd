@@ -1,0 +1,2508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://CytoscapeRPC.tudelft/" targetNamespace="http://CytoscapeRPC.tudelft/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="XmlRpcException" type="tns:XmlRpcException" />
+  <xs:element name="_getAttributeNames" type="tns:_getAttributeNames" />
+  <xs:element name="_getAttributeNamesResponse" type="tns:_getAttributeNamesResponse" />
+  <xs:element name="addBooleanEdgeAttribute" type="tns:addBooleanEdgeAttribute" />
+  <xs:element name="addBooleanEdgeAttributeResponse" type="tns:addBooleanEdgeAttributeResponse" />
+  <xs:element name="addBooleanEdgeAttributes" type="tns:addBooleanEdgeAttributes" />
+  <xs:element name="addBooleanEdgeAttributesResponse" type="tns:addBooleanEdgeAttributesResponse" />
+  <xs:element name="addBooleanNetworkAttribute" type="tns:addBooleanNetworkAttribute" />
+  <xs:element name="addBooleanNetworkAttributeResponse" type="tns:addBooleanNetworkAttributeResponse" />
+  <xs:element name="addBooleanNetworkAttributes" type="tns:addBooleanNetworkAttributes" />
+  <xs:element name="addBooleanNetworkAttributesResponse" type="tns:addBooleanNetworkAttributesResponse" />
+  <xs:element name="addBooleanNodeAttribute" type="tns:addBooleanNodeAttribute" />
+  <xs:element name="addBooleanNodeAttributeResponse" type="tns:addBooleanNodeAttributeResponse" />
+  <xs:element name="addBooleanNodeAttributes" type="tns:addBooleanNodeAttributes" />
+  <xs:element name="addBooleanNodeAttributesResponse" type="tns:addBooleanNodeAttributesResponse" />
+  <xs:element name="addDoubleEdgeAttribute" type="tns:addDoubleEdgeAttribute" />
+  <xs:element name="addDoubleEdgeAttributeResponse" type="tns:addDoubleEdgeAttributeResponse" />
+  <xs:element name="addDoubleEdgeAttributes" type="tns:addDoubleEdgeAttributes" />
+  <xs:element name="addDoubleEdgeAttributesResponse" type="tns:addDoubleEdgeAttributesResponse" />
+  <xs:element name="addDoubleNetworkAttribute" type="tns:addDoubleNetworkAttribute" />
+  <xs:element name="addDoubleNetworkAttributeResponse" type="tns:addDoubleNetworkAttributeResponse" />
+  <xs:element name="addDoubleNetworkAttributes" type="tns:addDoubleNetworkAttributes" />
+  <xs:element name="addDoubleNetworkAttributesResponse" type="tns:addDoubleNetworkAttributesResponse" />
+  <xs:element name="addDoubleNodeAttribute" type="tns:addDoubleNodeAttribute" />
+  <xs:element name="addDoubleNodeAttributeResponse" type="tns:addDoubleNodeAttributeResponse" />
+  <xs:element name="addDoubleNodeAttributes" type="tns:addDoubleNodeAttributes" />
+  <xs:element name="addDoubleNodeAttributesResponse" type="tns:addDoubleNodeAttributesResponse" />
+  <xs:element name="addEdgeAttribute" type="tns:addEdgeAttribute" />
+  <xs:element name="addEdgeAttributeResponse" type="tns:addEdgeAttributeResponse" />
+  <xs:element name="addEdgeAttributes" type="tns:addEdgeAttributes" />
+  <xs:element name="addEdgeAttributesResponse" type="tns:addEdgeAttributesResponse" />
+  <xs:element name="addIntegerEdgeAttribute" type="tns:addIntegerEdgeAttribute" />
+  <xs:element name="addIntegerEdgeAttributeResponse" type="tns:addIntegerEdgeAttributeResponse" />
+  <xs:element name="addIntegerEdgeAttributes" type="tns:addIntegerEdgeAttributes" />
+  <xs:element name="addIntegerEdgeAttributesResponse" type="tns:addIntegerEdgeAttributesResponse" />
+  <xs:element name="addIntegerNetworkAttribute" type="tns:addIntegerNetworkAttribute" />
+  <xs:element name="addIntegerNetworkAttributeResponse" type="tns:addIntegerNetworkAttributeResponse" />
+  <xs:element name="addIntegerNetworkAttributes" type="tns:addIntegerNetworkAttributes" />
+  <xs:element name="addIntegerNetworkAttributesResponse" type="tns:addIntegerNetworkAttributesResponse" />
+  <xs:element name="addIntegerNodeAttribute" type="tns:addIntegerNodeAttribute" />
+  <xs:element name="addIntegerNodeAttributeResponse" type="tns:addIntegerNodeAttributeResponse" />
+  <xs:element name="addIntegerNodeAttributes" type="tns:addIntegerNodeAttributes" />
+  <xs:element name="addIntegerNodeAttributesResponse" type="tns:addIntegerNodeAttributesResponse" />
+  <xs:element name="addNetworkAttribute" type="tns:addNetworkAttribute" />
+  <xs:element name="addNetworkAttributeResponse" type="tns:addNetworkAttributeResponse" />
+  <xs:element name="addNetworkAttributes" type="tns:addNetworkAttributes" />
+  <xs:element name="addNetworkAttributesResponse" type="tns:addNetworkAttributesResponse" />
+  <xs:element name="addNodeAttribute" type="tns:addNodeAttribute" />
+  <xs:element name="addNodeAttributeResponse" type="tns:addNodeAttributeResponse" />
+  <xs:element name="addNodesToCurrentNetwork" type="tns:addNodesToCurrentNetwork" />
+  <xs:element name="addNodesToCurrentNetworkResponse" type="tns:addNodesToCurrentNetworkResponse" />
+  <xs:element name="addNodesToNetwork" type="tns:addNodesToNetwork" />
+  <xs:element name="addNodesToNetworkResponse" type="tns:addNodesToNetworkResponse" />
+  <xs:element name="addStringEdgeAttribute" type="tns:addStringEdgeAttribute" />
+  <xs:element name="addStringEdgeAttributeResponse" type="tns:addStringEdgeAttributeResponse" />
+  <xs:element name="addStringEdgeAttributes" type="tns:addStringEdgeAttributes" />
+  <xs:element name="addStringEdgeAttributesResponse" type="tns:addStringEdgeAttributesResponse" />
+  <xs:element name="addStringNetworkAttribute" type="tns:addStringNetworkAttribute" />
+  <xs:element name="addStringNetworkAttributeResponse" type="tns:addStringNetworkAttributeResponse" />
+  <xs:element name="addStringNetworkAttributes" type="tns:addStringNetworkAttributes" />
+  <xs:element name="addStringNetworkAttributesResponse" type="tns:addStringNetworkAttributesResponse" />
+  <xs:element name="addStringNodeAttribute" type="tns:addStringNodeAttribute" />
+  <xs:element name="addStringNodeAttributeResponse" type="tns:addStringNodeAttributeResponse" />
+  <xs:element name="addStringNodeAttributes" type="tns:addStringNodeAttributes" />
+  <xs:element name="addStringNodeAttributesResponse" type="tns:addStringNodeAttributesResponse" />
+  <xs:element name="arrowMapper" type="tns:arrowMapper" />
+  <xs:element name="arrowMapperResponse" type="tns:arrowMapperResponse" />
+  <xs:element name="clearEdgeSelection" type="tns:clearEdgeSelection" />
+  <xs:element name="clearEdgeSelectionInCurrent" type="tns:clearEdgeSelectionInCurrent" />
+  <xs:element name="clearEdgeSelectionInCurrentResponse" type="tns:clearEdgeSelectionInCurrentResponse" />
+  <xs:element name="clearEdgeSelectionResponse" type="tns:clearEdgeSelectionResponse" />
+  <xs:element name="clearNodeSelection" type="tns:clearNodeSelection" />
+  <xs:element name="clearNodeSelectionInCurrent" type="tns:clearNodeSelectionInCurrent" />
+  <xs:element name="clearNodeSelectionInCurrentResponse" type="tns:clearNodeSelectionInCurrentResponse" />
+  <xs:element name="clearNodeSelectionResponse" type="tns:clearNodeSelectionResponse" />
+  <xs:element name="clearSelection" type="tns:clearSelection" />
+  <xs:element name="clearSelectionInCurrent" type="tns:clearSelectionInCurrent" />
+  <xs:element name="clearSelectionInCurrentResponse" type="tns:clearSelectionInCurrentResponse" />
+  <xs:element name="clearSelectionResponse" type="tns:clearSelectionResponse" />
+  <xs:element name="clearStatusBarMessage" type="tns:clearStatusBarMessage" />
+  <xs:element name="clearStatusBarMessageResponse" type="tns:clearStatusBarMessageResponse" />
+  <xs:element name="copyVisualStyle" type="tns:copyVisualStyle" />
+  <xs:element name="copyVisualStyleResponse" type="tns:copyVisualStyleResponse" />
+  <xs:element name="countAllEdges" type="tns:countAllEdges" />
+  <xs:element name="countAllEdgesResponse" type="tns:countAllEdgesResponse" />
+  <xs:element name="countAllNodes" type="tns:countAllNodes" />
+  <xs:element name="countAllNodesResponse" type="tns:countAllNodesResponse" />
+  <xs:element name="countEdges" type="tns:countEdges" />
+  <xs:element name="countEdgesInCurrent" type="tns:countEdgesInCurrent" />
+  <xs:element name="countEdgesInCurrentResponse" type="tns:countEdgesInCurrentResponse" />
+  <xs:element name="countEdgesResponse" type="tns:countEdgesResponse" />
+  <xs:element name="countNodes" type="tns:countNodes" />
+  <xs:element name="countNodesInCurrent" type="tns:countNodesInCurrent" />
+  <xs:element name="countNodesInCurrentResponse" type="tns:countNodesInCurrentResponse" />
+  <xs:element name="countNodesResponse" type="tns:countNodesResponse" />
+  <xs:element name="countSelectedEdges" type="tns:countSelectedEdges" />
+  <xs:element name="countSelectedEdgesInCurrent" type="tns:countSelectedEdgesInCurrent" />
+  <xs:element name="countSelectedEdgesInCurrentResponse" type="tns:countSelectedEdgesInCurrentResponse" />
+  <xs:element name="countSelectedEdgesResponse" type="tns:countSelectedEdgesResponse" />
+  <xs:element name="countSelectedNodes" type="tns:countSelectedNodes" />
+  <xs:element name="countSelectedNodesInCurrent" type="tns:countSelectedNodesInCurrent" />
+  <xs:element name="countSelectedNodesInCurrentResponse" type="tns:countSelectedNodesInCurrentResponse" />
+  <xs:element name="countSelectedNodesResponse" type="tns:countSelectedNodesResponse" />
+  <xs:element name="createContinuousNodeColorVisualStyle" type="tns:createContinuousNodeColorVisualStyle" />
+  <xs:element name="createContinuousNodeColorVisualStyleResponse" type="tns:createContinuousNodeColorVisualStyleResponse" />
+  <xs:element name="createContinuousNodeVisualStyle" type="tns:createContinuousNodeVisualStyle" />
+  <xs:element name="createContinuousNodeVisualStyleResponse" type="tns:createContinuousNodeVisualStyleResponse" />
+  <xs:element name="createEdge" type="tns:createEdge" />
+  <xs:element name="createEdgeInCurrent" type="tns:createEdgeInCurrent" />
+  <xs:element name="createEdgeInCurrentResponse" type="tns:createEdgeInCurrentResponse" />
+  <xs:element name="createEdgeResponse" type="tns:createEdgeResponse" />
+  <xs:element name="createEdges" type="tns:createEdges" />
+  <xs:element name="createEdgesFromVector" type="tns:createEdgesFromVector" />
+  <xs:element name="createEdgesFromVectorResponse" type="tns:createEdgesFromVectorResponse" />
+  <xs:element name="createEdgesInCurrent" type="tns:createEdgesInCurrent" />
+  <xs:element name="createEdgesInCurrentResponse" type="tns:createEdgesInCurrentResponse" />
+  <xs:element name="createEdgesResponse" type="tns:createEdgesResponse" />
+  <xs:element name="createNetwork" type="tns:createNetwork" />
+  <xs:element name="createNetworkResponse" type="tns:createNetworkResponse" />
+  <xs:element name="createNetworkView" type="tns:createNetworkView" />
+  <xs:element name="createNetworkViewResponse" type="tns:createNetworkViewResponse" />
+  <xs:element name="createNode" type="tns:createNode" />
+  <xs:element name="createNodeInCurrent" type="tns:createNodeInCurrent" />
+  <xs:element name="createNodeInCurrentResponse" type="tns:createNodeInCurrentResponse" />
+  <xs:element name="createNodeResponse" type="tns:createNodeResponse" />
+  <xs:element name="createNodes" type="tns:createNodes" />
+  <xs:element name="createNodesInCurrent" type="tns:createNodesInCurrent" />
+  <xs:element name="createNodesInCurrentResponse" type="tns:createNodesInCurrentResponse" />
+  <xs:element name="createNodesResponse" type="tns:createNodesResponse" />
+  <xs:element name="deleteEdgeAttribute" type="tns:deleteEdgeAttribute" />
+  <xs:element name="deleteEdgeAttributeInAll" type="tns:deleteEdgeAttributeInAll" />
+  <xs:element name="deleteEdgeAttributeInAllResponse" type="tns:deleteEdgeAttributeInAllResponse" />
+  <xs:element name="deleteEdgeAttributeResponse" type="tns:deleteEdgeAttributeResponse" />
+  <xs:element name="deleteNetworkAttribute" type="tns:deleteNetworkAttribute" />
+  <xs:element name="deleteNetworkAttributeInAll" type="tns:deleteNetworkAttributeInAll" />
+  <xs:element name="deleteNetworkAttributeInAllResponse" type="tns:deleteNetworkAttributeInAllResponse" />
+  <xs:element name="deleteNetworkAttributeResponse" type="tns:deleteNetworkAttributeResponse" />
+  <xs:element name="deleteNodeAttribute" type="tns:deleteNodeAttribute" />
+  <xs:element name="deleteNodeAttributeInAll" type="tns:deleteNodeAttributeInAll" />
+  <xs:element name="deleteNodeAttributeInAllResponse" type="tns:deleteNodeAttributeInAllResponse" />
+  <xs:element name="deleteNodeAttributeResponse" type="tns:deleteNodeAttributeResponse" />
+  <xs:element name="deleteNodeByPassAttr" type="tns:deleteNodeByPassAttr" />
+  <xs:element name="deleteNodeByPassAttrResponse" type="tns:deleteNodeByPassAttrResponse" />
+  <xs:element name="deselectNode" type="tns:deselectNode" />
+  <xs:element name="deselectNodeResponse" type="tns:deselectNodeResponse" />
+  <xs:element name="destroyNetwork" type="tns:destroyNetwork" />
+  <xs:element name="destroyNetworkResponse" type="tns:destroyNetworkResponse" />
+  <xs:element name="discreteMapper" type="tns:discreteMapper" />
+  <xs:element name="discreteMapperResponse" type="tns:discreteMapperResponse" />
+  <xs:element name="dockPanel" type="tns:dockPanel" />
+  <xs:element name="dockPanelResponse" type="tns:dockPanelResponse" />
+  <xs:element name="exportCurrentView" type="tns:exportCurrentView" />
+  <xs:element name="exportCurrentViewResponse" type="tns:exportCurrentViewResponse" />
+  <xs:element name="exportView" type="tns:exportView" />
+  <xs:element name="exportViewResponse" type="tns:exportViewResponse" />
+  <xs:element name="floatPanel" type="tns:floatPanel" />
+  <xs:element name="floatPanelResponse" type="tns:floatPanelResponse" />
+  <xs:element name="getAdjacentEdges" type="tns:getAdjacentEdges" />
+  <xs:element name="getAdjacentEdgesResponse" type="tns:getAdjacentEdgesResponse" />
+  <xs:element name="getAllEdges" type="tns:getAllEdges" />
+  <xs:element name="getAllEdgesInCurrent" type="tns:getAllEdgesInCurrent" />
+  <xs:element name="getAllEdgesInCurrentResponse" type="tns:getAllEdgesInCurrentResponse" />
+  <xs:element name="getAllEdgesResponse" type="tns:getAllEdgesResponse" />
+  <xs:element name="getAllNodes" type="tns:getAllNodes" />
+  <xs:element name="getAllNodesResponse" type="tns:getAllNodesResponse" />
+  <xs:element name="getArrowShapeNames" type="tns:getArrowShapeNames" />
+  <xs:element name="getArrowShapeNamesResponse" type="tns:getArrowShapeNamesResponse" />
+  <xs:element name="getConnectedEdgesInCurrent" type="tns:getConnectedEdgesInCurrent" />
+  <xs:element name="getConnectedEdgesInCurrentResponse" type="tns:getConnectedEdgesInCurrentResponse" />
+  <xs:element name="getCurrentNetworkIndex" type="tns:getCurrentNetworkIndex" />
+  <xs:element name="getCurrentNetworkIndexResponse" type="tns:getCurrentNetworkIndexResponse" />
+  <xs:element name="getCurrentNetworkTitle" type="tns:getCurrentNetworkTitle" />
+  <xs:element name="getCurrentNetworkTitleResponse" type="tns:getCurrentNetworkTitleResponse" />
+  <xs:element name="getCurrentVisualStyle" type="tns:getCurrentVisualStyle" />
+  <xs:element name="getCurrentVisualStyleResponse" type="tns:getCurrentVisualStyleResponse" />
+  <xs:element name="getEdgeAttribute" type="tns:getEdgeAttribute" />
+  <xs:element name="getEdgeAttributeList" type="tns:getEdgeAttributeList" />
+  <xs:element name="getEdgeAttributeListResponse" type="tns:getEdgeAttributeListResponse" />
+  <xs:element name="getEdgeAttributeNames" type="tns:getEdgeAttributeNames" />
+  <xs:element name="getEdgeAttributeNamesResponse" type="tns:getEdgeAttributeNamesResponse" />
+  <xs:element name="getEdgeAttributeResponse" type="tns:getEdgeAttributeResponse" />
+  <xs:element name="getEdgeAttributeType" type="tns:getEdgeAttributeType" />
+  <xs:element name="getEdgeAttributeTypeResponse" type="tns:getEdgeAttributeTypeResponse" />
+  <xs:element name="getEdgesAttributes" type="tns:getEdgesAttributes" />
+  <xs:element name="getEdgesAttributesResponse" type="tns:getEdgesAttributesResponse" />
+  <xs:element name="getEdgesFromNodePair" type="tns:getEdgesFromNodePair" />
+  <xs:element name="getEdgesFromNodePairResponse" type="tns:getEdgesFromNodePairResponse" />
+  <xs:element name="getInputArgMismatchCode" type="tns:getInputArgMismatchCode" />
+  <xs:element name="getInputArgMismatchCodeResponse" type="tns:getInputArgMismatchCodeResponse" />
+  <xs:element name="getLayoutNames" type="tns:getLayoutNames" />
+  <xs:element name="getLayoutNamesResponse" type="tns:getLayoutNamesResponse" />
+  <xs:element name="getLineStyleNames" type="tns:getLineStyleNames" />
+  <xs:element name="getLineStyleNamesResponse" type="tns:getLineStyleNamesResponse" />
+  <xs:element name="getNetworkAttributeList" type="tns:getNetworkAttributeList" />
+  <xs:element name="getNetworkAttributeListResponse" type="tns:getNetworkAttributeListResponse" />
+  <xs:element name="getNetworkAttributeNames" type="tns:getNetworkAttributeNames" />
+  <xs:element name="getNetworkAttributeNamesResponse" type="tns:getNetworkAttributeNamesResponse" />
+  <xs:element name="getNetworkCount" type="tns:getNetworkCount" />
+  <xs:element name="getNetworkCountResponse" type="tns:getNetworkCountResponse" />
+  <xs:element name="getNetworkID" type="tns:getNetworkID" />
+  <xs:element name="getNetworkIDResponse" type="tns:getNetworkIDResponse" />
+  <xs:element name="getNetworkTitle" type="tns:getNetworkTitle" />
+  <xs:element name="getNetworkTitleResponse" type="tns:getNetworkTitleResponse" />
+  <xs:element name="getNetworksAttributes" type="tns:getNetworksAttributes" />
+  <xs:element name="getNetworksAttributesResponse" type="tns:getNetworksAttributesResponse" />
+  <xs:element name="getNodeAttribute" type="tns:getNodeAttribute" />
+  <xs:element name="getNodeAttributeList" type="tns:getNodeAttributeList" />
+  <xs:element name="getNodeAttributeListResponse" type="tns:getNodeAttributeListResponse" />
+  <xs:element name="getNodeAttributeNames" type="tns:getNodeAttributeNames" />
+  <xs:element name="getNodeAttributeNamesResponse" type="tns:getNodeAttributeNamesResponse" />
+  <xs:element name="getNodeAttributeResponse" type="tns:getNodeAttributeResponse" />
+  <xs:element name="getNodeAttributeType" type="tns:getNodeAttributeType" />
+  <xs:element name="getNodeAttributeTypeResponse" type="tns:getNodeAttributeTypeResponse" />
+  <xs:element name="getNodeColorPropertyNames" type="tns:getNodeColorPropertyNames" />
+  <xs:element name="getNodeColorPropertyNamesResponse" type="tns:getNodeColorPropertyNamesResponse" />
+  <xs:element name="getNodeNeighbors" type="tns:getNodeNeighbors" />
+  <xs:element name="getNodeNeighborsInCurrent" type="tns:getNodeNeighborsInCurrent" />
+  <xs:element name="getNodeNeighborsInCurrentResponse" type="tns:getNodeNeighborsInCurrentResponse" />
+  <xs:element name="getNodeNeighborsResponse" type="tns:getNodeNeighborsResponse" />
+  <xs:element name="getNodeShapeNames" type="tns:getNodeShapeNames" />
+  <xs:element name="getNodeShapeNamesResponse" type="tns:getNodeShapeNamesResponse" />
+  <xs:element name="getNodes" type="tns:getNodes" />
+  <xs:element name="getNodesAttributes" type="tns:getNodesAttributes" />
+  <xs:element name="getNodesAttributesResponse" type="tns:getNodesAttributesResponse" />
+  <xs:element name="getNodesByStringAttr" type="tns:getNodesByStringAttr" />
+  <xs:element name="getNodesByStringAttrResponse" type="tns:getNodesByStringAttrResponse" />
+  <xs:element name="getNodesIDs" type="tns:getNodesIDs" />
+  <xs:element name="getNodesIDsResponse" type="tns:getNodesIDsResponse" />
+  <xs:element name="getNodesInCurrent" type="tns:getNodesInCurrent" />
+  <xs:element name="getNodesInCurrentResponse" type="tns:getNodesInCurrentResponse" />
+  <xs:element name="getNodesNeighbors" type="tns:getNodesNeighbors" />
+  <xs:element name="getNodesNeighborsResponse" type="tns:getNodesNeighborsResponse" />
+  <xs:element name="getNodesResponse" type="tns:getNodesResponse" />
+  <xs:element name="getNotExistsCode" type="tns:getNotExistsCode" />
+  <xs:element name="getNotExistsCodeResponse" type="tns:getNotExistsCodeResponse" />
+  <xs:element name="getNotFoundCode" type="tns:getNotFoundCode" />
+  <xs:element name="getNotFoundCodeResponse" type="tns:getNotFoundCodeResponse" />
+  <xs:element name="getSelectedEdges" type="tns:getSelectedEdges" />
+  <xs:element name="getSelectedEdgesInCurrent" type="tns:getSelectedEdgesInCurrent" />
+  <xs:element name="getSelectedEdgesInCurrentResponse" type="tns:getSelectedEdgesInCurrentResponse" />
+  <xs:element name="getSelectedEdgesResponse" type="tns:getSelectedEdgesResponse" />
+  <xs:element name="getSelectedNodes" type="tns:getSelectedNodes" />
+  <xs:element name="getSelectedNodesInCurrent" type="tns:getSelectedNodesInCurrent" />
+  <xs:element name="getSelectedNodesInCurrentResponse" type="tns:getSelectedNodesInCurrentResponse" />
+  <xs:element name="getSelectedNodesResponse" type="tns:getSelectedNodesResponse" />
+  <xs:element name="getShapeNames" type="tns:getShapeNames" />
+  <xs:element name="getShapeNamesResponse" type="tns:getShapeNamesResponse" />
+  <xs:element name="getTotalNodeCount" type="tns:getTotalNodeCount" />
+  <xs:element name="getTotalNodeCountResponse" type="tns:getTotalNodeCountResponse" />
+  <xs:element name="getUniqueNodeAttributes" type="tns:getUniqueNodeAttributes" />
+  <xs:element name="getUniqueNodeAttributesResponse" type="tns:getUniqueNodeAttributesResponse" />
+  <xs:element name="getVisualStyleModifiables" type="tns:getVisualStyleModifiables" />
+  <xs:element name="getVisualStyleModifiablesResponse" type="tns:getVisualStyleModifiablesResponse" />
+  <xs:element name="getVisualStyleNames" type="tns:getVisualStyleNames" />
+  <xs:element name="getVisualStyleNamesResponse" type="tns:getVisualStyleNamesResponse" />
+  <xs:element name="getWrongTypeCode" type="tns:getWrongTypeCode" />
+  <xs:element name="getWrongTypeCodeResponse" type="tns:getWrongTypeCodeResponse" />
+  <xs:element name="hasCurrentNetwork" type="tns:hasCurrentNetwork" />
+  <xs:element name="hasCurrentNetworkResponse" type="tns:hasCurrentNetworkResponse" />
+  <xs:element name="hasEdgeAttribute" type="tns:hasEdgeAttribute" />
+  <xs:element name="hasEdgeAttributeResponse" type="tns:hasEdgeAttributeResponse" />
+  <xs:element name="hasNetworkAttribute" type="tns:hasNetworkAttribute" />
+  <xs:element name="hasNetworkAttributeResponse" type="tns:hasNetworkAttributeResponse" />
+  <xs:element name="hasNodeAttribute" type="tns:hasNodeAttribute" />
+  <xs:element name="hasNodeAttributeResponse" type="tns:hasNodeAttributeResponse" />
+  <xs:element name="hideAll" type="tns:hideAll" />
+  <xs:element name="hideAllEdges" type="tns:hideAllEdges" />
+  <xs:element name="hideAllEdgesResponse" type="tns:hideAllEdgesResponse" />
+  <xs:element name="hideAllInCurrent" type="tns:hideAllInCurrent" />
+  <xs:element name="hideAllInCurrentResponse" type="tns:hideAllInCurrentResponse" />
+  <xs:element name="hideAllNodes" type="tns:hideAllNodes" />
+  <xs:element name="hideAllNodesResponse" type="tns:hideAllNodesResponse" />
+  <xs:element name="hideAllResponse" type="tns:hideAllResponse" />
+  <xs:element name="hideEdge" type="tns:hideEdge" />
+  <xs:element name="hideEdgeResponse" type="tns:hideEdgeResponse" />
+  <xs:element name="hideNode" type="tns:hideNode" />
+  <xs:element name="hideNodeResponse" type="tns:hideNodeResponse" />
+  <xs:element name="hidePanel" type="tns:hidePanel" />
+  <xs:element name="hidePanelResponse" type="tns:hidePanelResponse" />
+  <xs:element name="hideSelectedEdges" type="tns:hideSelectedEdges" />
+  <xs:element name="hideSelectedEdgesResponse" type="tns:hideSelectedEdgesResponse" />
+  <xs:element name="hideSelectedNodes" type="tns:hideSelectedNodes" />
+  <xs:element name="hideSelectedNodesInCurrent" type="tns:hideSelectedNodesInCurrent" />
+  <xs:element name="hideSelectedNodesInCurrentResponse" type="tns:hideSelectedNodesInCurrentResponse" />
+  <xs:element name="hideSelectedNodesResponse" type="tns:hideSelectedNodesResponse" />
+  <xs:element name="isNodeSelected" type="tns:isNodeSelected" />
+  <xs:element name="isNodeSelectedInCurrent" type="tns:isNodeSelectedInCurrent" />
+  <xs:element name="isNodeSelectedInCurrentResponse" type="tns:isNodeSelectedInCurrentResponse" />
+  <xs:element name="isNodeSelectedResponse" type="tns:isNodeSelectedResponse" />
+  <xs:element name="networkExists" type="tns:networkExists" />
+  <xs:element name="networkExistsResponse" type="tns:networkExistsResponse" />
+  <xs:element name="nodeExists" type="tns:nodeExists" />
+  <xs:element name="nodeExistsResponse" type="tns:nodeExistsResponse" />
+  <xs:element name="overrideNodeVizAttribute" type="tns:overrideNodeVizAttribute" />
+  <xs:element name="overrideNodeVizAttributeResponse" type="tns:overrideNodeVizAttributeResponse" />
+  <xs:element name="overrideNodesVizAttribute" type="tns:overrideNodesVizAttribute" />
+  <xs:element name="overrideNodesVizAttributeResponse" type="tns:overrideNodesVizAttributeResponse" />
+  <xs:element name="passthroughMapper" type="tns:passthroughMapper" />
+  <xs:element name="passthroughMapperResponse" type="tns:passthroughMapperResponse" />
+  <xs:element name="performDefaultLayout" type="tns:performDefaultLayout" />
+  <xs:element name="performDefaultLayoutOnCurrent" type="tns:performDefaultLayoutOnCurrent" />
+  <xs:element name="performDefaultLayoutOnCurrentResponse" type="tns:performDefaultLayoutOnCurrentResponse" />
+  <xs:element name="performDefaultLayoutResponse" type="tns:performDefaultLayoutResponse" />
+  <xs:element name="performLayout" type="tns:performLayout" />
+  <xs:element name="performLayoutOnCurrent" type="tns:performLayoutOnCurrent" />
+  <xs:element name="performLayoutOnCurrentResponse" type="tns:performLayoutOnCurrentResponse" />
+  <xs:element name="performLayoutResponse" type="tns:performLayoutResponse" />
+  <xs:element name="redraw" type="tns:redraw" />
+  <xs:element name="redrawCurrent" type="tns:redrawCurrent" />
+  <xs:element name="redrawCurrentResponse" type="tns:redrawCurrentResponse" />
+  <xs:element name="redrawResponse" type="tns:redrawResponse" />
+  <xs:element name="removeEdge" type="tns:removeEdge" />
+  <xs:element name="removeEdgeInCurrent" type="tns:removeEdgeInCurrent" />
+  <xs:element name="removeEdgeInCurrentResponse" type="tns:removeEdgeInCurrentResponse" />
+  <xs:element name="removeEdgeResponse" type="tns:removeEdgeResponse" />
+  <xs:element name="removeNode" type="tns:removeNode" />
+  <xs:element name="removeNodeInCurrent" type="tns:removeNodeInCurrent" />
+  <xs:element name="removeNodeInCurrentResponse" type="tns:removeNodeInCurrentResponse" />
+  <xs:element name="removeNodeResponse" type="tns:removeNodeResponse" />
+  <xs:element name="selectNode" type="tns:selectNode" />
+  <xs:element name="selectNodeInCurrent" type="tns:selectNodeInCurrent" />
+  <xs:element name="selectNodeInCurrentResponse" type="tns:selectNodeInCurrentResponse" />
+  <xs:element name="selectNodeResponse" type="tns:selectNodeResponse" />
+  <xs:element name="selectNodes" type="tns:selectNodes" />
+  <xs:element name="selectNodesInCurrent" type="tns:selectNodesInCurrent" />
+  <xs:element name="selectNodesInCurrentResponse" type="tns:selectNodesInCurrentResponse" />
+  <xs:element name="selectNodesResponse" type="tns:selectNodesResponse" />
+  <xs:element name="setContinuousEdgeColorRule" type="tns:setContinuousEdgeColorRule" />
+  <xs:element name="setContinuousEdgeColorRuleResponse" type="tns:setContinuousEdgeColorRuleResponse" />
+  <xs:element name="setCurrentNetwork" type="tns:setCurrentNetwork" />
+  <xs:element name="setCurrentNetworkResponse" type="tns:setCurrentNetworkResponse" />
+  <xs:element name="setCurrentNetworkTitle" type="tns:setCurrentNetworkTitle" />
+  <xs:element name="setCurrentNetworkTitleResponse" type="tns:setCurrentNetworkTitleResponse" />
+  <xs:element name="setDiscreteNodeMapper" type="tns:setDiscreteNodeMapper" />
+  <xs:element name="setDiscreteNodeMapperResponse" type="tns:setDiscreteNodeMapperResponse" />
+  <xs:element name="setDiscreteNodeShapeMapper" type="tns:setDiscreteNodeShapeMapper" />
+  <xs:element name="setDiscreteNodeShapeMapperResponse" type="tns:setDiscreteNodeShapeMapperResponse" />
+  <xs:element name="setEdgeColorRule" type="tns:setEdgeColorRule" />
+  <xs:element name="setEdgeColorRuleResponse" type="tns:setEdgeColorRuleResponse" />
+  <xs:element name="setEdgeLineStyleRule" type="tns:setEdgeLineStyleRule" />
+  <xs:element name="setEdgeLineStyleRuleResponse" type="tns:setEdgeLineStyleRuleResponse" />
+  <xs:element name="setEdgeProperty" type="tns:setEdgeProperty" />
+  <xs:element name="setEdgePropertyResponse" type="tns:setEdgePropertyResponse" />
+  <xs:element name="setEdgeSourceArrowRule" type="tns:setEdgeSourceArrowRule" />
+  <xs:element name="setEdgeSourceArrowRuleResponse" type="tns:setEdgeSourceArrowRuleResponse" />
+  <xs:element name="setEdgeTargetArrowRule" type="tns:setEdgeTargetArrowRule" />
+  <xs:element name="setEdgeTargetArrowRuleResponse" type="tns:setEdgeTargetArrowRuleResponse" />
+  <xs:element name="setNetworkTitle" type="tns:setNetworkTitle" />
+  <xs:element name="setNetworkTitleResponse" type="tns:setNetworkTitleResponse" />
+  <xs:element name="setNodeBorderColor" type="tns:setNodeBorderColor" />
+  <xs:element name="setNodeBorderColorResponse" type="tns:setNodeBorderColorResponse" />
+  <xs:element name="setNodeFillColor" type="tns:setNodeFillColor" />
+  <xs:element name="setNodeFillColorResponse" type="tns:setNodeFillColorResponse" />
+  <xs:element name="setNodeLabel" type="tns:setNodeLabel" />
+  <xs:element name="setNodeLabelColor" type="tns:setNodeLabelColor" />
+  <xs:element name="setNodeLabelColorResponse" type="tns:setNodeLabelColorResponse" />
+  <xs:element name="setNodeLabelResponse" type="tns:setNodeLabelResponse" />
+  <xs:element name="setNodePosition" type="tns:setNodePosition" />
+  <xs:element name="setNodePositionResponse" type="tns:setNodePositionResponse" />
+  <xs:element name="setNodeProperty" type="tns:setNodeProperty" />
+  <xs:element name="setNodePropertyResponse" type="tns:setNodePropertyResponse" />
+  <xs:element name="setNodeShape" type="tns:setNodeShape" />
+  <xs:element name="setNodeShapeInCurrent" type="tns:setNodeShapeInCurrent" />
+  <xs:element name="setNodeShapeInCurrentResponse" type="tns:setNodeShapeInCurrentResponse" />
+  <xs:element name="setNodeShapeResponse" type="tns:setNodeShapeResponse" />
+  <xs:element name="setNodeShapeRule" type="tns:setNodeShapeRule" />
+  <xs:element name="setNodeShapeRuleResponse" type="tns:setNodeShapeRuleResponse" />
+  <xs:element name="setNodesPositions" type="tns:setNodesPositions" />
+  <xs:element name="setNodesPositionsResponse" type="tns:setNodesPositionsResponse" />
+  <xs:element name="setSelectedNodes" type="tns:setSelectedNodes" />
+  <xs:element name="setSelectedNodesInCurrent" type="tns:setSelectedNodesInCurrent" />
+  <xs:element name="setSelectedNodesInCurrentResponse" type="tns:setSelectedNodesInCurrentResponse" />
+  <xs:element name="setSelectedNodesResponse" type="tns:setSelectedNodesResponse" />
+  <xs:element name="setStatusBarMessage" type="tns:setStatusBarMessage" />
+  <xs:element name="setStatusBarMessageResponse" type="tns:setStatusBarMessageResponse" />
+  <xs:element name="setVisualStyle" type="tns:setVisualStyle" />
+  <xs:element name="setVisualStyleResponse" type="tns:setVisualStyleResponse" />
+  <xs:element name="showMessage" type="tns:showMessage" />
+  <xs:element name="showMessageResponse" type="tns:showMessageResponse" />
+  <xs:element name="test" type="tns:test" />
+  <xs:element name="testResponse" type="tns:testResponse" />
+  <xs:element name="trait_names" type="tns:trait_names" />
+  <xs:element name="trait_namesResponse" type="tns:trait_namesResponse" />
+  <xs:element name="unhideAllEdges" type="tns:unhideAllEdges" />
+  <xs:element name="unhideAllEdgesInCurrent" type="tns:unhideAllEdgesInCurrent" />
+  <xs:element name="unhideAllEdgesInCurrentResponse" type="tns:unhideAllEdgesInCurrentResponse" />
+  <xs:element name="unhideAllEdgesResponse" type="tns:unhideAllEdgesResponse" />
+  <xs:element name="unhideAllInCurrent" type="tns:unhideAllInCurrent" />
+  <xs:element name="unhideAllInCurrentResponse" type="tns:unhideAllInCurrentResponse" />
+  <xs:element name="unhideAllNodes" type="tns:unhideAllNodes" />
+  <xs:element name="unhideAllNodesInCurrent" type="tns:unhideAllNodesInCurrent" />
+  <xs:element name="unhideAllNodesInCurrentResponse" type="tns:unhideAllNodesInCurrentResponse" />
+  <xs:element name="unhideAllNodesResponse" type="tns:unhideAllNodesResponse" />
+  <xs:element name="unhideNode" type="tns:unhideNode" />
+  <xs:element name="unhideNodeInCurrent" type="tns:unhideNodeInCurrent" />
+  <xs:element name="unhideNodeInCurrentResponse" type="tns:unhideNodeInCurrentResponse" />
+  <xs:element name="unhideNodeResponse" type="tns:unhideNodeResponse" />
+  <xs:complexType name="setNodeLabel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:anyType" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeLabelResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="XmlRpcException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeShapeRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg4" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeShapeRuleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideSelectedEdges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideSelectedEdgesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNetworkAttributeNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getNetworkAttributeNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllEdges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllEdgesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerNetworkAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerNetworkAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countAllEdges">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="countAllEdgesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNodeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="nodeID" type="xs:string" />
+      <xs:element minOccurs="0" name="value" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNodeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNetwork">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNetworkResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearEdgeSelection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearEdgeSelectionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeFillColor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:anyType" />
+      <xs:element name="arg2" type="xs:int" />
+      <xs:element name="arg3" type="xs:int" />
+      <xs:element name="arg4" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeFillColorResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideNodeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setCurrentNetwork">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setCurrentNetworkResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeAttributeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setDiscreteNodeMapper">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="networkID" type="xs:string" />
+      <xs:element minOccurs="0" name="styleName" type="xs:string" />
+      <xs:element minOccurs="0" name="styleProperty" type="xs:string" />
+      <xs:element minOccurs="0" name="paramName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mappingKeys" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="mappingValues" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setDiscreteNodeMapperResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEdge">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element name="arg4" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEdgeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAdjacentEdges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAdjacentEdgesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanNodeAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanNodeAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteNodeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteNodeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNetworkView">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNetworkViewResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNotFoundCode">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getNotFoundCodeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanNetworkAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanNetworkAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getConnectedEdgesInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="networkID" type="xs:string" />
+      <xs:element minOccurs="0" name="nodeID1" type="xs:string" />
+      <xs:element minOccurs="0" name="nodeID2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getConnectedEdgesInCurrentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="performDefaultLayoutOnCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="performDefaultLayoutOnCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getNodesInCurrentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCurrentNetworkIndex">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getCurrentNetworkIndexResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEdges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="networkID" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="from" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="to" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="type" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="directed" type="xs:boolean" />
+      <xs:element name="forgive" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEdgesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerEdgeAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerEdgeAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setSelectedNodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setSelectedNodesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringNetworkAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringNetworkAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getInputArgMismatchCode">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getInputArgMismatchCodeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgeAttributeNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getEdgeAttributeNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideAllEdgesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="unhideAllEdgesInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNetworkAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="networkIDs" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="values" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNetworkAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNotExistsCode">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getNotExistsCodeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNetworkAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="networkID" type="xs:string" />
+      <xs:element minOccurs="0" name="value" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNetworkAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addEdgeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" name="edgeID" type="xs:string" />
+      <xs:element minOccurs="0" name="value" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addEdgeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLayoutNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLayoutNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllEdgesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getAllEdgesInCurrentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeShapeNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getNodeShapeNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeAttributeList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeAttributeListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemAttribute" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="value" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="selectNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="selectNodeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeEdge">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeEdgeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="performLayout">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="networkID" type="xs:string" />
+      <xs:element minOccurs="0" name="layoutName" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="performLayoutResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEdgeSourceArrowRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg4" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEdgeSourceArrowRuleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isNodeSelectedInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isNodeSelectedInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getWrongTypeCode">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getWrongTypeCodeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteNetworkAttributeInAll">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteNetworkAttributeInAllResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgesFromNodePair">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgesFromNodePairResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="selectNodeInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="selectNodeInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeShapeInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="nodeIDs" type="xs:string" />
+      <xs:element minOccurs="0" name="shape" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeShapeInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEdgeColorRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg4" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEdgeColorRuleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeNeighbors">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeNeighborsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNodesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countSelectedNodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countSelectedNodesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createContinuousNodeColorVisualStyle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element name="arg5" type="xs:double" />
+      <xs:element name="arg6" type="xs:double" />
+      <xs:element name="arg7" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createContinuousNodeColorVisualStyleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCurrentVisualStyle">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getCurrentVisualStyleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleNetworkAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleNetworkAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeAttributeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeAttributeTypeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleNodeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleNodeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodesAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodesAttributesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="arrowMapper">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="arrowMapperResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="performLayoutOnCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="performLayoutOnCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNetworksAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNetworksAttributesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringNetworkAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringNetworkAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hasEdgeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hasEdgeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEdgeInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="from" type="xs:string" />
+      <xs:element minOccurs="0" name="to" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element name="directed" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEdgeInCurrentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNetworkTitle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNetworkTitleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanEdgeAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanEdgeAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEdgesInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg3" type="xs:boolean" />
+      <xs:element name="arg4" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEdgesInCurrentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideNodeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEdgeProperty">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEdgePropertyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteNodeAttributeInAll">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteNodeAttributeInAllResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEdgesFromVector">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:anyType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createEdgesFromVectorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeNodeInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeNodeInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideAllNodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideAllNodesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideNodeInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideNodeInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setContinuousEdgeColorRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element name="arg5" type="xs:double" />
+      <xs:element name="arg6" type="xs:double" />
+      <xs:element name="arg7" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setContinuousEdgeColorRuleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteNetworkAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteNetworkAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countEdges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countEdgesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countEdgesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="countEdgesInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanEdgeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanEdgeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getLineStyleNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getLineStyleNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="copyVisualStyle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="copyVisualStyleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countNodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countNodesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringEdgeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringEdgeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="selectNodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="selectNodesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deselectNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deselectNodeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerEdgeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerEdgeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hasNodeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hasNodeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="floatPanel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="floatPanelResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSelectedEdgesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getSelectedEdgesInCurrentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNodesToCurrentNetwork">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:anyType" />
+      <xs:element name="arg1" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNodesToCurrentNetworkResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setVisualStyle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setVisualStyleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodesByStringAttr">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodesByStringAttrResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideEdge">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideEdgeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dockPanel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dockPanelResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeNeighborsInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeNeighborsInCurrentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearNodeSelection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearNodeSelectionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEdgeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEdgeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNetworkAttributeList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNetworkAttributeListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemAttribute" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideSelectedNodesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="hideSelectedNodesInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSelectedNodesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getSelectedNodesInCurrentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEdgeTargetArrowRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg4" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEdgeTargetArrowRuleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEdgeAttributeInAll">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteEdgeAttributeInAllResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringNodeAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringNodeAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerNodeAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerNodeAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="selectNodesInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="selectNodesInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideAllNodesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="unhideAllNodesInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getCurrentNetworkTitle">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getCurrentNetworkTitleResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="_getAttributeNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="_getAttributeNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNodesToNetwork">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:anyType" />
+      <xs:element name="arg2" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addNodesToNetworkResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideAllInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="hideAllInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteNodeByPassAttr">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteNodeByPassAttrResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeLabelColor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:anyType" />
+      <xs:element name="arg2" type="xs:int" />
+      <xs:element name="arg3" type="xs:int" />
+      <xs:element name="arg4" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeLabelColorResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getTotalNodeCount">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getTotalNodeCountResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgeAttributeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSelectedNodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSelectedNodesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodesIDs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodesIDsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNodesInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNodesInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="destroyNetwork">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="destroyNetworkResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setDiscreteNodeShapeMapper">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="networkID" type="xs:string" />
+      <xs:element minOccurs="0" name="styleName" type="xs:string" />
+      <xs:element minOccurs="0" name="attrName" type="xs:string" />
+      <xs:element minOccurs="0" name="defaultShape" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="values" type="xs:anyType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="shapes" type="xs:string" />
+      <xs:element name="overWrite" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setDiscreteNodeShapeMapperResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="passthroughMapper">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="passthroughMapperResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearSelection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearSelectionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNetworkTitle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNetworkTitleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countSelectedEdges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countSelectedEdgesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerNodeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerNodeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSelectedEdges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSelectedEdgesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="exportCurrentView">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="exportCurrentViewResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="networkExists">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="networkExistsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hasCurrentNetwork">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="hasCurrentNetworkResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleNodeAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleNodeAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="test">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="testResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideSelectedNodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideSelectedNodesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearEdgeSelectionInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="clearEdgeSelectionInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="showMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="showMessageResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="nodeExists">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="nodeExistsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setStatusBarMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setStatusBarMessageResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addEdgeAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="type" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="edgeIDs" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="values" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addEdgeAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideAll">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideAllResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getVisualStyleNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getVisualStyleNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanNodeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanNodeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="trait_names">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="trait_namesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getArrowShapeNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getArrowShapeNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanNetworkAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addBooleanNetworkAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setSelectedNodesInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setSelectedNodesInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideAllNodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideAllNodesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleEdgeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleEdgeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="discreteMapper">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" name="arg4" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg5" type="xs:anyType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg6" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="discreteMapperResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="overrideNodeVizAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="overrideNodeVizAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isNodeSelected">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="isNodeSelectedResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="performDefaultLayout">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="performDefaultLayoutResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="redraw">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="redrawResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUniqueNodeAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getUniqueNodeAttributesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeEdgeInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeEdgeInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringNodeAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringNodeAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEdgeLineStyleRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg3" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg4" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setEdgeLineStyleRuleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgeAttributeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgeAttributeTypeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgeAttributeList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgeAttributeListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemAttribute" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeProperty">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodePropertyResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="removeNodeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="exportView">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+      <xs:element minOccurs="0" name="arg3" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="exportViewResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideAllEdges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hideAllEdgesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hidePanel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hidePanelResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countAllNodes">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="countAllNodesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeShape">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:anyType" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeShapeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNetworkID">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getNetworkIDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNodeInCurrent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNodeInCurrentResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeAttributeNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getNodeAttributeNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createNodeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="redrawCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="redrawCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearStatusBarMessage">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="clearStatusBarMessageResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleNetworkAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleNetworkAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getShapeNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getShapeNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllNodes">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getAllNodesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgesAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getEdgesAttributesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="overrideNodesVizAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="overrideNodesVizAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerNetworkAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addIntegerNetworkAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodeColorPropertyNames">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getNodeColorPropertyNamesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setCurrentNetworkTitle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setCurrentNetworkTitleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringEdgeAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addStringEdgeAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideAllEdges">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideAllEdgesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countSelectedEdgesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="countSelectedEdgesInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countNodesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="countNodesInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleEdgeAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="addDoubleEdgeAttributesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNetworkCount">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getNetworkCountResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodesPositions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg3" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodesPositionsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="countSelectedNodesInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="countSelectedNodesInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeBorderColor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:anyType" />
+      <xs:element name="arg2" type="xs:int" />
+      <xs:element name="arg3" type="xs:int" />
+      <xs:element name="arg4" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodeBorderColorResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hasNetworkAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hasNetworkAttributeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="unhideAllInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="unhideAllInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodesNeighbors">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg1" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getNodesNeighborsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearSelectionInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="clearSelectionInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="clearNodeSelectionInCurrent">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="clearNodeSelectionInCurrentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodePosition">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:double" />
+      <xs:element name="arg3" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNodePositionResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createContinuousNodeVisualStyle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" type="xs:anyType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg3" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="createContinuousNodeVisualStyleResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getVisualStyleModifiables">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getVisualStyleModifiablesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

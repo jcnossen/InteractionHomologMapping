@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<dbconn>
+  <host> Insert host name </host>
+  <database>string</database>
+  <password> Insert password </password>
+  <port>5400</port>
+  <user> Insert user </user>
+</dbconn>

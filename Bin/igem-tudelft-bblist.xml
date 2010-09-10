@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<PartList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <parts>
+    <Part>
+      <stringID>420246.GTNG_3499</stringID>
+      <stringProteinID>2536780</stringProteinID>
+      <name>BBa_K398000</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>Coenzyme F420-dependent N5,N10-methylene tetrahydromethanopterin reductase and related flavin-dependent oxidoreductases</orthgroupDesc>
+      <orthgroupID>1973</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>101510.RHA1_ro02534</stringID>
+      <stringProteinID>876563</stringProteinID>
+      <name>BBa_K398001</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>Monooxygenase</orthgroupDesc>
+      <orthgroupID>12340</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>246196.MSMEG_1840</stringID>
+      <stringProteinID>1394931</stringProteinID>
+      <name>BBa_K398002</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>Rubredoxin</orthgroupDesc>
+      <orthgroupID>1608</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>350058.Mvan_1744</stringID>
+      <stringProteinID>2152220</stringProteinID>
+      <name>BBa_K398003</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>Rubredoxin</orthgroupDesc>
+      <orthgroupID>1608</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>101510.RHA1_ro02537</stringID>
+      <stringProteinID>876566</stringProteinID>
+      <name>BBa_K398004</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>Uncharacterized NAD(FAD)-dependent dehydrogenases</orthgroupDesc>
+      <orthgroupID>444</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>235909.GK0984</stringID>
+      <stringProteinID>1331748</stringProteinID>
+      <name>BBa_K398005</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>Dehydrogenases with different specificities (related to short-chain alcohol dehydrogenases)</orthgroupDesc>
+      <orthgroupID>880</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>235909.GK2772</stringID>
+      <stringProteinID>1333536</stringProteinID>
+      <name>BBa_K398006</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>NAD-dependent aldehyde dehydrogenases</orthgroupDesc>
+      <orthgroupID>865</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>62977.ACIAD0697</stringID>
+      <stringProteinID>750944</stringProteinID>
+      <name>BBa_K398200</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>Outer membrane protein and related peptidoglycan-associated (lipo)proteins</orthgroupDesc>
+      <orthgroupID>2360</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>160488.PP_0504</stringID>
+      <stringProteinID>938997</stringProteinID>
+      <name>BBa_K398201</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>Outer membrane protein W</orthgroupDesc>
+      <orthgroupID>2510</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>399739.Pmen_0429</stringID>
+      <stringProteinID>2436533</stringProteinID>
+      <name>BBa_K398300</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>ATP-dependent transcriptional regulator</orthgroupDesc>
+      <orthgroupID>2382</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>70601.PH0527</stringID>
+      <stringProteinID>786836</stringProteinID>
+      <name>BBa_K398400</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>Predicted prefoldin, molecular chaperone implicated in de novo protein folding</orthgroupDesc>
+      <orthgroupID>1565</orthgroupID>
+    </Part>
+    <Part>
+      <stringID>70601.PH0532</stringID>
+      <stringProteinID>786842</stringProteinID>
+      <name>BBa_K398401</name>
+      <geneID>0</geneID>
+      <orthgroupDesc>Prefoldin, chaperonin cofactor</orthgroupDesc>
+      <orthgroupID>1221</orthgroupID>
+    </Part>
+  </parts>
+</PartList>
