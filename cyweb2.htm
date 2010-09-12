@@ -1,0 +1,77 @@
+<html>
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="CytoscapeWeb/js/min/json2.min.js"></script>
+    <script type="text/javascript" src="CytoscapeWeb/js/min/AC_OETags.min.js"></script>
+    <script type="text/javascript" src="CytoscapeWeb/js/min/cytoscapeweb.min.js"></script>
+
+    <script type="text/javascript">
+        var vis;
+
+        function menuGotoStringURL(evt) {
+            // Get the right-clicked node:
+            var node = evt.target;
+
+            var url = 'http://string-db.org/version_8_3/newstring_cgi/show_network_section.pl?all_channels_on=1' + 
+                '&interactive=yes&network_flavor=evidence&targetmode=proteins&identifier=' + node.data.label;
+            
+            window.open(url);
+        }
+
+        function menuGotoBiobrickPage(evt) {
+            // Get the right-clicked node:
+            var node = evt.target;
+
+            if (node.data.biobrick)
+                window.open('http://partsregistry.org/wiki/index.php?title=Part:'+node.data.biobrick);
+        }
+
+	    function initializeViewer(networkData) {
+            // 2. Add a context menu item any time after the network is ready:
+            vis.ready(function () {
+                vis.addContextMenuItem("Go to STRING page", "nodes", menuGotoStringURL);
+                vis.addContextMenuItem("Go to Biobrick page (if any)", "nodes", menuGotoBiobrickPage);
+	        });
+            vis.draw({ network: networkData });
+ 	    }
+
+        $(function () {
+            // id of Cytoscape Web container div
+            var div_id = "cytoscapeweb";
+
+            // initialization options
+            var options = {
+                // where you have the Cytoscape Web SWF
+		swfPath: "CytoscapeWeb/swf/CytoscapeWeb",
+//                swfPath: "http://2010.igem.org/wiki/images/8/85/CytoscapeWeb",
+                // where you have the Flash installer SWF
+                flashInstallerPath: "CytoscapeWeb/swf/playerProductInstall"
+            };
+
+            vis = new org.cytoscapeweb.Visualization(div_id, options);
+
+            $.ajax({
+                url: "prefoldin-mapping.xgmml",
+                dataType: 'text',
+                success: initializeViewer
+            });
+        });
+    </script>
+        
+    <style>
+        /* The Cytoscape Web container must have its dimensions set. */
+        html, body { height: 100%; width: 100%; padding: 0; margin: 0; }
+        #cytoscapeweb { width: 100%; height: 100%; }
+    </style>
+</head>
+
+<body>
+   
+    <div id="cytoscapeweb">
+        Cytoscape Web will replace the contents of this div with your graph.
+    </div>
+
+</body>
+
+</html>
