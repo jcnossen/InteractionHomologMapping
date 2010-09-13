@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="CytoscapeWeb/js/min/json2.min.js"></script>
+	<script type="text/javascript" src="CytoscapeWeb/js/min/AC_OETags.min.js"></script>
+	<script type="text/javascript" src="CytoscapeWeb/js/min/cytoscapeweb.min.js"></script>
+	<script type="text/javascript" src="networkview.js"></script>
+
+	<script type="text/javascript">
+
+	$(function() {
+		loadnetwork("alkdeg-mapping.xgmml");
+	});
+
+	</script>
+        
+	<style>
+		/* The Cytoscape Web container must have its dimensions set. */
+		html, body { height: 100%; width: 100%; padding: 0; margin: 0; }
+		#cytoscapeweb { width: 100%; height: 100%; }
+	</style>
+</head>
+<body>
+   
+	<div id="cytoscapeweb">
+		Cytoscape Web will replace the contents of this div...
+	</div>
+
+</body>
+</html>
