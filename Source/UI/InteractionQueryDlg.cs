@@ -148,8 +148,10 @@ namespace InteractionMapping
 							continue;
 
 						ct.createNodeInCurrent(p.stringExternalID);
-						ct.addStringNodeAttribute("label", nodeID, p.name);
+						if (!p.attributes.ContainsKey("label"))
+							ct.addStringNodeAttribute("label", nodeID, p.name);
 
+						ct.addStringNodeAttribute("string_id", nodeID, nodeID);
 						foreach (var kv in p.attributes)
 							ct.addStringNodeAttribute(kv.Key, nodeID, kv.Value);
 					}
@@ -218,8 +220,9 @@ namespace InteractionMapping
 							name = "Missing: " + interaction.b.name,
 							speciesID = speciesID,
 							stringID = 0,
-							stringExternalID = "missing-" + interaction.b.stringExternalID
+							stringExternalID = interaction.b.stringExternalID
 						};
+						missing.attributes["label"] = "missing-" + interaction.b.stringExternalID;
 						missing.attributes["missing"] = "yes";
 						edges.Add(new GraphEdge() {
 							a = prot,
