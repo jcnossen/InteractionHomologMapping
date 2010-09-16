@@ -1,4 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Enter connection details and rename this file to StringDbSettings.xml -->
+
 <dbconn>
   <host> Insert host name </host>
   <database>string</database>
