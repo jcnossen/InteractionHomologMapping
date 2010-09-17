@@ -195,6 +195,7 @@ namespace InteractionMapping
 
 			List<GraphEdge> edges = new List<GraphEdge>();
 
+			Console.WriteLine("ProteinA; ProteinB; Bitscore; InteractionScore; Annotation");
 			foreach (Protein prot in set.startProteins)
 				foreach (Interaction interaction in interactionMap[prot.stringID]) {
 					var homologs = homologMap[interaction.b.stringID];
@@ -206,6 +207,8 @@ namespace InteractionMapping
 							strength = interaction.score * h.bitscore,
 							type = "MappedInteraction"
 						});
+
+						Console.WriteLine(string.Format("{0} {1}; {2}; {3}; {4}", prot.name, h.B.name, h.bitscore, interaction.score, h.b.attributes["annotation"]));
 					}
 
 					if (set.startProteins.Contains(interaction.b) && prot!=interaction.b) {
