@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<graph label="STRING Interaction search" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cy="http://www.cytoscape.org" xmlns="http://www.cs.rpi.edu/XGMML"  directed="1">
+  <att name="documentVersion" value="1.1"/>
+  <att name="networkMetadata">
+    <rdf:RDF>
+      <rdf:Description rdf:about="http://www.cytoscape.org/">
+        <dc:type>Protein-Protein Interaction</dc:type>
+        <dc:description>N/A</dc:description>
+        <dc:identifier>N/A</dc:identifier>
+        <dc:date>2010-09-30 22:54:13</dc:date>
+        <dc:title>STRING Interaction search</dc:title>
+        <dc:source>http://www.cytoscape.org/</dc:source>
+        <dc:format>Cytoscape-XGMML</dc:format>
+      </rdf:Description>
+    </rdf:RDF>
+  </att>
+  <att type="string" name="backgroundColor" value="#ccccff"/>
+  <att type="real" name="GRAPH_VIEW_ZOOM" value="0.4840725119433752"/>
+  <att type="real" name="GRAPH_VIEW_CENTER_X" value="536.4458591973943"/>
+  <att type="real" name="GRAPH_VIEW_CENTER_Y" value="413.7859316689594"/>
+  <att type="string" name="__layoutAlgorithm" value="Kamada-Kawai" cy:hidden="true"/>
+  <node label="70601.PH1899a" id="-40">
+    <att type="string" name="canonicalName" value="70601.PH1899a"/>
+    <att type="string" name="label" value="-- PH1899a"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1899a"/>
+    <graphics type="ELLIPSE" h="40.0" w="39.999969482421875" x="445.77232360839844" y="630.9657592773438" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1877" id="-39">
+    <att type="string" name="canonicalName" value="70601.PH1877"/>
+    <att type="string" name="label" value="-- rnp3"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1877"/>
+    <graphics type="ELLIPSE" h="40.0" w="39.999969482421875" x="279.40110778808594" y="345.5179443359375" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1783" id="-38">
+    <att type="string" name="canonicalName" value="70601.PH1783"/>
+    <att type="string" name="label" value="-- PH1783"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1783"/>
+    <graphics type="ELLIPSE" h="40.000030517578125" w="40.00004577636719" x="232.88105010986328" y="517.7846527099609" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0665" id="-37">
+    <att type="string" name="canonicalName" value="70601.PH0665"/>
+    <att type="string" name="label" value="-- pcn"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0665"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.00006103515625" x="346.8854675292969" y="648.96923828125" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1481" id="-36">
+    <att type="string" name="canonicalName" value="70601.PH1481"/>
+    <att type="string" name="label" value="-- rnp2"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1481"/>
+    <graphics type="ELLIPSE" h="40.00018310546875" w="40.00004577636719" x="268.41275787353516" y="535.5984191894531" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1900" id="-35">
+    <att type="string" name="canonicalName" value="70601.PH1900"/>
+    <att type="string" name="label" value="-- PH1900"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1900"/>
+    <graphics type="ELLIPSE" h="39.999908447265625" w="40.00006103515625" x="262.42327880859375" y="419.6205596923828" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0531" id="-34">
+    <att type="string" name="canonicalName" value="70601.PH0531"/>
+    <att type="string" name="label" value="-- PH0531"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0531"/>
+    <graphics type="ELLIPSE" h="40.0" w="39.999969482421875" x="484.4980926513672" y="645.140869140625" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1876" id="-33">
+    <att type="string" name="canonicalName" value="70601.PH1876"/>
+    <att type="string" name="label" value="-- PH1876"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1876"/>
+    <graphics type="ELLIPSE" h="39.999908447265625" w="40.000091552734375" x="244.35743713378906" y="477.52565002441406" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0978" id="-32">
+    <att type="string" name="canonicalName" value="70601.PH0978"/>
+    <att type="string" name="label" value="-- rpl15e"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0978"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.0" x="537.16064453125" y="572.2959594726562" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1553" id="-31">
+    <att type="string" name="canonicalName" value="70601.PH1553"/>
+    <att type="string" name="label" value="-- psmA"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1553"/>
+    <graphics type="ELLIPSE" h="39.9998779296875" w="40.00010681152344" x="256.0066604614258" y="378.247802734375" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1549" id="-30">
+    <att type="string" name="canonicalName" value="70601.PH1549"/>
+    <att type="string" name="label" value="-- PH1549"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1549"/>
+    <graphics type="ELLIPSE" h="40.0" w="39.9998779296875" x="502.7750244140625" y="605.6976318359375" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="83333.b3643" id="-29">
+    <att type="string" name="annotation" value="Ribonuclease PH; Phosphorolytic exoribonuclease that removes nucleotide residues following the -CCA terminus of tRNA and adds nucleotides to the ends of RNA molecules by using nucleoside diphosphates as substrates. Also acts to regulate the attenuation of pyrE"/>
+    <att type="string" name="canonicalName" value="83333.b3643"/>
+    <att type="string" name="label" value="rph"/>
+    <att type="string" name="preferredName" value="rph"/>
+    <att type="string" name="proteinSize" value="228"/>
+    <att type="string" name="species" value="83333"/>
+    <att type="string" name="string_id" value="83333.b3643"/>
+    <graphics type="ELLIPSE" h="40.0" w="39.999969482421875" x="416.5857391357422" y="658.3780517578125" fill="#33cc00" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1551" id="-28">
+    <att type="string" name="canonicalName" value="70601.PH1551"/>
+    <att type="string" name="label" value="-- PH1551"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1551"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.0" x="308.59014892578125" y="580.813232421875" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PHS057" id="-27">
+    <att type="string" name="canonicalName" value="70601.PHS057"/>
+    <att type="string" name="label" value="-- rpl37ae"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PHS057"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.0" x="313.66876220703125" y="625.72607421875" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="83333.b1696" id="-26">
+    <att type="string" name="annotation" value="Uncharacterized HTH-type transcriptional regulator ydiP"/>
+    <att type="string" name="canonicalName" value="83333.b1696"/>
+    <att type="string" name="label" value="ydiP"/>
+    <att type="string" name="preferredName" value="ydiP"/>
+    <att type="string" name="proteinSize" value="303"/>
+    <att type="string" name="species" value="83333"/>
+    <att type="string" name="string_id" value="83333.b1696"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.0" x="372.9189147949219" y="687.0394897460938" fill="#33cc00" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0535" id="-25">
+    <att type="string" name="canonicalName" value="70601.PH0535"/>
+    <att type="string" name="label" value="-- PH0535"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0535"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.000030517578125" x="380.7289581298828" y="318.8926086425781" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0533" id="-24">
+    <att type="string" name="canonicalName" value="70601.PH0533"/>
+    <att type="string" name="label" value="-- PH0533"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0533"/>
+    <graphics type="ELLIPSE" h="40.0" w="39.999969482421875" x="340.61497497558594" y="311.0885009765625" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="83333.b1713" id="-23">
+    <att type="string" name="annotation" value="phenylalanine tRNA synthetase, beta subunit"/>
+    <att type="string" name="canonicalName" value="83333.b1713"/>
+    <att type="string" name="label" value="pheT"/>
+    <att type="string" name="preferredName" value="pheT"/>
+    <att type="string" name="proteinSize" value="795"/>
+    <att type="string" name="species" value="83333"/>
+    <att type="string" name="string_id" value="83333.b1713"/>
+    <graphics type="ELLIPSE" h="40.00006103515625" w="40.00004577636719" x="261.69364166259766" y="575.2797546386719" fill="#33cc00" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1552" id="-22">
+    <att type="string" name="canonicalName" value="70601.PH1552"/>
+    <att type="string" name="label" value="-- PH1552"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1552"/>
+    <graphics type="ELLIPSE" h="39.9998779296875" w="40.00001525878906" x="228.05243682861328" y="440.0426330566406" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0534" id="-21">
+    <att type="string" name="canonicalName" value="70601.PH0534"/>
+    <att type="string" name="label" value="-- PH0534"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0534"/>
+    <graphics type="ELLIPSE" h="40.00006103515625" w="40.0" x="319.0272216796875" y="352.1497802734375" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0530" id="-20">
+    <att type="string" name="canonicalName" value="70601.PH0530"/>
+    <att type="string" name="label" value="-- PH0530"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0530"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.0" x="612.8966674804688" y="468.59649658203125" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="83333.b0051" id="-19">
+    <att type="string" name="annotation" value="S-adenosylmethionine-6-N&apos;,N&apos;-adenosyl (RRNA) dimethyltransferase; Specifically dimethylates two adjacent adenosines in the loop of a conserved hairpin near the 3&apos;-end of 16S rRNA in the 30S particle. Its inactivation leads to kasugamycin resistance"/>
+    <att type="string" name="canonicalName" value="83333.b0051"/>
+    <att type="string" name="label" value="ksgA"/>
+    <att type="string" name="preferredName" value="ksgA"/>
+    <att type="string" name="proteinSize" value="273"/>
+    <att type="string" name="species" value="83333"/>
+    <att type="string" name="string_id" value="83333.b0051"/>
+    <graphics type="ELLIPSE" h="40.00004577636719" w="39.99993896484375" x="836.6540832519531" y="204.21060943603516" fill="#33cc00" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="83333.b2330" id="-18">
+    <att type="string" name="annotation" value="Uncharacterized adenine-specific methylase yfcB"/>
+    <att type="string" name="canonicalName" value="83333.b2330"/>
+    <att type="string" name="label" value="prmB"/>
+    <att type="string" name="preferredName" value="prmB"/>
+    <att type="string" name="proteinSize" value="310"/>
+    <att type="string" name="species" value="83333"/>
+    <att type="string" name="string_id" value="83333.b2330"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.0" x="788.5814819335938" y="385.2667236328125" fill="#33cc00" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1822" id="-17">
+    <att type="string" name="canonicalName" value="70601.PH1822"/>
+    <att type="string" name="label" value="-- PH1822"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1822"/>
+    <graphics type="ELLIPSE" h="40.00001525878906" w="40.0" x="793.7035522460938" y="198.99127960205078" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1127" id="-16">
+    <att type="string" name="canonicalName" value="70601.PH1127"/>
+    <att type="string" name="label" value="-- PH1127"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1127"/>
+    <graphics type="ELLIPSE" h="39.99998474121094" w="40.0" x="601.5454711914062" y="153.98979949951172" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1401" id="-15">
+    <att type="string" name="canonicalName" value="70601.PH1401"/>
+    <att type="string" name="label" value="-- PH1401"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1401"/>
+    <graphics type="ELLIPSE" h="40.00000762939453" w="40.0" x="637.031982421875" y="135.98614120483398" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0962" id="-14">
+    <att type="string" name="canonicalName" value="70601.PH0962"/>
+    <att type="string" name="label" value="-- PH0962"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0962"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.0" x="816.5056762695312" y="304.28448486328125" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PHS032" id="-13">
+    <att type="string" name="canonicalName" value="70601.PHS032"/>
+    <att type="string" name="label" value="-- rpl21e"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PHS032"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.0" x="802.5725708007812" y="422.3127136230469" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1601" id="-12">
+    <att type="string" name="canonicalName" value="70601.PH1601"/>
+    <att type="string" name="label" value="-- rnp4"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1601"/>
+    <graphics type="ELLIPSE" h="40.00000762939453" w="40.0" x="695.1838989257812" y="135.28910446166992" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1694" id="-11">
+    <att type="string" name="canonicalName" value="70601.PH1694"/>
+    <att type="string" name="label" value="-- srp54"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1694"/>
+    <graphics type="ELLIPSE" h="39.99998474121094" w="40.0" x="791.1430053710938" y="155.08350372314453" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="83333.b1133" id="-10">
+    <att type="string" name="annotation" value="tRNA-specific 2-thiouridylase mnmA; Catalyzes the 2-thiolation of uridine at the wobble position (U34) of tRNA(Lys), tRNA(Glu) and tRNA(Gln), leading to the formation of s(2)U34, the first step of tRNA-mnm(5)s(2)U34 synthesis. Sulfur is provided by iscS, via a sulfur-relay system. Binds ATP and its substrate tRNAs"/>
+    <att type="string" name="canonicalName" value="83333.b1133"/>
+    <att type="string" name="label" value="mnmA"/>
+    <att type="string" name="preferredName" value="mnmA"/>
+    <att type="string" name="proteinSize" value="368"/>
+    <att type="string" name="species" value="83333"/>
+    <att type="string" name="string_id" value="83333.b1133"/>
+    <graphics type="ELLIPSE" h="39.99998474121094" w="40.0" x="750.0586547851562" y="161.67919158935547" fill="#33cc00" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1325" id="-9">
+    <att type="string" name="canonicalName" value="70601.PH1325"/>
+    <att type="string" name="label" value="-- rps19e"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1325"/>
+    <graphics type="ELLIPSE" h="40.000030517578125" w="39.99993896484375" x="853.9724426269531" y="290.1500701904297" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH1060" id="-8">
+    <att type="string" name="canonicalName" value="70601.PH1060"/>
+    <att type="string" name="label" value="-- PH1060"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH1060"/>
+    <graphics type="ELLIPSE" h="39.999969482421875" w="40.0" x="752.0409545898438" y="434.0471649169922" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="83333.b2610" id="-7">
+    <att type="string" name="annotation" value="Signal Recognition Particle (SRP) component with 4.5S RNA (Ffs); Necessary for efficient export of extracytoplasmic proteins. Binds to the signal sequence when it emerges from the ribosomes. This binding is mediated at least in part by ribosomal protein L23 (PubMed:12756233, PubMed:12702815 and PubMed:15148364)"/>
+    <att type="string" name="canonicalName" value="83333.b2610"/>
+    <att type="string" name="label" value="ffh"/>
+    <att type="string" name="preferredName" value="ffh"/>
+    <att type="string" name="proteinSize" value="453"/>
+    <att type="string" name="species" value="83333"/>
+    <att type="string" name="string_id" value="83333.b2610"/>
+    <graphics type="ELLIPSE" h="40.000030517578125" w="39.99993896484375" x="838.8618469238281" y="245.82362365722656" fill="#33cc00" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PHS021" id="-6">
+    <att type="string" name="canonicalName" value="70601.PHS021"/>
+    <att type="string" name="label" value="-- rplX"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PHS021"/>
+    <graphics type="ELLIPSE" h="39.99998474121094" w="40.0" x="735.6981811523438" y="117.59322357177734" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0529b" id="-5">
+    <att type="string" name="canonicalName" value="70601.PH0529b"/>
+    <att type="string" name="label" value="-- rpl39e"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0529b"/>
+    <graphics type="ELLIPSE" h="40.0" w="39.99993896484375" x="830.8031311035156" y="377.2943115234375" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0529a" id="-4">
+    <att type="string" name="canonicalName" value="70601.PH0529a"/>
+    <att type="string" name="label" value="-- rpl31e"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0529a"/>
+    <graphics type="ELLIPSE" h="40.0" w="39.99993896484375" x="850.8805236816406" y="340.4469299316406" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0528" id="-3">
+    <att type="string" name="canonicalName" value="70601.PH0528"/>
+    <att type="string" name="label" value="-- eif6"/>
+    <att type="string" name="missing" value="yes"/>
+    <att type="string" name="string_id" value="70601.PH0528"/>
+    <graphics type="ELLIPSE" h="39.999977111816406" w="40.0" x="667.7161865234375" y="106.48041152954102" fill="#ff6464" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0532" id="-2">
+    <att type="string" name="annotation" value="Prefoldin subunit beta; Molecular chaperone capable of stabilizing a range of proteins. Seems to fulfill an ATP-independent, HSP70-like function in archaeal de novo protein folding (By similarity)"/>
+    <att type="string" name="biobrick" value="BBa_K398401"/>
+    <att type="string" name="canonicalName" value="70601.PH0532"/>
+    <att type="string" name="gene" value="?"/>
+    <att type="string" name="label" value="Prefoldin subunit beta Pyrococcus horikoshii OT3"/>
+    <att type="string" name="length" value="354"/>
+    <att type="string" name="node.fillColor" value="0,0,255" cy:hidden="true"/>
+    <att type="string" name="preferredName" value="pfdB"/>
+    <att type="string" name="proteinSize" value="117"/>
+    <att type="string" name="species" value="70601"/>
+    <att type="string" name="string_id" value="70601.PH0532"/>
+    <att type="string" name="url" value="http://partsregistry.org/Part:BBa_K398401"/>
+    <graphics type="ELLIPSE" h="39.9998779296875" w="39.99993896484375" x="470.9055480957031" y="428.8193664550781" fill="#0000ff" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <node label="70601.PH0527" id="-1">
+    <att type="string" name="annotation" value="Prefoldin subunit alpha; Molecular chaperone capable of stabilizing a range of proteins. Seems to fulfill an ATP-independent, HSP70-like function in archaeal de novo protein folding (By similarity)"/>
+    <att type="string" name="biobrick" value="BBa_K398400"/>
+    <att type="string" name="canonicalName" value="70601.PH0527"/>
+    <att type="string" name="gene" value="?"/>
+    <att type="string" name="label" value="Prefoldin subunit alpha Pyrococcus horikoshii OT3"/>
+    <att type="string" name="length" value="456"/>
+    <att type="string" name="node.fillColor" value="0,0,255" cy:hidden="true"/>
+    <att type="string" name="preferredName" value="pfdA"/>
+    <att type="string" name="proteinSize" value="151"/>
+    <att type="string" name="species" value="70601"/>
+    <att type="string" name="string_id" value="70601.PH0527"/>
+    <att type="string" name="url" value="http://partsregistry.org/Part:BBa_K398400"/>
+    <graphics type="ELLIPSE" h="40.0" w="40.0" x="651.9924926757812" y="298.4047546386719" fill="#0000ff" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+  <edge label="70601.PH0532 (interaction) 70601.PH1899a" source="-2" target="-40">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH1899a"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH1877" source="-2" target="-39">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH1877"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH0530" source="-2" target="-20">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH0530"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH1783" source="-2" target="-38">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH1783"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH0665" source="-2" target="-37">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH0665"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH1481" source="-2" target="-36">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH1481"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH1900" source="-2" target="-35">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH1900"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH0531" source="-2" target="-34">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH0531"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH1876" source="-2" target="-33">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH1876"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH0978" source="-2" target="-32">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH0978"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH1553" source="-2" target="-31">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH1553"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH1549" source="-2" target="-30">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH1549"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 83333.b3643" source="-2" target="-29">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 83333.b3643"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MappedInteraction"/>
+    <att type="real" name="strength" value="0.06721866130828857"/>
+    <graphics width="1" fill="#00ff00" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH1551" source="-2" target="-28">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH1551"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PHS057" source="-2" target="-27">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PHS057"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 83333.b1696" source="-2" target="-26">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 83333.b1696"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MappedInteraction"/>
+    <att type="real" name="strength" value="0.14798320829868317"/>
+    <graphics width="1" fill="#00ff00" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH0535" source="-2" target="-25">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH0535"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH0533" source="-2" target="-24">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH0533"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 83333.b1713" source="-2" target="-23">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 83333.b1713"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MappedInteraction"/>
+    <att type="real" name="strength" value="0.08050000667572021"/>
+    <graphics width="1" fill="#00ff00" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH1552" source="-2" target="-22">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH1552"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH0534" source="-2" target="-21">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH0534"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0532 (interaction) 70601.PH0527" source="-2" target="-1">
+    <att type="string" name="canonicalName" value="70601.PH0532 (interaction) 70601.PH0527"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="NativeInteraction"/>
+    <att type="real" name="strength" value="0.999000072479248"/>
+    <graphics width="1" fill="#646464" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH0530" source="-1" target="-20">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH0530"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 83333.b0051" source="-1" target="-19">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 83333.b0051"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MappedInteraction"/>
+    <att type="real" name="strength" value="0.09495428949594498"/>
+    <graphics width="1" fill="#00ff00" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 83333.b2330" source="-1" target="-18">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 83333.b2330"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MappedInteraction"/>
+    <att type="real" name="strength" value="0.09394063800573349"/>
+    <graphics width="1" fill="#00ff00" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH1822" source="-1" target="-17">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH1822"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH1127" source="-1" target="-16">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH1127"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH1401" source="-1" target="-15">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH1401"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH0962" source="-1" target="-14">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH0962"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PHS032" source="-1" target="-13">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PHS032"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH1601" source="-1" target="-12">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH1601"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH1694" source="-1" target="-11">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH1694"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 83333.b1133" source="-1" target="-10">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 83333.b1133"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MappedInteraction"/>
+    <att type="real" name="strength" value="0.07717478275299072"/>
+    <graphics width="1" fill="#00ff00" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH1325" source="-1" target="-9">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH1325"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH1060" source="-1" target="-8">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH1060"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 83333.b2610" source="-1" target="-7">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 83333.b2610"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MappedInteraction"/>
+    <att type="real" name="strength" value="0.28518134355545044"/>
+    <graphics width="1" fill="#00ff00" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PHS021" source="-1" target="-6">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PHS021"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH0529b" source="-1" target="-5">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH0529b"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH0529a" source="-1" target="-4">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH0529a"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH0528" source="-1" target="-3">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH0528"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="MissingHomolog"/>
+    <att type="real" name="strength" value="0.0"/>
+    <graphics width="1" fill="#ff0000" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+  <edge label="70601.PH0527 (interaction) 70601.PH0532" source="-1" target="-2">
+    <att type="string" name="canonicalName" value="70601.PH0527 (interaction) 70601.PH0532"/>
+    <att type="string" name="interaction" value="interaction" cy:editable="false"/>
+    <att type="string" name="mappingType" value="NativeInteraction"/>
+    <att type="real" name="strength" value="0.999000072479248"/>
+    <graphics width="1" fill="#646464" cy:sourceArrow="0" cy:targetArrow="0" cy:sourceArrowColor="#000000" cy:targetArrowColor="#000000" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+  </edge>
+</graph>
