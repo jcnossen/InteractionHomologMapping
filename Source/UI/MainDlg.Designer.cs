@@ -56,7 +56,9 @@ namespace InteractionMapping
 			this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.generateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.wikiTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.queryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.queryInteractionsForSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.nCBIBlastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.textBB = new System.Windows.Forms.TextBox();
 			this.splitContainer = new System.Windows.Forms.SplitContainer();
 			this.listBB = new System.Windows.Forms.ListView();
@@ -69,7 +71,8 @@ namespace InteractionMapping
 			// 
 			this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.generateToolStripMenuItem});
+            this.generateToolStripMenuItem,
+            this.queryToolStripMenuItem});
 			this.menuStrip.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip.Name = "menuStrip";
 			this.menuStrip.Size = new System.Drawing.Size(589, 24);
@@ -109,8 +112,7 @@ namespace InteractionMapping
 			// generateToolStripMenuItem
 			// 
 			this.generateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.wikiTableToolStripMenuItem,
-            this.queryInteractionsForSelectionToolStripMenuItem});
+            this.wikiTableToolStripMenuItem});
 			this.generateToolStripMenuItem.Name = "generateToolStripMenuItem";
 			this.generateToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
 			this.generateToolStripMenuItem.Text = "Generate";
@@ -118,10 +120,19 @@ namespace InteractionMapping
 			// wikiTableToolStripMenuItem
 			// 
 			this.wikiTableToolStripMenuItem.Name = "wikiTableToolStripMenuItem";
-			this.wikiTableToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+			this.wikiTableToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
 			this.wikiTableToolStripMenuItem.Text = "Wiki table";
 			this.wikiTableToolStripMenuItem.Visible = false;
 			this.wikiTableToolStripMenuItem.Click += new System.EventHandler(this.wikiTableToolStripMenuItem_Click);
+			// 
+			// queryToolStripMenuItem
+			// 
+			this.queryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.queryInteractionsForSelectionToolStripMenuItem,
+            this.nCBIBlastToolStripMenuItem});
+			this.queryToolStripMenuItem.Name = "queryToolStripMenuItem";
+			this.queryToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+			this.queryToolStripMenuItem.Text = "Query";
 			// 
 			// queryInteractionsForSelectionToolStripMenuItem
 			// 
@@ -129,6 +140,13 @@ namespace InteractionMapping
 			this.queryInteractionsForSelectionToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
 			this.queryInteractionsForSelectionToolStripMenuItem.Text = "Query interactions for selection";
 			this.queryInteractionsForSelectionToolStripMenuItem.Click += new System.EventHandler(this.queryInteractionsForSelectionToolStripMenuItem_Click);
+			// 
+			// nCBIBlastToolStripMenuItem
+			// 
+			this.nCBIBlastToolStripMenuItem.Name = "nCBIBlastToolStripMenuItem";
+			this.nCBIBlastToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+			this.nCBIBlastToolStripMenuItem.Text = "NCBI Blast";
+			this.nCBIBlastToolStripMenuItem.Click += new System.EventHandler(this.nCBIBlastToolStripMenuItem_Click);
 			// 
 			// textBB
 			// 
@@ -202,8 +220,10 @@ namespace InteractionMapping
 		private System.Windows.Forms.SplitContainer splitContainer;
 		private System.Windows.Forms.ToolStripMenuItem generateToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem wikiTableToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem queryInteractionsForSelectionToolStripMenuItem;
 		private System.Windows.Forms.ListView listBB;
+		private System.Windows.Forms.ToolStripMenuItem queryToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem queryInteractionsForSelectionToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem nCBIBlastToolStripMenuItem;
 	}
 }
 

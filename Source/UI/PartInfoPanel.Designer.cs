@@ -38,8 +38,6 @@
 			this.textDNA = new System.Windows.Forms.TextBox();
 			this.tabPageAA = new System.Windows.Forms.TabPage();
 			this.textAA = new System.Windows.Forms.TextBox();
-			this.tabInteractions = new System.Windows.Forms.TabPage();
-			this.textInteractions = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.textStringID = new System.Windows.Forms.TextBox();
 			this.labelName = new System.Windows.Forms.LinkLabel();
@@ -48,7 +46,6 @@
 			this.tabControl.SuspendLayout();
 			this.tabPageDNA.SuspendLayout();
 			this.tabPageAA.SuspendLayout();
-			this.tabInteractions.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -101,7 +98,6 @@
 									| System.Windows.Forms.AnchorStyles.Right)));
 			this.tabControl.Controls.Add(this.tabPageDNA);
 			this.tabControl.Controls.Add(this.tabPageAA);
-			this.tabControl.Controls.Add(this.tabInteractions);
 			this.tabControl.Location = new System.Drawing.Point(3, 111);
 			this.tabControl.Name = "tabControl";
 			this.tabControl.SelectedIndex = 0;
@@ -147,28 +143,6 @@
 			this.textAA.Name = "textAA";
 			this.textAA.Size = new System.Drawing.Size(346, 104);
 			this.textAA.TabIndex = 0;
-			// 
-			// tabInteractions
-			// 
-			this.tabInteractions.Controls.Add(this.textInteractions);
-			this.tabInteractions.Location = new System.Drawing.Point(4, 22);
-			this.tabInteractions.Name = "tabInteractions";
-			this.tabInteractions.Padding = new System.Windows.Forms.Padding(3);
-			this.tabInteractions.Size = new System.Drawing.Size(352, 110);
-			this.tabInteractions.TabIndex = 3;
-			this.tabInteractions.Text = "Interactions";
-			this.tabInteractions.UseVisualStyleBackColor = true;
-			// 
-			// textInteractions
-			// 
-			this.textInteractions.AcceptsReturn = true;
-			this.textInteractions.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textInteractions.Location = new System.Drawing.Point(3, 3);
-			this.textInteractions.Multiline = true;
-			this.textInteractions.Name = "textInteractions";
-			this.textInteractions.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.textInteractions.Size = new System.Drawing.Size(346, 104);
-			this.textInteractions.TabIndex = 0;
 			// 
 			// label4
 			// 
@@ -230,8 +204,6 @@
 			this.tabPageDNA.PerformLayout();
 			this.tabPageAA.ResumeLayout(false);
 			this.tabPageAA.PerformLayout();
-			this.tabInteractions.ResumeLayout(false);
-			this.tabInteractions.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -251,9 +223,7 @@
 		private System.Windows.Forms.TextBox textAA;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.TextBox textStringID;
-		private System.Windows.Forms.TabPage tabInteractions;
 		private System.Windows.Forms.LinkLabel labelName;
-		private System.Windows.Forms.TextBox textInteractions;
 		private System.ComponentModel.BackgroundWorker blastBackgroundWorker;
 		private System.Windows.Forms.Button buttonOpenStringWeb;
 	}

@@ -171,9 +171,8 @@ namespace InteractionMapping
 		{
 			InteractionSet set = new InteractionSet();
 
-			foreach (ListViewItem i in listBB.Items) {
-				if (!i.Checked) continue;
-
+			foreach (ListViewItem i in listBB.CheckedItems) {
+//				if (!i.Checked) continue;
 				PartList.Part part = (PartList.Part)i.Tag;
 				Protein protein = new Protein();
 				protein.stringExternalID = part.stringID;
@@ -190,6 +189,15 @@ namespace InteractionMapping
 			}
 
 			new InteractionQueryDlg(set).ShowDialog();
+		}
+
+		private void nCBIBlastToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			if (listBB.CheckedItems.Count == 0)
+				return;
+
+			var part = listBB.CheckedItems[0].Tag as PartList.Part;
+			new BlastDlg(SeqUtil.DNAToProtein(part.DNASequence)).ShowDialog();
 		}
 	}
 }
