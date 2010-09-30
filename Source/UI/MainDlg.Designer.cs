@@ -82,27 +82,27 @@ namespace InteractionMapping
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem});
 			this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-			this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+			this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
 			this.fileToolStripMenuItem.Text = "File";
 			// 
 			// newToolStripMenuItem
 			// 
 			this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-			this.newToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+			this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
 			this.newToolStripMenuItem.Text = "New";
 			this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
 			// 
 			// openToolStripMenuItem
 			// 
 			this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-			this.openToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+			this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
 			this.openToolStripMenuItem.Text = "Open";
 			this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
 			// 
 			// saveToolStripMenuItem
 			// 
 			this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-			this.saveToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+			this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
 			this.saveToolStripMenuItem.Text = "Save";
 			this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
 			// 
@@ -112,13 +112,13 @@ namespace InteractionMapping
             this.wikiTableToolStripMenuItem,
             this.queryInteractionsForSelectionToolStripMenuItem});
 			this.generateToolStripMenuItem.Name = "generateToolStripMenuItem";
-			this.generateToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+			this.generateToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
 			this.generateToolStripMenuItem.Text = "Generate";
 			// 
 			// wikiTableToolStripMenuItem
 			// 
 			this.wikiTableToolStripMenuItem.Name = "wikiTableToolStripMenuItem";
-			this.wikiTableToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+			this.wikiTableToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
 			this.wikiTableToolStripMenuItem.Text = "Wiki table";
 			this.wikiTableToolStripMenuItem.Visible = false;
 			this.wikiTableToolStripMenuItem.Click += new System.EventHandler(this.wikiTableToolStripMenuItem_Click);
@@ -126,7 +126,7 @@ namespace InteractionMapping
 			// queryInteractionsForSelectionToolStripMenuItem
 			// 
 			this.queryInteractionsForSelectionToolStripMenuItem.Name = "queryInteractionsForSelectionToolStripMenuItem";
-			this.queryInteractionsForSelectionToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+			this.queryInteractionsForSelectionToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
 			this.queryInteractionsForSelectionToolStripMenuItem.Text = "Query interactions for selection";
 			this.queryInteractionsForSelectionToolStripMenuItem.Click += new System.EventHandler(this.queryInteractionsForSelectionToolStripMenuItem_Click);
 			// 
@@ -168,6 +168,7 @@ namespace InteractionMapping
 			this.listBB.UseCompatibleStateImageBehavior = false;
 			this.listBB.View = System.Windows.Forms.View.List;
 			this.listBB.SelectedIndexChanged += new System.EventHandler(this.listBB_SelectedIndexChanged);
+			this.listBB.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listBB_MouseDown);
 			// 
 			// MainDlg
 			// 

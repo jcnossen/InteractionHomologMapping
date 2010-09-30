@@ -191,5 +191,18 @@ namespace InteractionMapping
 
 			new InteractionQueryDlg(set).ShowDialog();
 		}
+
+		private void listBB_MouseDown(object sender, MouseEventArgs e)
+		{
+			if (e.Button == MouseButtons.Right)
+				new ContextMenu(new MenuItem[] {
+					new MenuItem("Remove", new EventHandler((o,ea)=>{
+						var partset = new HashSet<PartList.Part>(from ListViewItem l in listBB.SelectedItems select (PartList.Part)l.Tag);
+						partList.parts.RemoveAll(p => partset.Contains(p));
+
+						UpdateView();
+					}))
+				}).Show(listBB, e.Location);
+		}
 	}
 }

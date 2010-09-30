@@ -213,7 +213,7 @@ namespace InteractionMapping
 			prot.speciesID = dbp.speciesId;
 
 			if (prot.name == null)
-				prot.name = dbp.proteinExternalId;
+				prot.name = dbp.preferredName;
 
 			prot.attributes["proteinSize"] = dbp.proteinSize.ToString();
 			prot.attributes["preferredName"] = dbp.preferredName;

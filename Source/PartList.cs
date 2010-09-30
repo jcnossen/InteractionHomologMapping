@@ -31,22 +31,6 @@ namespace InteractionMapping
 {
 	public class PartList
 	{
-		public class Homolog
-		{
-			public int proteinID;
-			public string proteinAnnotation;
-			public int proteinSize;
-			public float normScore;
-			public int alignmentLength;
-		}
-
-		public class Interaction
-		{
-			public StringDatabaseSearch.dbPPI original; // interaction in the original organism
-			public int proteinID;
-			public Homolog[] homologs;
-		}
-
 		public class Part : ISequence {
 			public string stringID;
 			public int stringProteinID;
@@ -56,8 +40,6 @@ namespace InteractionMapping
 
 			public string gene;
 			public int geneID;
-
-			public Interaction[] interactions;
 
 			public override string ToString()
 			{
@@ -74,7 +56,6 @@ namespace InteractionMapping
 			#endregion
 		}
 
-		[XmlIgnore] bool allLoaded = false;
 		public List<Part> parts = new List<Part>();
 
 		static XmlSerializer serializer;

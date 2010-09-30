@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interactions\CytoscapeGraphExporter.cs" />
     <Compile Include="Interactions\Interaction.cs" />
     <Compile Include="Interactions\StringDbSearch.cs" />
     <Compile Include="PartsRegistry\BiobrickCache.cs" />
