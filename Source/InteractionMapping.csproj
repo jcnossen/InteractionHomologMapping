@@ -79,6 +79,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\BlastDlg.resx">
+      <DependentUpon>BlastDlg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\InteractionQueryDlg.resx">
       <DependentUpon>InteractionQueryDlg.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +114,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BlastDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\BlastDlg.Designer.cs">
+      <DependentUpon>BlastDlg.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\InteractionQueryDlg.cs">
       <SubType>Form</SubType>

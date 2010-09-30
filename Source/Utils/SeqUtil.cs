@@ -32,6 +32,11 @@ namespace InteractionMapping
 		{
 			return dna.Replace('t', 'u');
 		}
+
+		public static string DNAToProtein(string dna)
+		{
+			return RNAToProtein(DNAToRNA(dna));
+		}
 		
 		public static string RNAToProtein(string rna)
 		{
