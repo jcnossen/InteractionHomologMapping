@@ -206,10 +206,10 @@ namespace InteractionMapping
 
 		private void nCBIBlastToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			if (listBB.CheckedItems.Count == 0)
+			if (listBB.SelectedItems.Count == 0)
 				return;
 
-			var part = listBB.CheckedItems[0].Tag as PartList.Part;
+			var part = listBB.SelectedItems[0].Tag as PartList.Part;
 			new BlastDlg(SeqUtil.DNAToProtein(part.DNASequence)).ShowDialog();
 		}
 	}

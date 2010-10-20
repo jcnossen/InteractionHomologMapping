@@ -36,7 +36,10 @@ namespace InteractionMapping
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new MainDlg(args));
+			//Application.Run(new MainDlg(args));
+
+			string seq = "MNFKLFRCEVCGFEYDEELGWPEDGIEPGTRWADIPDDWSCPDCGAAKADFEMVEVARP.";
+			Application.Run(new BlastDlg(seq));
 		}
 	}
 }
