@@ -14,7 +14,7 @@
       </rdf:Description>
     </rdf:RDF>
   </att>
-  <att type="string" name="backgroundColor" value="#ccccff"/>
+  <att type="string" name="backgroundColor" value="#ffffff"/>
   <att type="real" name="GRAPH_VIEW_ZOOM" value="0.4840725119433752"/>
   <att type="real" name="GRAPH_VIEW_CENTER_X" value="536.4458591973943"/>
   <att type="real" name="GRAPH_VIEW_CENTER_Y" value="413.7859316689594"/>
