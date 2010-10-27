@@ -33,13 +33,12 @@ namespace InteractionMapping
 	{
 		public class Part : ISequence {
 			public string stringID;
-			public int stringProteinID;
+
 			[XmlIgnore]
 			public PartsRegistry.Part data;
 			public string name;
-
-			public string gene;
-			public int geneID;
+			public bool enabled;
+			public string customSequence;
 
 			public override string ToString()
 			{
@@ -103,6 +102,32 @@ namespace InteractionMapping
 						cb(string.Join("\n", errs.ToArray()));
 				});
 			}
+		}
+
+		public InteractionSet BuildInteractionSet()
+		{
+			return BuildInteractionSet(parts);
+		}
+
+		public static InteractionSet BuildInteractionSet(IEnumerable<Part> parts)
+		{
+			InteractionSet set = new InteractionSet();
+
+			foreach (PartList.Part part in parts)
+			{
+				Protein protein = new Protein();
+				protein.stringExternalID = part.stringID;
+				protein.sequence = part;
+				protein.name = part.data.ShortDesc;
+
+				protein.attributes["length"] = part.data.Sequence.Length.ToString();
+				protein.attributes["biobrick"] = part.data.Name;
+				protein.attributes["url"] = BiobrickCache.PartRegistryLink(part.data.Name);
+
+				set.startProteins.Add(protein);
+				set.proteins[part.stringID] = protein;
+			}
+			return set;
 		}
 	}
 }

@@ -82,6 +82,24 @@
     <EmbeddedResource Include="UI\BlastDlg.resx">
       <DependentUpon>BlastDlg.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\PartListBox.resx">
+      <DependentUpon>PartListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\PartListControl.resx">
+      <DependentUpon>PartListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WizardExport.resx">
+      <DependentUpon>WizardExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WizardMapInteractions.resx">
+      <DependentUpon>WizardMapInteractions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WizardStringID.resx">
+      <DependentUpon>WizardStringID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\IMWizardDlg.resx">
+      <DependentUpon>IMWizardDlg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\InteractionQueryDlg.resx">
       <DependentUpon>InteractionQueryDlg.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\TextBoxDlg.resx">
       <DependentUpon>TextBoxDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WizardEnterParts.resx">
+      <DependentUpon>WizardEnterParts.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -121,6 +142,43 @@
     <Compile Include="UI\BlastDlg.Designer.cs">
       <DependentUpon>BlastDlg.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\PartListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\PartListBox.Designer.cs">
+      <DependentUpon>PartListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PartListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\PartListControl.Designer.cs">
+      <DependentUpon>PartListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardExport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardExport.Designer.cs">
+      <DependentUpon>WizardExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardMapInteractions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardMapInteractions.Designer.cs">
+      <DependentUpon>WizardMapInteractions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardState.cs" />
+    <Compile Include="UI\WizardStringID.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardStringID.Designer.cs">
+      <DependentUpon>WizardStringID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IMWizardDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\IMWizardDlg.Designer.cs">
+      <DependentUpon>IMWizardDlg.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\InteractionQueryDlg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +202,12 @@
     </Compile>
     <Compile Include="UI\TextBoxDlg.Designer.cs">
       <DependentUpon>TextBoxDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WizardEnterParts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WizardEnterParts.Designer.cs">
+      <DependentUpon>WizardEnterParts.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils\AssocationMap.cs" />
     <Compile Include="Utils\SeqUtil.cs" />

@@ -60,8 +60,8 @@ namespace InteractionMapping
 			this.queryInteractionsForSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.nCBIBlastToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.textBB = new System.Windows.Forms.TextBox();
-			this.splitContainer = new System.Windows.Forms.SplitContainer();
 			this.listBB = new System.Windows.Forms.ListView();
+			this.splitContainer = new System.Windows.Forms.SplitContainer();
 			this.menuStrip.SuspendLayout();
 			this.splitContainer.Panel1.SuspendLayout();
 			this.splitContainer.SuspendLayout();
@@ -85,27 +85,27 @@ namespace InteractionMapping
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem});
 			this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-			this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+			this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
 			this.fileToolStripMenuItem.Text = "File";
 			// 
 			// newToolStripMenuItem
 			// 
 			this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-			this.newToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+			this.newToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
 			this.newToolStripMenuItem.Text = "New";
 			this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
 			// 
 			// openToolStripMenuItem
 			// 
 			this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-			this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+			this.openToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
 			this.openToolStripMenuItem.Text = "Open";
 			this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
 			// 
 			// saveToolStripMenuItem
 			// 
 			this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-			this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+			this.saveToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
 			this.saveToolStripMenuItem.Text = "Save";
 			this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
 			// 
@@ -114,7 +114,7 @@ namespace InteractionMapping
 			this.generateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.wikiTableToolStripMenuItem});
 			this.generateToolStripMenuItem.Name = "generateToolStripMenuItem";
-			this.generateToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+			this.generateToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
 			this.generateToolStripMenuItem.Text = "Generate";
 			// 
 			// wikiTableToolStripMenuItem
@@ -137,7 +137,7 @@ namespace InteractionMapping
 			// queryInteractionsForSelectionToolStripMenuItem
 			// 
 			this.queryInteractionsForSelectionToolStripMenuItem.Name = "queryInteractionsForSelectionToolStripMenuItem";
-			this.queryInteractionsForSelectionToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+			this.queryInteractionsForSelectionToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
 			this.queryInteractionsForSelectionToolStripMenuItem.Text = "Query interactions for selection";
 			this.queryInteractionsForSelectionToolStripMenuItem.Click += new System.EventHandler(this.queryInteractionsForSelectionToolStripMenuItem_Click);
 			// 
@@ -159,20 +159,6 @@ namespace InteractionMapping
 			this.textBB.TextChanged += new System.EventHandler(this.textBB_TextChanged);
 			this.textBB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBB_KeyDown);
 			// 
-			// splitContainer
-			// 
-			this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.splitContainer.Location = new System.Drawing.Point(0, 24);
-			this.splitContainer.Name = "splitContainer";
-			// 
-			// splitContainer.Panel1
-			// 
-			this.splitContainer.Panel1.Controls.Add(this.listBB);
-			this.splitContainer.Panel1.Controls.Add(this.textBB);
-			this.splitContainer.Size = new System.Drawing.Size(589, 280);
-			this.splitContainer.SplitterDistance = 196;
-			this.splitContainer.TabIndex = 3;
-			// 
 			// listBB
 			// 
 			this.listBB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
@@ -187,6 +173,20 @@ namespace InteractionMapping
 			this.listBB.View = System.Windows.Forms.View.List;
 			this.listBB.SelectedIndexChanged += new System.EventHandler(this.listBB_SelectedIndexChanged);
 			this.listBB.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listBB_MouseDown);
+			// 
+			// splitContainer
+			// 
+			this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.splitContainer.Location = new System.Drawing.Point(0, 24);
+			this.splitContainer.Name = "splitContainer";
+			// 
+			// splitContainer.Panel1
+			// 
+			this.splitContainer.Panel1.Controls.Add(this.listBB);
+			this.splitContainer.Panel1.Controls.Add(this.textBB);
+			this.splitContainer.Size = new System.Drawing.Size(589, 280);
+			this.splitContainer.SplitterDistance = 196;
+			this.splitContainer.TabIndex = 3;
 			// 
 			// MainDlg
 			// 
@@ -217,14 +217,14 @@ namespace InteractionMapping
 		private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-		private System.Windows.Forms.TextBox textBB;
-		private System.Windows.Forms.SplitContainer splitContainer;
 		private System.Windows.Forms.ToolStripMenuItem generateToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem wikiTableToolStripMenuItem;
-		private System.Windows.Forms.ListView listBB;
 		private System.Windows.Forms.ToolStripMenuItem queryToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem queryInteractionsForSelectionToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem nCBIBlastToolStripMenuItem;
+		private System.Windows.Forms.TextBox textBB;
+		private System.Windows.Forms.ListView listBB;
+		private System.Windows.Forms.SplitContainer splitContainer;
 	}
 }
 

@@ -3,75 +3,63 @@
   <parts>
     <Part>
       <stringID>420246.GTNG_3499</stringID>
-      <stringProteinID>2536780</stringProteinID>
       <name>BBa_K398000</name>
-      <geneID>0</geneID>
+      <enabled>false</enabled>
     </Part>
     <Part>
       <stringID>101510.RHA1_ro02534</stringID>
-      <stringProteinID>876563</stringProteinID>
       <name>BBa_K398001</name>
-      <geneID>0</geneID>
+      <enabled>false</enabled>
     </Part>
     <Part>
       <stringID>246196.MSMEG_1840</stringID>
-      <stringProteinID>1394931</stringProteinID>
       <name>BBa_K398002</name>
-      <geneID>0</geneID>
+      <enabled>false</enabled>
     </Part>
     <Part>
       <stringID>350058.Mvan_1744</stringID>
-      <stringProteinID>2152220</stringProteinID>
       <name>BBa_K398003</name>
-      <geneID>0</geneID>
+      <enabled>false</enabled>
     </Part>
     <Part>
       <stringID>101510.RHA1_ro02537</stringID>
-      <stringProteinID>876566</stringProteinID>
       <name>BBa_K398004</name>
-      <geneID>0</geneID>
+      <enabled>false</enabled>
     </Part>
     <Part>
       <stringID>235909.GK0984</stringID>
-      <stringProteinID>1331748</stringProteinID>
       <name>BBa_K398005</name>
-      <geneID>0</geneID>
+      <enabled>false</enabled>
     </Part>
     <Part>
       <stringID>235909.GK2772</stringID>
-      <stringProteinID>1333536</stringProteinID>
       <name>BBa_K398006</name>
-      <geneID>0</geneID>
+      <enabled>false</enabled>
     </Part>
     <Part>
       <stringID>62977.ACIAD0697</stringID>
-      <stringProteinID>750944</stringProteinID>
       <name>BBa_K398200</name>
-      <geneID>0</geneID>
+      <enabled>false</enabled>
     </Part>
     <Part>
       <stringID>160488.PP_0504</stringID>
-      <stringProteinID>938997</stringProteinID>
       <name>BBa_K398201</name>
-      <geneID>0</geneID>
+      <enabled>false</enabled>
     </Part>
     <Part>
       <stringID>399739.Pmen_0429</stringID>
-      <stringProteinID>2436533</stringProteinID>
       <name>BBa_K398300</name>
-      <geneID>0</geneID>
+      <enabled>false</enabled>
     </Part>
     <Part>
       <stringID>70601.PH0527</stringID>
-      <stringProteinID>786836</stringProteinID>
       <name>BBa_K398400</name>
-      <geneID>0</geneID>
+      <enabled>true</enabled>
     </Part>
     <Part>
       <stringID>70601.PH0532</stringID>
-      <stringProteinID>786842</stringProteinID>
       <name>BBa_K398401</name>
-      <geneID>0</geneID>
+      <enabled>true</enabled>
     </Part>
   </parts>
 </PartList>

@@ -38,6 +38,8 @@ namespace InteractionMapping
 		public PartInfoPanel()
 		{
 			InitializeComponent();
+
+			tabControl.SelectedIndex = 1;
 		}
 
 		public void SetPart(PartList.Part part) 
@@ -46,7 +48,6 @@ namespace InteractionMapping
 			var d = part.data;
 			labelName.Text = d.ShortName;
 			labelDesc.Text = d.ShortDesc;
-			labelLength.Text = d.Sequence.Length.ToString();
 			textStringID.Text = part.stringID;
 
 			textDNA.Text = d.Sequence;
@@ -65,8 +66,7 @@ namespace InteractionMapping
 
 		private void buttonOpenStringWeb_Click(object sender, EventArgs e)
 		{
-			string url = string.Format("http://string-db.org/version_8_3/newstring_cgi/show_network_section.pl?identifier={0}&all_channels_on=1&interactive=yes&network_flavor=evidence&targetmode=proteins",
-				part.stringID);
+			string url = string.Format("http://string-db.org/version_8_3/newstring_cgi/show_network_section.pl?identifier={0}&all_channels_on=1&interactive=yes&network_flavor=evidence&targetmode=proteins", part.stringID);
 
 			Util.OpenWebAddr(url);
 		}

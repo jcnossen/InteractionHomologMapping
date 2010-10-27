@@ -179,7 +179,6 @@ namespace InteractionMapping
 				protein.sequence = part;
 				protein.name = part.data.ShortDesc;
 
-				protein.attributes["gene"] = part.gene == null ? "?" : part.gene;
 				protein.attributes["length"] = part.data.Sequence.Length.ToString();
 				protein.attributes["biobrick"] = part.data.Name;
 				protein.attributes["url"] = BiobrickCache.PartRegistryLink(part.data.Name);

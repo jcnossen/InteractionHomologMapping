@@ -38,8 +38,9 @@ namespace InteractionMapping
 			Application.SetCompatibleTextRenderingDefault(false);
 			//Application.Run(new MainDlg(args));
 
-			string seq = "MNFKLFRCEVCGFEYDEELGWPEDGIEPGTRWADIPDDWSCPDCGAAKADFEMVEVARP.";
-			Application.Run(new BlastDlg(seq));
+			Application.Run(new IMWizardDlg());
+//			string seq = "MNFKLFRCEVCGFEYDEELGWPEDGIEPGTRWADIPDDWSCPDCGAAKADFEMVEVARP.";
+	//		Application.Run(new BlastDlg(seq));
 		}
 	}
 }

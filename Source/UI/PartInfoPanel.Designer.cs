@@ -30,9 +30,7 @@
 		{
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
 			this.labelDesc = new System.Windows.Forms.Label();
-			this.labelLength = new System.Windows.Forms.Label();
 			this.tabControl = new System.Windows.Forms.TabControl();
 			this.tabPageDNA = new System.Windows.Forms.TabPage();
 			this.textDNA = new System.Windows.Forms.TextBox();
@@ -66,30 +64,14 @@
 			this.label2.TabIndex = 2;
 			this.label2.Text = "Description";
 			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(9, 61);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(40, 13);
-			this.label3.TabIndex = 3;
-			this.label3.Text = "Length";
-			// 
 			// labelDesc
 			// 
 			this.labelDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
 									| System.Windows.Forms.AnchorStyles.Right)));
 			this.labelDesc.Location = new System.Drawing.Point(93, 37);
 			this.labelDesc.Name = "labelDesc";
-			this.labelDesc.Size = new System.Drawing.Size(263, 21);
+			this.labelDesc.Size = new System.Drawing.Size(298, 21);
 			this.labelDesc.TabIndex = 5;
-			// 
-			// labelLength
-			// 
-			this.labelLength.Location = new System.Drawing.Point(93, 61);
-			this.labelLength.Name = "labelLength";
-			this.labelLength.Size = new System.Drawing.Size(91, 21);
-			this.labelLength.TabIndex = 6;
 			// 
 			// tabControl
 			// 
@@ -98,10 +80,10 @@
 									| System.Windows.Forms.AnchorStyles.Right)));
 			this.tabControl.Controls.Add(this.tabPageDNA);
 			this.tabControl.Controls.Add(this.tabPageAA);
-			this.tabControl.Location = new System.Drawing.Point(3, 111);
+			this.tabControl.Location = new System.Drawing.Point(3, 89);
 			this.tabControl.Name = "tabControl";
 			this.tabControl.SelectedIndex = 0;
-			this.tabControl.Size = new System.Drawing.Size(360, 136);
+			this.tabControl.Size = new System.Drawing.Size(395, 158);
 			this.tabControl.TabIndex = 7;
 			// 
 			// tabPageDNA
@@ -110,7 +92,7 @@
 			this.tabPageDNA.Location = new System.Drawing.Point(4, 22);
 			this.tabPageDNA.Name = "tabPageDNA";
 			this.tabPageDNA.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPageDNA.Size = new System.Drawing.Size(352, 110);
+			this.tabPageDNA.Size = new System.Drawing.Size(387, 132);
 			this.tabPageDNA.TabIndex = 0;
 			this.tabPageDNA.Text = "DNA";
 			this.tabPageDNA.UseVisualStyleBackColor = true;
@@ -121,7 +103,7 @@
 			this.textDNA.Location = new System.Drawing.Point(3, 3);
 			this.textDNA.Multiline = true;
 			this.textDNA.Name = "textDNA";
-			this.textDNA.Size = new System.Drawing.Size(346, 104);
+			this.textDNA.Size = new System.Drawing.Size(381, 126);
 			this.textDNA.TabIndex = 0;
 			// 
 			// tabPageAA
@@ -130,7 +112,7 @@
 			this.tabPageAA.Location = new System.Drawing.Point(4, 22);
 			this.tabPageAA.Name = "tabPageAA";
 			this.tabPageAA.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPageAA.Size = new System.Drawing.Size(352, 110);
+			this.tabPageAA.Size = new System.Drawing.Size(387, 132);
 			this.tabPageAA.TabIndex = 1;
 			this.tabPageAA.Text = "AA";
 			this.tabPageAA.UseVisualStyleBackColor = true;
@@ -141,13 +123,13 @@
 			this.textAA.Location = new System.Drawing.Point(3, 3);
 			this.textAA.Multiline = true;
 			this.textAA.Name = "textAA";
-			this.textAA.Size = new System.Drawing.Size(346, 104);
+			this.textAA.Size = new System.Drawing.Size(381, 126);
 			this.textAA.TabIndex = 0;
 			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(9, 85);
+			this.label4.Location = new System.Drawing.Point(11, 66);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(62, 13);
 			this.label4.TabIndex = 8;
@@ -155,7 +137,7 @@
 			// 
 			// textStringID
 			// 
-			this.textStringID.Location = new System.Drawing.Point(96, 82);
+			this.textStringID.Location = new System.Drawing.Point(98, 63);
 			this.textStringID.Name = "textStringID";
 			this.textStringID.Size = new System.Drawing.Size(191, 20);
 			this.textStringID.TabIndex = 9;
@@ -163,7 +145,7 @@
 			// 
 			// labelName
 			// 
-			this.labelName.Location = new System.Drawing.Point(93, 11);
+			this.labelName.Location = new System.Drawing.Point(92, 5);
 			this.labelName.Name = "labelName";
 			this.labelName.Size = new System.Drawing.Size(194, 26);
 			this.labelName.TabIndex = 10;
@@ -175,11 +157,11 @@
 			// 
 			// buttonOpenStringWeb
 			// 
-			this.buttonOpenStringWeb.Location = new System.Drawing.Point(293, 80);
+			this.buttonOpenStringWeb.Location = new System.Drawing.Point(295, 61);
 			this.buttonOpenStringWeb.Name = "buttonOpenStringWeb";
-			this.buttonOpenStringWeb.Size = new System.Drawing.Size(52, 22);
+			this.buttonOpenStringWeb.Size = new System.Drawing.Size(96, 22);
 			this.buttonOpenStringWeb.TabIndex = 11;
-			this.buttonOpenStringWeb.Text = "Open";
+			this.buttonOpenStringWeb.Text = "Open Website";
 			this.buttonOpenStringWeb.UseVisualStyleBackColor = true;
 			this.buttonOpenStringWeb.Click += new System.EventHandler(this.buttonOpenStringWeb_Click);
 			// 
@@ -192,13 +174,11 @@
 			this.Controls.Add(this.textStringID);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.tabControl);
-			this.Controls.Add(this.labelLength);
 			this.Controls.Add(this.labelDesc);
-			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Name = "PartInfoPanel";
-			this.Size = new System.Drawing.Size(364, 247);
+			this.Size = new System.Drawing.Size(399, 247);
 			this.tabControl.ResumeLayout(false);
 			this.tabPageDNA.ResumeLayout(false);
 			this.tabPageDNA.PerformLayout();
@@ -213,9 +193,7 @@
 
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label labelDesc;
-		private System.Windows.Forms.Label labelLength;
 		private System.Windows.Forms.TabControl tabControl;
 		private System.Windows.Forms.TabPage tabPageDNA;
 		private System.Windows.Forms.TabPage tabPageAA;

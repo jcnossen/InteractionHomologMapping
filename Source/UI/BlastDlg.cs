@@ -25,14 +25,12 @@ namespace InteractionMapping
 			InitializeComponent();
 
 			txtSeq.Text = seq;
-
 			blastDispatch = new ServiceClient();
 		}
 
 		private void buttonBlast_Click(object sender, EventArgs e)
 		{
 			buttonBlast.Enabled=false;
-
 			InputParameters p = new InputParameters();
 
 			p.stype = "protein";
@@ -41,7 +39,7 @@ namespace InteractionMapping
 			p.program = "blastp";
 
 			blastDispatch.Open();
-			jobID = blastDispatch.run("j.cnossen@gmail.com", "test", p);
+			jobID = blastDispatch.run("blast@igempartview.appspot.com", "test", p);
 			statusPollTimer.Start();
 		}
 
@@ -67,6 +65,5 @@ namespace InteractionMapping
 				buttonBlast.Enabled = true;
 			}
 		}
-
 	}
 }
