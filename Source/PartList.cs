@@ -104,11 +104,6 @@ namespace InteractionMapping
 			}
 		}
 
-		public InteractionSet BuildInteractionSet()
-		{
-			return BuildInteractionSet(parts);
-		}
-
 		public static InteractionSet BuildInteractionSet(IEnumerable<Part> parts)
 		{
 			InteractionSet set = new InteractionSet();

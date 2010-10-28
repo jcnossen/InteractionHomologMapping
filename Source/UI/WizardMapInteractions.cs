@@ -29,7 +29,7 @@ namespace InteractionMapping
 
 		public void InitializeSet()
 		{
-			wstate.set = PartList.BuildInteractionSet(wstate.partList.parts);
+			wstate.set = PartList.BuildInteractionSet(wstate.partList.parts.Where(p => p.enabled));
 
 			RunQuery(delegate
 			{
@@ -48,8 +48,7 @@ namespace InteractionMapping
 						SpeciesList.FirstOrDefault(s => s.speciesId == 83333));
 
 					foreach (Protein prot in wstate.set.proteins.Values)
-						if (prot.stringID == 0)
-							treeView.Nodes.Add(CreateProteinNode(prot));
+						treeView.Nodes.Add(CreateProteinNode(prot));
 
 					treeView.ExpandAll();
 				}));
@@ -97,14 +96,15 @@ namespace InteractionMapping
 			ThreadPool.QueueUserWorkItem(new WaitCallback(delegate
 			{
 				BeginQuery();
-				try
+				queryFunc();
+/*				try
 				{
 					queryFunc();
 				}
 				catch (Exception e)
 				{
 					Invoke(new Action(delegate { MessageBox.Show("Error: " + e.Message); }));
-				}
+				}*/
 				EndQuery();
 			}));
 		}
@@ -129,7 +129,6 @@ namespace InteractionMapping
 			{
 				strdb.ExtendInteractions(wstate.set, natives, MinInteractionScore, TreeUpdateLogCallback);
 			}
-
 		}
 
 		private void buttonLocalExtend_Click(object sender, EventArgs e)
