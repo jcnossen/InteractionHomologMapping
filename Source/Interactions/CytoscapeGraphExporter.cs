@@ -21,7 +21,7 @@ namespace InteractionMapping
 		public CytoscapeGraphExporter() {
 		}
 
-		internal void Export(InteractionSet set, bool showOriginal, bool showMissing)
+		public void Export(InteractionSet set, bool showOriginal, bool showMissing)
 		{
 			this.set = set;
 
@@ -88,9 +88,11 @@ namespace InteractionMapping
 					new string[] { "MappedInteraction", "MissingHomolog", "NativeInteraction", "LocalInteraction" },
 					new string[] { "0,255,0", "255,0,0", "100, 100, 100", "150, 150, 150" });
 
-				ct.discreteMapper(ctNetworkID, "default", "missing", "Node Color", "0,255,0",
-					new string[] { "yes" },
-					new string[] { "255,100,100" });
+				if (showMissing) {
+					ct.discreteMapper(ctNetworkID, "default", "missing", "Node Color", "0,255,0",
+						new string[] { "yes" },
+						new string[] { "255,100,100" });
+				}
 			}
 
 
@@ -101,7 +103,7 @@ namespace InteractionMapping
 			var homologMap = set.HomologMap();
 
 			List<GraphEdge> edges = new List<GraphEdge>();
-			Console.WriteLine("ProteinA; ProteinB; Bitscore; InteractionScore; Annotation; Name");
+			Console.WriteLine("ProteinA; ProteinB; Bitscore; InteractionScore; Name");
 			foreach (Protein prot in set.startProteins)
 				foreach (Interaction interaction in interactionMap[prot.stringID]) {
 					var homologs = homologMap[interaction.b.stringID];
@@ -113,9 +115,9 @@ namespace InteractionMapping
 							strength = interaction.score * h.bitscore,
 							type = "MappedInteraction"
 						});
-						Console.WriteLine(string.Format("{0} {1}; {2}; {3}; {4}; {5}", 
+						Console.WriteLine(string.Format("{0}; {1}; {2}; {3}; {4}", 
 							prot.stringExternalID, h.B.stringExternalID, h.bitscore, 
-							interaction.score, h.b.attributes["annotation"], h.b.name));
+							interaction.score, h.b.name));
 					}
 
 					if (set.startProteins.Contains(interaction.b) && prot != interaction.b) {
@@ -133,7 +135,7 @@ namespace InteractionMapping
 							stringID = 0,
 							stringExternalID = interaction.b.stringExternalID
 						};
-						missing.attributes["label"] = "-- " + interaction.b.name;
+						missing.attributes["label"] = interaction.b.name;
 						missing.attributes["missing"] = "yes";
 						edges.Add(new GraphEdge() {
 							a = prot,

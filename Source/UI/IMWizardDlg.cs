@@ -14,6 +14,7 @@ namespace InteractionMapping
 		WizardState wizardState;
 
 		Label[] stepLabels;
+		UserControl[] wizardPages;
 		int currentStep;
 
 		/*
@@ -37,6 +38,13 @@ namespace InteractionMapping
 			wizardState = new WizardState();
 			wizardState.partList = new PartList();
 
+			wizardPages = new UserControl[] {
+				new WizardEnterPartsPage(),
+				new WizardStringIDPage(),
+				new WizardMapInteractions(),
+				new WizardExport()
+			};
+
 			SetStep(0);
 		}
 
@@ -53,22 +61,7 @@ namespace InteractionMapping
 
 			stepPanel.Controls.Clear();
 
-			UserControl page = null;
-			switch (s)
-			{
-				case 0:
-					page = new WizardEnterPartsPage();
-					break;
-				case 1:
-					page = new WizardStringIDPage();
-					break;
-				case 2:
-					page = new WizardMapInteractions();
-					break;
-				case 3:
-					page = new WizardExport();
-					break;
-			}
+			UserControl page = wizardPages[s];
 			page.Dock = DockStyle.Fill;
 			stepPanel.Controls.Add(page);
 

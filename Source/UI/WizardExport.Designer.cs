@@ -33,10 +33,10 @@
 			this.buttonExportToCSV = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.label1 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
 			this.textCyNetworkName = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
@@ -70,6 +70,7 @@
 			this.buttonExportToCSV.TabIndex = 21;
 			this.buttonExportToCSV.Text = "Export to text";
 			this.buttonExportToCSV.UseVisualStyleBackColor = true;
+			this.buttonExportToCSV.Click += new System.EventHandler(this.buttonExportToCSV_Click);
 			// 
 			// groupBox1
 			// 
@@ -101,15 +102,14 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Cytoscape Export";
 			// 
-			// label1
+			// label2
 			// 
-			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-									| System.Windows.Forms.AnchorStyles.Right)));
-			this.label1.Location = new System.Drawing.Point(6, 18);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(447, 18);
-			this.label1.TabIndex = 21;
-			this.label1.Text = "To make this work, make sure you have the CytoscapeRPC installed and running. ";
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(13, 94);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(123, 13);
+			this.label2.TabIndex = 24;
+			this.label2.Text = "CytoscapeRPC Address:";
 			// 
 			// textCyNetworkName
 			// 
@@ -128,14 +128,15 @@
 			this.label4.TabIndex = 22;
 			this.label4.Text = "Cytoscape Network Name:";
 			// 
-			// label2
+			// label1
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(13, 94);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(123, 13);
-			this.label2.TabIndex = 24;
-			this.label2.Text = "CytoscapeRPC Address:";
+			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+									| System.Windows.Forms.AnchorStyles.Right)));
+			this.label1.Location = new System.Drawing.Point(6, 18);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(447, 18);
+			this.label1.TabIndex = 21;
+			this.label1.Text = "To make this work, make sure you have the CytoscapeRPC installed and running. ";
 			// 
 			// WizardExport
 			// 

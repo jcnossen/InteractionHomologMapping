@@ -24,19 +24,21 @@ namespace InteractionMapping
 		public void InitWizard(WizardState ws)
 		{
 			wstate = ws;
-			InitializeSet();
+
+			if (ws.set == null)
+				InitializeSet();
 		}
 
 		public void InitializeSet()
 		{
-			wstate.set = PartList.BuildInteractionSet(wstate.partList.parts.Where(p => p.enabled));
-
 			RunQuery(delegate
 			{
 				var speciesList = SpeciesList;
 
 				using (var strdb = new StringDatabaseSearch())
 				{
+					wstate.set = PartList.BuildInteractionSet(wstate.partList.parts.Where(p => p.enabled));
+
 					foreach (Protein prot in wstate.set.proteins.Values)
 						if (prot.stringID == 0)
 							strdb.UpdateProtein(prot);
@@ -44,8 +46,8 @@ namespace InteractionMapping
 
 				Invoke(new Action(delegate {
 					comboSpecies.Items.AddRange(speciesList);
-					comboSpecies.SelectedIndex = Array.IndexOf(SpeciesList,
-						SpeciesList.FirstOrDefault(s => s.speciesId == 83333));
+					comboSpecies.SelectedIndex = Array.IndexOf(speciesList,
+						speciesList.FirstOrDefault(s => s.speciesId == 83333));
 
 					foreach (Protein prot in wstate.set.proteins.Values)
 						treeView.Nodes.Add(CreateProteinNode(prot));
@@ -207,7 +209,6 @@ namespace InteractionMapping
 					strdb.ExtendBestHomologs(wstate.set, natives, speciesID, 0, TreeUpdateLogCallback);
 				}
 			});
-
 		}
 	
 	}

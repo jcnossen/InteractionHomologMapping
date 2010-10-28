@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace InteractionMapping
 {
@@ -36,6 +37,19 @@ namespace InteractionMapping
 			};
 
 			exporter.Export(wstate.set, false, true);
+		}
+
+		private void buttonExportToCSV_Click(object sender, EventArgs e)
+		{
+			var sfd = new SaveFileDialog() {
+				Title = "Export to CSV",
+			};
+
+			if (sfd.ShowDialog() == DialogResult.OK) {
+				using (Stream stream = sfd.OpenFile()) {
+					
+				}
+			}
 		}
 	}
 }
