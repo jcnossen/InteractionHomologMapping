@@ -43,7 +43,7 @@
 			this.txtSeq.Location = new System.Drawing.Point(12, 71);
 			this.txtSeq.Multiline = true;
 			this.txtSeq.Name = "txtSeq";
-			this.txtSeq.Size = new System.Drawing.Size(382, 173);
+			this.txtSeq.Size = new System.Drawing.Size(487, 223);
 			this.txtSeq.TabIndex = 0;
 			// 
 			// buttonBlast
@@ -73,7 +73,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(406, 256);
+			this.ClientSize = new System.Drawing.Size(511, 306);
 			this.Controls.Add(this.lblStatus);
 			this.Controls.Add(this.buttonBlast);
 			this.Controls.Add(this.txtSeq);

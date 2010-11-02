@@ -65,5 +65,10 @@ namespace InteractionMapping
 				buttonBlast.Enabled = true;
 			}
 		}
+
+		private void dataRepeater1_CurrentItemIndexChanged(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

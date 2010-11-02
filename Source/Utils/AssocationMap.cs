@@ -50,18 +50,19 @@ namespace InteractionMapping
 		public AssociationMap()
 		{}
 
-		public void Add(TPair x)
+		public bool Add(TPair x)
 		{
-			AddEntry(x.A, x);
+			return AddEntry(x.A, x);
 		}
 
-		void AddEntry(T p, TPair pair){
+		bool AddEntry(T p, TPair pair){
 			List<TPair> pairlist;
 			if (!map.TryGetValue(p.Key, out pairlist)) {
 				pairlist = new List<TPair>();
 				map[p.Key] = pairlist;
 			}
 			pairlist.Add(pair);
+			return false;
 		}
 
 		public TPair Get(TKey idA, TKey idB)

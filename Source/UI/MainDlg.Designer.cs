@@ -139,7 +139,6 @@ namespace InteractionMapping
 			this.queryInteractionsForSelectionToolStripMenuItem.Name = "queryInteractionsForSelectionToolStripMenuItem";
 			this.queryInteractionsForSelectionToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
 			this.queryInteractionsForSelectionToolStripMenuItem.Text = "Query interactions for selection";
-			this.queryInteractionsForSelectionToolStripMenuItem.Click += new System.EventHandler(this.queryInteractionsForSelectionToolStripMenuItem_Click);
 			// 
 			// nCBIBlastToolStripMenuItem
 			// 

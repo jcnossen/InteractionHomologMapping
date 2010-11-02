@@ -236,7 +236,7 @@ namespace InteractionMapping
 		/// </summary>
 		/// <param name="set">The interaction set</param>
 		/// <param name="queryset">Subset of the proteins in the interactions set</param>
-		public void ExtendInteractions(InteractionSet set, IEnumerable<Protein> queryset, float minScore, 
+		public void ExtendInteractions(InteractionSet set, IEnumerable<Protein> queryset, float minScore, bool addNewProteins,
 																		Action<Protein, Protein, string> logcb) {
 			//Dictionary<int, Protein> idents = set.IDsToProteinsMap();
 			var interactionMap = set.InteractionMap();
@@ -265,7 +265,10 @@ namespace InteractionMapping
 					UpdateProtein(ia.b, protB);
 
 					if (!set.proteins.ContainsKey(ia.b.stringExternalID)) {
-						set.proteins[ia.b.stringExternalID] = ia.b;
+						if (addNewProteins)
+							set.proteins[ia.b.stringExternalID] = ia.b;
+						else
+							continue;
 					}
 					else {
 						// already exists
@@ -273,8 +276,8 @@ namespace InteractionMapping
 					}
 					Console.WriteLine("Interaction between: " + ia.a.name + " and " + ia.b.name);
 
+					//if (interactionMap.Add(ia))
 					set.interactions.Add(ia);
-					interactionMap.Add(ia);
 
 					logcb(ia.a, ia.b, "Interaction between: " + ia.a.name + " and " + ia.b.name);
 				}

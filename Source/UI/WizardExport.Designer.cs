@@ -37,6 +37,7 @@
 			this.textCyNetworkName = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
+			this.checkExportNative = new System.Windows.Forms.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
@@ -89,6 +90,7 @@
 			this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
 									| System.Windows.Forms.AnchorStyles.Left)
 									| System.Windows.Forms.AnchorStyles.Right)));
+			this.groupBox2.Controls.Add(this.checkExportNative);
 			this.groupBox2.Controls.Add(this.label2);
 			this.groupBox2.Controls.Add(this.textCyNetworkName);
 			this.groupBox2.Controls.Add(this.label4);
@@ -138,6 +140,16 @@
 			this.label1.TabIndex = 21;
 			this.label1.Text = "To make this work, make sure you have the CytoscapeRPC installed and running. ";
 			// 
+			// checkExportNative
+			// 
+			this.checkExportNative.AutoSize = true;
+			this.checkExportNative.Location = new System.Drawing.Point(147, 42);
+			this.checkExportNative.Name = "checkExportNative";
+			this.checkExportNative.Size = new System.Drawing.Size(180, 17);
+			this.checkExportNative.TabIndex = 25;
+			this.checkExportNative.Text = "Export native interacting proteins";
+			this.checkExportNative.UseVisualStyleBackColor = true;
+			// 
 			// WizardExport
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,5 +176,6 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TextBox textCyNetworkName;
 		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.CheckBox checkExportNative;
 	}
 }

@@ -38,6 +38,7 @@
 			this.treeView = new System.Windows.Forms.TreeView();
 			this.label5 = new System.Windows.Forms.Label();
 			this.buttonMapInteractions = new System.Windows.Forms.Button();
+			this.buttonClear = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// textMinHomolog
@@ -91,6 +92,7 @@
 			this.comboSpecies.Name = "comboSpecies";
 			this.comboSpecies.Size = new System.Drawing.Size(268, 21);
 			this.comboSpecies.TabIndex = 18;
+			this.comboSpecies.SelectedIndexChanged += new System.EventHandler(this.comboSpecies_SelectedIndexChanged);
 			// 
 			// labelInProgress
 			// 
@@ -134,10 +136,21 @@
 			this.buttonMapInteractions.UseVisualStyleBackColor = true;
 			this.buttonMapInteractions.Click += new System.EventHandler(this.buttonMapInteractions_Click);
 			// 
+			// buttonClear
+			// 
+			this.buttonClear.Location = new System.Drawing.Point(154, 109);
+			this.buttonClear.Name = "buttonClear";
+			this.buttonClear.Size = new System.Drawing.Size(118, 23);
+			this.buttonClear.TabIndex = 26;
+			this.buttonClear.Text = "Clear";
+			this.buttonClear.UseVisualStyleBackColor = true;
+			this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+			// 
 			// WizardMapInteractions
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.buttonClear);
 			this.Controls.Add(this.buttonMapInteractions);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.treeView);
@@ -167,5 +180,6 @@
 		private System.Windows.Forms.TreeView treeView;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Button buttonMapInteractions;
+		private System.Windows.Forms.Button buttonClear;
 	}
 }

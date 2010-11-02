@@ -29,10 +29,7 @@ namespace InteractionMapping
 				ct.Url = URL;
 
 				List<GraphEdge> edges = new List<GraphEdge>();
-				if (showOriginal)
-					edges.AddRange(GetOriginalInteractions());
-				else
-					edges.AddRange(GetMappedInteractions(showMissing));
+				edges.AddRange(GetMappedInteractions(showMissing));
 
 				HashSet<Protein> nodes = new HashSet<Protein>();
 
@@ -53,6 +50,8 @@ namespace InteractionMapping
 					ctNetworkID = ct.createNetwork("STRING Interaction search");
 
 				ct.setCurrentNetwork(ctNetworkID);
+
+//				FixVisualStyle(ct);
 
 				foreach (Protein p in nodes) {
 					string nodeID = p.stringExternalID;
@@ -97,27 +96,65 @@ namespace InteractionMapping
 
 
 		}
+
+		private void FixVisualStyle(CytoscapeRPC.cytoscape.CytoscapeService ct)
+		{
+			string[] vstyles = ct.getVisualStyleNames();
+			string name = "interaction-mapped";
+
+			// If not existing, create a new visual style for 
+			if (vstyles.Contains(name))
+				return;
+
+			ct.copyVisualStyle("default", name);
+		}
+
+
 		private IEnumerable<GraphEdge> GetMappedInteractions(bool showMissing)
 		{
 			var interactionMap = set.InteractionMap();
 			var homologMap = set.HomologMap();
 
+			Dictionary<Protein, Protein> startProteinsCopy = new Dictionary<Protein, Protein>();
+			foreach (Protein p in set.startProteins) {
+				Protein cp = new Protein() {
+					sequence = p.sequence,
+					sequenceMatch = p.sequenceMatch,
+					stringExternalID = p.stringExternalID+".insert",
+					stringID = p.stringID
+				};
+				cp.attributes.Add("label", "inserted " + p.name);
+				startProteinsCopy[p]=cp;
+			}
+
 			List<GraphEdge> edges = new List<GraphEdge>();
 			Console.WriteLine("ProteinA; ProteinB; Bitscore; InteractionScore; Name");
 			foreach (Protein prot in set.startProteins)
 				foreach (Interaction interaction in interactionMap[prot.stringID]) {
-					var homologs = homologMap[interaction.b.stringID];
+					var interactionEdge = new GraphEdge() {
+						a = prot, b = interaction.b,
+						strength = interaction.score,
+						type = "NativeInteraction"
+					};
+					edges.Add(interactionEdge);
 
+					var homologs = homologMap[interaction.b.stringID];
 					foreach (Homolog h in homologs) {
 						edges.Add(new GraphEdge() {
-							a = prot,
+							a = interaction.b,
 							b = h.B,
-							strength = interaction.score * h.bitscore,
-							type = "MappedInteraction"
+							strength = h.bitscore,
+							type = "Homolog"
 						});
 						Console.WriteLine(string.Format("{0}; {1}; {2}; {3}; {4}", 
 							prot.stringExternalID, h.B.stringExternalID, h.bitscore, 
 							interaction.score, h.b.name));
+
+						edges.Add(new GraphEdge() {
+							a = h.B, b = startProteinsCopy[prot],
+							strength = interaction.score * h.bitscore,
+							type = "MappedInteraction"
+						});
 					}
 
 					if (set.startProteins.Contains(interaction.b) && prot != interaction.b) {
@@ -129,20 +166,8 @@ namespace InteractionMapping
 						});
 					}
 					else if (showMissing && homologs.Count == 0) {
-						var missing = new Protein() {
-							name = "Missing: " + interaction.b.name,
-							speciesID = destSpeciesID,
-							stringID = 0,
-							stringExternalID = interaction.b.stringExternalID
-						};
-						missing.attributes["label"] = interaction.b.name;
+						var missing = interactionEdge.b;
 						missing.attributes["missing"] = "yes";
-						edges.Add(new GraphEdge() {
-							a = prot,
-							b = missing,
-							strength = 0,
-							type = "MissingHomolog"
-						});
 					}
 				}
 			return edges;

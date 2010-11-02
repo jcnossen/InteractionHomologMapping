@@ -167,28 +167,6 @@ namespace InteractionMapping
 			new TextBoxDlg(sb.ToString(), "Wiki table markup").ShowDialog();
 		}
 
-		private void queryInteractionsForSelectionToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-			InteractionSet set = new InteractionSet();
-
-			foreach (ListViewItem i in listBB.CheckedItems) {
-//				if (!i.Checked) continue;
-				PartList.Part part = (PartList.Part)i.Tag;
-				Protein protein = new Protein();
-				protein.stringExternalID = part.stringID;
-				protein.sequence = part;
-				protein.name = part.data.ShortDesc;
-
-				protein.attributes["length"] = part.data.Sequence.Length.ToString();
-				protein.attributes["biobrick"] = part.data.Name;
-				protein.attributes["url"] = BiobrickCache.PartRegistryLink(part.data.Name);
-
-				set.startProteins.Add(protein);
-				set.proteins[part.stringID] = protein;
-			}
-
-			new InteractionQueryDlg(set).ShowDialog();
-		}
 
 		private void listBB_MouseDown(object sender, MouseEventArgs e)
 		{

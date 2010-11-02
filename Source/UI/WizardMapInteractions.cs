@@ -15,6 +15,7 @@ namespace InteractionMapping
 	{
 		WizardState wstate;
 		Dictionary<Protein, TreeNode> treeNodes = new Dictionary<Protein, TreeNode>();
+		StringDatabaseSearch.dbSpecies[] speciesList;
 
 		public WizardMapInteractions()
 		{
@@ -34,6 +35,7 @@ namespace InteractionMapping
 			RunQuery(delegate
 			{
 				var speciesList = SpeciesList;
+				wstate.speciesList = speciesList.Select(s=>s.compactName).ToArray();
 
 				using (var strdb = new StringDatabaseSearch())
 				{
@@ -57,12 +59,10 @@ namespace InteractionMapping
 			});
 		}
 
-		static StringDatabaseSearch.dbSpecies[] speciesList;
-
 		public StringDatabaseSearch.dbSpecies[] SpeciesList
 		{
 			get {
-				if (speciesList == null) 
+				if (speciesList == null)
 					using (var sds = new StringDatabaseSearch())
 						speciesList = sds.LoadSpecies();
 				return speciesList;
@@ -121,15 +121,14 @@ namespace InteractionMapping
 
 		private void NativeExtend()
 		{
-			List<Protein> natives = new List<Protein>();
-
-			foreach (Protein p in wstate.set.proteins.Values)
-				if (!p.fromHomolog)
-					natives.Add(p);
-
 			using (StringDatabaseSearch strdb = new StringDatabaseSearch())
 			{
-				strdb.ExtendInteractions(wstate.set, natives, MinInteractionScore, TreeUpdateLogCallback);
+				strdb.ExtendInteractions(wstate.set, wstate.set.proteins.Values.Where(p => !p.fromHomolog).ToArray(), 
+					MinInteractionScore, true, TreeUpdateLogCallback);
+
+				// Find the interactions between the newly added nodes
+//				strdb.ExtendInteractions(wstate.set, wstate.set.proteins.Values.Where(p => !p.fromHomolog).ToArray(),
+	//				MinInteractionScore, false, TreeUpdateLogCallback);
 			}
 		}
 
@@ -137,15 +136,10 @@ namespace InteractionMapping
 		{
 			RunQuery(delegate
 			{
-				List<Protein> locals = new List<Protein>();
-
-				foreach (Protein p in wstate.set.proteins.Values)
-					if (p.fromHomolog)
-						locals.Add(p);
-
 				using (StringDatabaseSearch strdb = new StringDatabaseSearch())
 				{
-					strdb.ExtendInteractions(wstate.set, locals, MinInteractionScore, TreeUpdateLogCallback);
+					strdb.ExtendInteractions(wstate.set, wstate.set.proteins.Values.Where(p => p.fromHomolog), 
+						MinInteractionScore, true, TreeUpdateLogCallback);
 				}
 			});
 		}
@@ -209,6 +203,18 @@ namespace InteractionMapping
 					strdb.ExtendBestHomologs(wstate.set, natives, speciesID, 0, TreeUpdateLogCallback);
 				}
 			});
+		}
+
+		private void comboSpecies_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			wstate.species = (StringDatabaseSearch.dbSpecies)comboSpecies.SelectedItem;
+		}
+
+		private void buttonClear_Click(object sender, EventArgs e)
+		{
+			treeNodes.Clear();
+			treeView.Nodes.Clear();
+			InitializeSet();
 		}
 	
 	}

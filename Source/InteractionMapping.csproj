@@ -45,6 +45,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Design" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Runtime.Serialization">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
@@ -99,9 +100,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\IMWizardDlg.resx">
       <DependentUpon>IMWizardDlg.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\InteractionQueryDlg.resx">
-      <DependentUpon>InteractionQueryDlg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MainDlg.resx">
       <DependentUpon>MainDlg.cs</DependentUpon>
@@ -178,12 +176,6 @@
     </Compile>
     <Compile Include="UI\IMWizardDlg.Designer.cs">
       <DependentUpon>IMWizardDlg.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\InteractionQueryDlg.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\InteractionQueryDlg.Designer.cs">
-      <DependentUpon>InteractionQueryDlg.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\MainDlg.cs">
       <SubType>Form</SubType>
