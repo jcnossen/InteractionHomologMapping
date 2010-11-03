@@ -47,7 +47,12 @@ namespace InteractionMapping
 
 			if (sfd.ShowDialog() == DialogResult.OK) {
 				using (Stream stream = sfd.OpenFile()) {
-					
+					StreamWriter sw = new StreamWriter(stream);
+
+					sw.WriteLine("start_protein; host_protein; interactionscore; homologyscore; host_protein_name; host_protein_annotation");
+					foreach (MappedInteraction mi in wstate.set.GetMappedInteractions(true)) {
+						sw.WriteLine("'{0}';'{1}';'{2}';'{3}';'{4}';'{5}'", mi.A.stringExternalID, mi.B.stringExternalID, mi.score, mi.homologyScore, mi.b.PreferredName, mi.b.Annotation);
+					}
 				}
 			}
 		}

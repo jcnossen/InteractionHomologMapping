@@ -33,11 +33,11 @@
 			this.buttonExportToCSV = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.checkExportNative = new System.Windows.Forms.CheckBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.textCyNetworkName = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.checkExportNative = new System.Windows.Forms.CheckBox();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			this.SuspendLayout();
@@ -104,6 +104,19 @@
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Cytoscape Export";
 			// 
+			// checkExportNative
+			// 
+			this.checkExportNative.AutoSize = true;
+			this.checkExportNative.Checked = true;
+			this.checkExportNative.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.checkExportNative.Location = new System.Drawing.Point(147, 42);
+			this.checkExportNative.Name = "checkExportNative";
+			this.checkExportNative.Size = new System.Drawing.Size(180, 17);
+			this.checkExportNative.TabIndex = 25;
+			this.checkExportNative.Text = "Export native interacting proteins";
+			this.checkExportNative.UseVisualStyleBackColor = true;
+			this.checkExportNative.Visible = false;
+			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
@@ -139,16 +152,6 @@
 			this.label1.Size = new System.Drawing.Size(447, 18);
 			this.label1.TabIndex = 21;
 			this.label1.Text = "To make this work, make sure you have the CytoscapeRPC installed and running. ";
-			// 
-			// checkExportNative
-			// 
-			this.checkExportNative.AutoSize = true;
-			this.checkExportNative.Location = new System.Drawing.Point(147, 42);
-			this.checkExportNative.Name = "checkExportNative";
-			this.checkExportNative.Size = new System.Drawing.Size(180, 17);
-			this.checkExportNative.TabIndex = 25;
-			this.checkExportNative.Text = "Export native interacting proteins";
-			this.checkExportNative.UseVisualStyleBackColor = true;
 			// 
 			// WizardExport
 			// 

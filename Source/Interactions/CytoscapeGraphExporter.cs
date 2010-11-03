@@ -44,12 +44,12 @@ namespace InteractionMapping
 				foreach (Protein p in set.startProteins)
 					nodes.Add(p);
 
-				string ctNetworkID = null;
+				string ctNetworkID = ct.getCurrentNetworkIndex();
 
-				if (ctNetworkID == null)
-					ctNetworkID = ct.createNetwork("STRING Interaction search");
+//				if (ctNetworkID == null)
+	//				ctNetworkID = ct.createNetwork("STRING Interaction search");
 
-				ct.setCurrentNetwork(ctNetworkID);
+	//			ct.setCurrentNetwork(ctNetworkID);
 
 //				FixVisualStyle(ct);
 

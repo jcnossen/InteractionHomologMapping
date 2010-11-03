@@ -66,6 +66,26 @@ namespace InteractionMapping
 		/// Optional attributes
 		/// </summary>
 		public Dictionary<string, string> attributes = new Dictionary<string, string>();
+
+		public string PreferredName {
+			get {
+				string s;
+				if (attributes.TryGetValue("preferredName", out s))
+					return s;
+				return "";
+			}
+		}
+
+		public string Annotation
+		{
+			get
+			{
+				string s;
+				if (attributes.TryGetValue("annotation", out s))
+					return s;
+				return "";
+			}
+		}
 	}
 
 	public class Interaction : IPair<Protein>
@@ -75,6 +95,17 @@ namespace InteractionMapping
 
 		public Protein A { get { return a; } }
 		public Protein B { get { return b; } }
+
+		internal Protein GetOpposite(Protein s)
+		{
+			return (a == s) ? b : a;
+		}
+	}
+
+	public class MappedInteraction : Interaction
+	{
+		public float homologyScore;
+		public bool missing;
 	}
 
 	public class Homolog : IPair<Protein>
@@ -85,6 +116,11 @@ namespace InteractionMapping
 
 		public Protein A { get { return a; } }
 		public Protein B { get { return b; } }
+
+		public Protein GetOpposite(Protein interacting)
+		{
+			return (a == interacting) ? b : a;
+		}
 	}
 
 	public class InteractionSet
@@ -112,6 +148,46 @@ namespace InteractionMapping
 		public AssociationMap<int, Homolog, Protein> HomologMap()
 		{
 			return new AssociationMap<int, Homolog, Protein>(homologs);
+		}
+
+		public IEnumerable<MappedInteraction> GetMappedInteractions(bool includeMissing)
+		{
+			var interactionMap = InteractionMap();
+			var homologMap = HomologMap();
+			List<MappedInteraction> mappedInteractions = new List<MappedInteraction>();
+
+			foreach (Protein s in startProteins) {
+				foreach (Interaction i in interactionMap[s.stringID]) {
+					Protein interacting = i.GetOpposite(s);
+					if (startProteins.Contains(interacting))
+						continue;
+
+					bool missing = true;
+					foreach (Homolog h in homologMap[interacting.stringID]) {
+						Protein other = h.GetOpposite(interacting);
+
+						mappedInteractions.Add(new MappedInteraction() {
+							a = s,
+							b = other, 
+							score = i.score,
+							homologyScore = h.bitscore
+						});
+
+						missing = false;
+					}
+					if (missing && includeMissing) {
+						mappedInteractions.Add(new MappedInteraction() {
+							a = s,
+							b = interacting,
+							score = i.score,
+							homologyScore = 0,
+							missing = true
+						});
+					}
+				}
+			}
+
+			return mappedInteractions;
 		}
 	}
 }
