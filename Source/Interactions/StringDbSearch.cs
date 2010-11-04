@@ -284,6 +284,7 @@ namespace InteractionMapping
 			}
 		}
 
+#pragma warning disable 0649
 		class HomologQuery {
 			public string protein_annotation;
 			public int protein_size;
@@ -291,6 +292,7 @@ namespace InteractionMapping
 			public float norm_score;
 			public int alignment_length;
 		}
+#pragma warning restore 0649
 
 		public void ExtendBestHomologs(InteractionSet set, IEnumerable<Protein> queryList, 
 															int speciesID, float minscore, Action<Protein, Protein, string> logcb)

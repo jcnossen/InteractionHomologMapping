@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WizardExport));
 			this.textCytoscapeServiceURL = new System.Windows.Forms.TextBox();
 			this.buttonExportCytoscape = new System.Windows.Forms.Button();
 			this.buttonExportToCSV = new System.Windows.Forms.Button();
@@ -35,8 +36,6 @@
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.checkExportNative = new System.Windows.Forms.CheckBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textCyNetworkName = new System.Windows.Forms.TextBox();
-			this.label4 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
@@ -46,7 +45,6 @@
 			// 
 			this.textCytoscapeServiceURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
 									| System.Windows.Forms.AnchorStyles.Right)));
-			this.textCytoscapeServiceURL.Enabled = false;
 			this.textCytoscapeServiceURL.Location = new System.Drawing.Point(164, 91);
 			this.textCytoscapeServiceURL.Name = "textCytoscapeServiceURL";
 			this.textCytoscapeServiceURL.Size = new System.Drawing.Size(280, 20);
@@ -55,7 +53,7 @@
 			// 
 			// buttonExportCytoscape
 			// 
-			this.buttonExportCytoscape.Location = new System.Drawing.Point(6, 39);
+			this.buttonExportCytoscape.Location = new System.Drawing.Point(6, 65);
 			this.buttonExportCytoscape.Name = "buttonExportCytoscape";
 			this.buttonExportCytoscape.Size = new System.Drawing.Size(135, 23);
 			this.buttonExportCytoscape.TabIndex = 20;
@@ -92,8 +90,6 @@
 									| System.Windows.Forms.AnchorStyles.Right)));
 			this.groupBox2.Controls.Add(this.checkExportNative);
 			this.groupBox2.Controls.Add(this.label2);
-			this.groupBox2.Controls.Add(this.textCyNetworkName);
-			this.groupBox2.Controls.Add(this.label4);
 			this.groupBox2.Controls.Add(this.label1);
 			this.groupBox2.Controls.Add(this.buttonExportCytoscape);
 			this.groupBox2.Controls.Add(this.textCytoscapeServiceURL);
@@ -109,7 +105,7 @@
 			this.checkExportNative.AutoSize = true;
 			this.checkExportNative.Checked = true;
 			this.checkExportNative.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.checkExportNative.Location = new System.Drawing.Point(147, 42);
+			this.checkExportNative.Location = new System.Drawing.Point(147, 68);
 			this.checkExportNative.Name = "checkExportNative";
 			this.checkExportNative.Size = new System.Drawing.Size(180, 17);
 			this.checkExportNative.TabIndex = 25;
@@ -126,32 +122,15 @@
 			this.label2.TabIndex = 24;
 			this.label2.Text = "CytoscapeRPC Address:";
 			// 
-			// textCyNetworkName
-			// 
-			this.textCyNetworkName.Location = new System.Drawing.Point(164, 65);
-			this.textCyNetworkName.Name = "textCyNetworkName";
-			this.textCyNetworkName.Size = new System.Drawing.Size(280, 20);
-			this.textCyNetworkName.TabIndex = 23;
-			this.textCyNetworkName.Text = "STRING Interaction search";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(13, 68);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(134, 13);
-			this.label4.TabIndex = 22;
-			this.label4.Text = "Cytoscape Network Name:";
-			// 
 			// label1
 			// 
 			this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
 									| System.Windows.Forms.AnchorStyles.Right)));
 			this.label1.Location = new System.Drawing.Point(6, 18);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(447, 18);
+			this.label1.Size = new System.Drawing.Size(447, 44);
 			this.label1.TabIndex = 21;
-			this.label1.Text = "To make this work, make sure you have the CytoscapeRPC installed and running. ";
+			this.label1.Text = resources.GetString("label1.Text");
 			// 
 			// WizardExport
 			// 
@@ -177,8 +156,6 @@
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TextBox textCyNetworkName;
-		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.CheckBox checkExportNative;
 	}
 }

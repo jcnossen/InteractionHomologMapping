@@ -117,4 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>To make this work, make sure you have the CytoscapeRPC installed and running. 
+The interactions will be exported to the currently selected network in Cytoscape
+The first export to Cytoscape will take a few seconds, due to the SOAP interface</value>
+  </data>
 </root>

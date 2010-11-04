@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web.Services.Protocols;
 
 namespace InteractionMapping
 {
 	class CytoscapeGraphExporter
 	{
+		public class Exception : SoapException
+		{
+
+		}
+
 		class GraphEdge
 		{
 			public Protein a, b;
@@ -46,12 +52,12 @@ namespace InteractionMapping
 
 				string ctNetworkID = ct.getCurrentNetworkIndex();
 
-//				if (ctNetworkID == null)
-	//				ctNetworkID = ct.createNetwork("STRING Interaction search");
+				//				if (ctNetworkID == null)
+				//				ctNetworkID = ct.createNetwork("STRING Interaction search");
 
-	//			ct.setCurrentNetwork(ctNetworkID);
+				//			ct.setCurrentNetwork(ctNetworkID);
 
-//				FixVisualStyle(ct);
+				//				FixVisualStyle(ct);
 
 				foreach (Protein p in nodes) {
 					string nodeID = p.stringExternalID;
@@ -93,7 +99,6 @@ namespace InteractionMapping
 						new string[] { "255,100,100" });
 				}
 			}
-
 
 		}
 

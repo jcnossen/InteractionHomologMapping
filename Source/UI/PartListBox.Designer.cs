@@ -36,6 +36,7 @@
 			this.FullRowSelect = true;
 			this.View = System.Windows.Forms.View.List;
 			this.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(this.PartListBox_ItemChecked);
+			this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listBB_MouseDown);
 			this.ResumeLayout(false);
 
 		}

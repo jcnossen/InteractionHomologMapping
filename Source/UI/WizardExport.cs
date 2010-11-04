@@ -36,7 +36,11 @@ namespace InteractionMapping
 				destSpeciesID = wstate.species.speciesId
 			};
 
-			exporter.Export(wstate.set, checkExportNative.Checked, true);
+			try {
+				exporter.Export(wstate.set, checkExportNative.Checked, true);
+			}catch (Exception exc) {
+				MessageBox.Show("Error occurred:\n" + exc.Message);
+			}
 		}
 
 		private void buttonExportToCSV_Click(object sender, EventArgs e)
